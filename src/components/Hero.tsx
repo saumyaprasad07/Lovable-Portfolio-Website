@@ -16,10 +16,7 @@ const Hero = () => {
           Hi, I'm <span className="gradient-text">Saumya Prasad</span>
         </h1>
         <p className="text-xl md:text-2xl text-muted-foreground mb-4">Data / BI Analytics & Product Analytics Enthusiast</p>
-        <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-          Crafting beautiful, functional digital experiences with modern technologies.
-          Passionate about clean code and elegant design.
-        </p>
+        
         
         {/* CTA Buttons */}
         <div className="flex flex-wrap gap-4 justify-center mb-12">
