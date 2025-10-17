@@ -7,28 +7,28 @@ import project3 from "@/assets/project3.jpg";
 
 const projects = [
   {
-    title: "E-Commerce Platform",
-    description: "A modern e-commerce solution with real-time inventory management, secure payments, and beautiful UI.",
+    title: "Yelp Business Sentiment Analysis",
+    description: "Processed 5GB+ Yelp data with scalable ingestion pipelines and complex SQL/BigQuery queries. Validated data quality and modeled sentiment insights for comprehensive reporting.",
     image: project1,
-    tech: ["React", "Node.js", "PostgreSQL", "Stripe"],
-    github: "https://github.com",
-    live: "https://example.com",
+    tech: ["SQL", "Snowflake", "AWS", "BigQuery"],
+    github: "https://github.com/saumyaprasad07",
+    live: "#",
   },
   {
-    title: "Mobile Fitness App",
-    description: "Cross-platform fitness tracking app with personalized workout plans and social features.",
+    title: "Database Management System for UPS",
+    description: "Designed and implemented logistics database using EERD and 3NF principles. Optimized SQL queries with indexing and window functions. Authored BRD, TRD, and project charter for cross-functional alignment.",
     image: project2,
-    tech: ["React Native", "Firebase", "Redux", "TypeScript"],
-    github: "https://github.com",
-    live: "https://example.com",
+    tech: ["MySQL", "Business Analysis", "SQL Optimization"],
+    github: "https://github.com/saumyaprasad07",
+    live: "#",
   },
   {
-    title: "Analytics Dashboard",
-    description: "Real-time analytics dashboard with interactive charts and data visualization for business intelligence.",
+    title: "Interactive BI Dashboards",
+    description: "Designed automated end-to-end dashboards using SQL, Python, Tableau, and Power BI for real-time visualization, improving reporting efficiency by 25% across multiple departments.",
     image: project3,
-    tech: ["React", "D3.js", "Express", "MongoDB"],
-    github: "https://github.com",
-    live: "https://example.com",
+    tech: ["Tableau", "Power BI", "Python", "SQL"],
+    github: "https://github.com/saumyaprasad07",
+    live: "#",
   },
 ];
 
@@ -41,7 +41,7 @@ const Projects = () => {
             Featured <span className="gradient-text">Projects</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            A selection of projects that showcase my skills and experience in web development.
+            A selection of projects showcasing my data analytics and business intelligence expertise.
           </p>
         </div>
 

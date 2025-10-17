@@ -1,35 +1,35 @@
-import { Code2, Database, Layout, Smartphone, Server, Palette } from "lucide-react";
+import { Code2, Database, BarChart3, Cloud, GitBranch, TrendingUp } from "lucide-react";
 
 const skills = [
   {
     icon: Code2,
-    title: "Frontend Development",
-    description: "React, TypeScript, Next.js, Tailwind CSS",
+    title: "Programming & Analytics",
+    description: "Python (Pandas, NumPy, Scikit-learn, Matplotlib), SQL",
   },
   {
-    icon: Server,
-    title: "Backend Development",
-    description: "Node.js, Express, Python, RESTful APIs",
+    icon: BarChart3,
+    title: "Data Visualization & BI",
+    description: "Tableau, Power BI, Google Data Studio, Excel",
   },
   {
     icon: Database,
-    title: "Database Management",
-    description: "PostgreSQL, MongoDB, Redis, Supabase",
+    title: "Databases & Cloud",
+    description: "MySQL, Snowflake, AWS (S3, Redshift, Lambda), GCP, Azure",
   },
   {
-    icon: Smartphone,
-    title: "Mobile Development",
-    description: "React Native, Cross-platform solutions",
+    icon: TrendingUp,
+    title: "Business Analysis",
+    description: "Market Research, KPI Dashboards, A/B Testing",
   },
   {
-    icon: Layout,
-    title: "UI/UX Design",
-    description: "Figma, Responsive Design, Accessibility",
+    icon: GitBranch,
+    title: "Methodologies & Tools",
+    description: "Agile/Scrum, Statistical Analysis, Git/GitHub",
   },
   {
-    icon: Palette,
-    title: "Design Systems",
-    description: "Component Libraries, Design Tokens",
+    icon: Cloud,
+    title: "Certifications",
+    description: "Google Data Analytics, Tableau, AWS Cloud, SQL",
   },
 ];
 
@@ -42,7 +42,7 @@ const Skills = () => {
             Skills & <span className="gradient-text">Expertise</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Technologies and tools I use to bring ideas to life.
+            Technical skills and tools I leverage to deliver data-driven insights.
           </p>
         </div>
 
