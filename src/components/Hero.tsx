@@ -38,13 +38,13 @@ const Hero = () => {
 
         {/* Social Links */}
         <div className="flex gap-4 justify-center">
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full border border-border hover:border-primary hover:bg-primary/10 transition-all duration-300">
+          <a href="https://github.com/saumyaprasad07" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full border border-border hover:border-primary hover:bg-primary/10 transition-all duration-300">
             <Github className="h-5 w-5" />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full border border-border hover:border-primary hover:bg-primary/10 transition-all duration-300">
+          <a href="https://linkedin.com/in/saumyaprasad07" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full border border-border hover:border-primary hover:bg-primary/10 transition-all duration-300">
             <Linkedin className="h-5 w-5" />
           </a>
-          <a href="mailto:contact@example.com" className="p-3 rounded-full border border-border hover:border-primary hover:bg-primary/10 transition-all duration-300">
+          <a href="mailto:saumya.prasad460@gmail.com" className="p-3 rounded-full border border-border hover:border-primary hover:bg-primary/10 transition-all duration-300">
             <Mail className="h-5 w-5" />
           </a>
         </div>
