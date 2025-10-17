@@ -6,9 +6,7 @@ const About = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             About <span className="gradient-text">Me</span>
           </h2>
-          <p className="text-lg text-muted-foreground">
-            Passionate developer with a love for creating exceptional digital experiences.
-          </p>
+          
         </div>
 
         <div className="glass-card p-8 mb-8 animate-fade-in">
