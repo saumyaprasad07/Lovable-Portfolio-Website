@@ -1,15 +1,52 @@
-import { Award, Briefcase, GraduationCap } from "lucide-react";
+import { Code2, Database, BarChart3, Cloud, GitBranch, TrendingUp } from "lucide-react";
+
 const About = () => {
-  return <section id="about" className="py-20 px-4">
-      <div className="container mx-auto max-w-4xl">
+  const skills = [
+    {
+      icon: Code2,
+      title: "Programming & Analytics",
+      description: "Python (Pandas, NumPy, Scikit-learn, Matplotlib), SQL",
+    },
+    {
+      icon: BarChart3,
+      title: "Data Visualization & BI",
+      description: "Tableau, Power BI, Google Data Studio, Excel",
+    },
+    {
+      icon: Database,
+      title: "Databases & Cloud",
+      description: "MySQL, Snowflake, AWS (S3, Redshift, Lambda), GCP, Azure",
+    },
+    {
+      icon: TrendingUp,
+      title: "Business Analysis",
+      description: "Market Research, KPI Dashboards, A/B Testing",
+    },
+    {
+      icon: GitBranch,
+      title: "Methodologies & Tools",
+      description: "Agile/Scrum, Statistical Analysis, Git/GitHub",
+    },
+    {
+      icon: Cloud,
+      title: "Certifications",
+      description: "Google Data Analytics, Tableau, AWS Cloud, SQL",
+    },
+  ];
+
+  return (
+    <section id="about" className="py-20 px-4">
+      <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             About <span className="gradient-text">Me</span>
           </h2>
-          
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Data Analyst passionate about transforming data into actionable insights
+          </p>
         </div>
 
-        <div className="glass-card p-8 mb-8 animate-fade-in">
+        <div className="glass-card p-8 mb-12 animate-fade-in">
           <p className="text-lg text-muted-foreground leading-relaxed mb-6">
             I'm a Data Analyst with expertise in business analytics, data visualization, and database management. 
             Currently pursuing my Master of Science in Information Systems at California State University Long Beach, 
@@ -22,79 +59,34 @@ const About = () => {
           </p>
         </div>
 
-        <div className="mb-12">
-          <h3 className="text-2xl font-bold mb-6 flex items-center gap-2">
-            <Briefcase className="h-6 w-6 text-primary" />
-            Work Experience
-          </h3>
-          <div className="space-y-6">
-            <div className="glass-card p-6 animate-fade-in">
-              <div className="flex justify-between items-start mb-2">
-                <h4 className="text-xl font-semibold">Data Analyst</h4>
-                <span className="text-sm text-muted-foreground">Aug 2024 – Apr 2025</span>
-              </div>
-              <p className="text-primary mb-2">California State University – Long Beach, CA</p>
-              <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                <li>Designed automated dashboards using SQL, Python, Tableau, and Power BI, improving reporting efficiency by 25%</li>
-                <li>Conducted business analysis on large datasets to identify trends and ensure data accuracy</li>
-                <li>Collaborated with Agile teams to optimize queries, reducing report generation time by 30%</li>
-              </ul>
-            </div>
-
-            <div className="glass-card p-6 animate-fade-in">
-              <div className="flex justify-between items-start mb-2">
-                <h4 className="text-xl font-semibold">Market Research Data Analyst</h4>
-                <span className="text-sm text-muted-foreground">Mar 2024 - May 2024</span>
-              </div>
-              <p className="text-primary mb-2">California State University - Long Beach, CA</p>
-              <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                <li>Performed business analytics for CSU PACE programs, translating stakeholder needs into insights</li>
-                <li>Developed Excel dashboards with KPIs and regression analysis, increasing enrollment by 10%</li>
-                <li>Conducted data audits to ensure quality and stakeholder confidence</li>
-              </ul>
-            </div>
-
-            <div className="glass-card p-6 animate-fade-in">
-              <div className="flex justify-between items-start mb-2">
-                <h4 className="text-xl font-semibold">Data Analyst Intern</h4>
-                <span className="text-sm text-muted-foreground">Jan 2023 - May 2023</span>
-              </div>
-              <p className="text-primary mb-2">The Zen Labs – Mumbai, India</p>
-              <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                <li>Developed BI dashboards in Power BI and Excel, improving reporting efficiency by 20%</li>
-                <li>Executed complex SQL queries and Python workflows on large datasets</li>
-                <li>Led QA efforts including regression testing for high data integrity</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
+        {/* Skills Section */}
         <div>
-          <h3 className="text-2xl font-bold mb-6 flex items-center gap-2">
-            <GraduationCap className="h-6 w-6 text-primary" />
-            Education
+          <h3 className="text-2xl font-bold mb-6 text-center">
+            Skills & <span className="gradient-text">Expertise</span>
           </h3>
-          <div className="space-y-6">
-            <div className="glass-card p-6 animate-fade-in">
-              <div className="flex justify-between items-start mb-2">
-                <h4 className="text-xl font-semibold">Master of Science in Information Systems</h4>
-                <span className="text-sm text-muted-foreground">May 2025</span>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {skills.map((skill, index) => (
+              <div
+                key={index}
+                className="glass-card p-6 group hover:border-primary/50 transition-all duration-300 animate-fade-in"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <div className="flex items-start gap-4">
+                  <div className="p-3 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
+                    <skill.icon className="h-6 w-6 text-primary" />
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-semibold mb-2">{skill.title}</h4>
+                    <p className="text-sm text-muted-foreground">{skill.description}</p>
+                  </div>
+                </div>
               </div>
-              <p className="text-primary mb-2">California State University Long Beach</p>
-              <p className="text-muted-foreground">GPA: 3.5 | Business Analytics, Project Management, Database Management, Statistics</p>
-            </div>
-
-            <div className="glass-card p-6 animate-fade-in">
-              <div className="flex justify-between items-start mb-2">
-                <h4 className="text-xl font-semibold">B.E. in Information Technology</h4>
-                <span className="text-sm text-muted-foreground">May 2023</span>
-              </div>
-              <p className="text-primary mb-2">University of Mumbai, India</p>
-              <p className="text-muted-foreground">GPA: 3.5 | Data Mining, Machine Learning, Data Science, Cloud Computing</p>
-            </div>
+            ))}
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default About;

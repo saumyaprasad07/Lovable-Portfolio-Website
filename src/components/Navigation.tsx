@@ -24,25 +24,28 @@ const Navigation = () => {
           <a href="#" className="text-2xl font-bold gradient-text">SP</a>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
-            <button onClick={() => scrollToSection("projects")} className="text-foreground hover:text-primary transition-colors">
-              Projects
-            </button>
+          <div className="hidden md:flex items-center gap-6">
             <button onClick={() => scrollToSection("about")} className="text-foreground hover:text-primary transition-colors">
               About
             </button>
-            <button onClick={() => scrollToSection("publications")} className="text-foreground hover:text-primary transition-colors">
-              Publications
+            <button onClick={() => scrollToSection("education")} className="text-foreground hover:text-primary transition-colors">
+              Education
             </button>
-            <button onClick={() => scrollToSection("extracurricular")} className="text-foreground hover:text-primary transition-colors">
-              Activities
+            <button onClick={() => scrollToSection("experience")} className="text-foreground hover:text-primary transition-colors">
+              Experience
+            </button>
+            <button onClick={() => scrollToSection("projects")} className="text-foreground hover:text-primary transition-colors">
+              Projects
+            </button>
+            <button onClick={() => scrollToSection("achievements")} className="text-foreground hover:text-primary transition-colors">
+              Achievements
+            </button>
+            <button onClick={() => scrollToSection("resume")} className="text-foreground hover:text-primary transition-colors">
+              Resume
             </button>
             <button onClick={() => scrollToSection("contact")} className="text-foreground hover:text-primary transition-colors">
               Contact
             </button>
-            <Button onClick={() => scrollToSection("contact")}>
-              Hire Me
-            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -53,24 +56,27 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && <div className="md:hidden py-4 space-y-4 border-t border-border">
-            <button onClick={() => scrollToSection("projects")} className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors">
-              Projects
-            </button>
             <button onClick={() => scrollToSection("about")} className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors">
               About
             </button>
-            <button onClick={() => scrollToSection("publications")} className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors">
-              Publications
+            <button onClick={() => scrollToSection("education")} className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors">
+              Education
             </button>
-            <button onClick={() => scrollToSection("extracurricular")} className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors">
-              Activities
+            <button onClick={() => scrollToSection("experience")} className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors">
+              Experience
+            </button>
+            <button onClick={() => scrollToSection("projects")} className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors">
+              Projects
+            </button>
+            <button onClick={() => scrollToSection("achievements")} className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors">
+              Achievements
+            </button>
+            <button onClick={() => scrollToSection("resume")} className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors">
+              Resume
             </button>
             <button onClick={() => scrollToSection("contact")} className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors">
               Contact
             </button>
-            <Button onClick={() => scrollToSection("contact")} className="w-full">
-              Hire Me
-            </Button>
           </div>}
       </div>
     </nav>;
