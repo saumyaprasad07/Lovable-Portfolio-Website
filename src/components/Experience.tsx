@@ -26,14 +26,13 @@ const Experience = () => {
       ]
     },
     {
-      title: "Data Analyst Intern",
-      company: "The Zen Labs",
-      location: "Mumbai, India",
-      duration: "Jan 2023 - May 2023",
+      title: "Project Manager (Volunteer)",
+      company: "Saayam for All",
+      location: "San Jose, CA",
+      duration: "Mar 2024 - May 2024",
       responsibilities: [
-        "Developed BI dashboards in Power BI and Excel, improving reporting efficiency by 20%",
-        "Executed complex SQL queries and Python workflows on large datasets",
-        "Led QA efforts including regression testing for high data integrity"
+        "Coordinated cross-functional project activities using Asana and Jira, improving visibility with real-time dashboards and reports; Supported onboarding and configuration tasks, maintaining documentation for end-to-end processes",
+        "Partnered with leads to enhance workflows, ensuring responsiveness to project needs and issue escalation"
       ]
     }
   ];
