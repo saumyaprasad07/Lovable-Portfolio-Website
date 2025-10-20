@@ -1,4 +1,4 @@
-import { Download, FileText, ExternalLink } from "lucide-react";
+import { Download, FileText, ExternalLink, BookOpen, BarChart3, FileStack } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -86,6 +86,36 @@ const Resume = () => {
                 <a href="mailto:saumya.prasad460@gmail.com">
                   <ExternalLink className="mr-2 h-4 w-4" />
                   Email Me
+                </a>
+              </Button>
+              <Button 
+                variant="outline" 
+                className="w-full justify-start" 
+                asChild
+              >
+                <a href="https://medium.com/@saumya.prasad07" target="_blank" rel="noopener noreferrer">
+                  <BookOpen className="mr-2 h-4 w-4" />
+                  Medium Blog
+                </a>
+              </Button>
+              <Button 
+                variant="outline" 
+                className="w-full justify-start" 
+                asChild
+              >
+                <a href="https://public.tableau.com/app/profile/saumya.prasad/vizzes" target="_blank" rel="noopener noreferrer">
+                  <BarChart3 className="mr-2 h-4 w-4" />
+                  Tableau Public
+                </a>
+              </Button>
+              <Button 
+                variant="outline" 
+                className="w-full justify-start" 
+                asChild
+              >
+                <a href="https://www.notion.so/saumyaprasad/Saumya-C-Prasad-275a7b9cbe00802ebf0fe4a418620b45" target="_blank" rel="noopener noreferrer">
+                  <FileStack className="mr-2 h-4 w-4" />
+                  Notion Portfolio
                 </a>
               </Button>
             </CardContent>
