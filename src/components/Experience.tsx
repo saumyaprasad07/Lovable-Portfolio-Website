@@ -4,14 +4,14 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 const Experience = () => {
   const experiences = [
     {
-      title: "Data Analyst",
-      company: "California State University",
-      location: "Long Beach, CA",
-      duration: "Aug 2024 – Apr 2025",
+      title: "Project Manager (Volunteer)",
+      company: "Saayam for All",
+      location: "San Jose, CA",
+      duration: "Mar 2024 - May 2024",
       responsibilities: [
-        "Designed automated dashboards using SQL, Python, Tableau, and Power BI, improving reporting efficiency by 25%",
-        "Conducted business analysis on large datasets to identify trends and ensure data accuracy",
-        "Collaborated with Agile teams to optimize queries, reducing report generation time by 30%"
+        "Coordinated cross-functional project activities using Asana and Jira, improving visibility with real-time dashboards and reports; Supported onboarding and configuration tasks, maintaining documentation for end-to-end processes",
+        "Assist in project planning by contributing to timelines, resource allocation, task assignments, and maintaining organized documentation",
+        "Coordinate project activities by scheduling/facilitating meetings, preparing agendas and minutes, and updating dashboards for real-time visibility and track project progress using tools - Microsoft Project, Asana, and Trello"
       ]
     },
     {
@@ -26,14 +26,14 @@ const Experience = () => {
       ]
     },
     {
-      title: "Project Manager (Volunteer)",
-      company: "Saayam for All",
-      location: "San Jose, CA",
-      duration: "Mar 2024 - May 2024",
+      title: "Data Analyst",
+      company: "California State University",
+      location: "Long Beach, CA",
+      duration: "Aug 2024 – Apr 2025",
       responsibilities: [
-        "Coordinated cross-functional project activities using Asana and Jira, improving visibility with real-time dashboards and reports; Supported onboarding and configuration tasks, maintaining documentation for end-to-end processes",
-        "Assist in project planning by contributing to timelines, resource allocation, task assignments, and maintaining organized documentation",
-        "Coordinate project activities by scheduling/facilitating meetings, preparing agendas and minutes, and updating dashboards for real-time visibility and track project progress using tools - Microsoft Project, Asana, and Trello"
+        "Designed automated dashboards using SQL, Python, Tableau, and Power BI, improving reporting efficiency by 25%",
+        "Conducted business analysis on large datasets to identify trends and ensure data accuracy",
+        "Collaborated with Agile teams to optimize queries, reducing report generation time by 30%"
       ]
     }
   ];
