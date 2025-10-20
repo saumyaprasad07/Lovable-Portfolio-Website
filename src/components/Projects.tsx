@@ -1,15 +1,12 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
-import project1 from "@/assets/project1.jpg";
-import project2 from "@/assets/project2.jpg";
-import project3 from "@/assets/project3.jpg";
+
 
 const projects = [
   {
     title: "Yelp Business Sentiment Analysis",
     description: "Processed 5GB+ Yelp data with scalable ingestion pipelines and complex SQL/BigQuery queries. Validated data quality and modeled sentiment insights for comprehensive reporting.",
-    image: project1,
     tech: ["SQL", "Snowflake", "AWS", "BigQuery"],
     github: "https://github.com/saumyaprasad07",
     live: "#",
@@ -17,7 +14,6 @@ const projects = [
   {
     title: "Database Management System for UPS",
     description: "Designed and implemented logistics database using EERD and 3NF principles. Optimized SQL queries with indexing and window functions. Authored BRD, TRD, and project charter for cross-functional alignment.",
-    image: project2,
     tech: ["MySQL", "Business Analysis", "SQL Optimization"],
     github: "https://github.com/saumyaprasad07",
     live: "#",
@@ -25,7 +21,6 @@ const projects = [
   {
     title: "Interactive BI Dashboards",
     description: "Designed automated end-to-end dashboards using SQL, Python, Tableau, and Power BI for real-time visualization, improving reporting efficiency by 25% across multiple departments.",
-    image: project3,
     tech: ["Tableau", "Power BI", "Python", "SQL"],
     github: "https://github.com/saumyaprasad07",
     live: "#",
@@ -53,12 +48,7 @@ const Projects = () => {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="relative overflow-hidden aspect-video">
-                <img 
-                  src={project.image} 
-                  alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center gap-4 p-4">
+                          <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center gap-4 p-4">
                   <Button size="sm" variant="outline" asChild>
                     <a href={project.github} target="_blank" rel="noopener noreferrer">
                       <Github className="h-4 w-4 mr-2" />
