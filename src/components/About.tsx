@@ -30,7 +30,7 @@ const About = () => {
     {
       icon: Cloud,
       title: "Certifications",
-      description: "Google Data Analytics, Tableau, AWS Cloud, SQL",
+      description: "Google Advanced Data Analytics, Google Business Intelligence, Tableau Fundamentals, AWS Cloud Foundations, HackerRank SQL Intermediate, Amazon Redshift Essentials",
     },
   ];
 
@@ -49,8 +49,8 @@ const About = () => {
         <div className="glass-card p-8 mb-12 animate-fade-in">
           <p className="text-lg text-muted-foreground leading-relaxed mb-6">
             I'm a Data Analyst with expertise in business analytics, data visualization, and database management. 
-            Currently pursuing my Master of Science in Information Systems at California State University Long Beach, 
-            I combine technical proficiency with business acumen to deliver data-driven insights.
+            I have graduated from California State University Long Beach with a Master of Science in Information Systems, 
+            where I combined technical proficiency with business acumen to deliver data-driven insights.
           </p>
           <p className="text-lg text-muted-foreground leading-relaxed">
             I specialize in SQL, Python, Tableau, and Power BI, creating automated dashboards and conducting 

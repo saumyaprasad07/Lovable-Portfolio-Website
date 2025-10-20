@@ -32,7 +32,8 @@ const Experience = () => {
       duration: "Mar 2024 - May 2024",
       responsibilities: [
         "Coordinated cross-functional project activities using Asana and Jira, improving visibility with real-time dashboards and reports; Supported onboarding and configuration tasks, maintaining documentation for end-to-end processes",
-        "Partnered with leads to enhance workflows, ensuring responsiveness to project needs and issue escalation"
+        "Assist in project planning by contributing to timelines, resource allocation, task assignments, and maintaining organized documentation",
+        "Coordinate project activities by scheduling/facilitating meetings, preparing agendas and minutes, and updating dashboards for real-time visibility and track project progress using tools - Microsoft Project, Asana, and Trello"
       ]
     }
   ];
