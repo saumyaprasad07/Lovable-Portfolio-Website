@@ -26,9 +26,11 @@ const Hero = () => {
             View My Work
             <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
           </Button>
-          <Button size="lg" variant="outline">
-            <Download className="mr-2 h-4 w-4" />
-            Download Resume
+          <Button size="lg" variant="outline" asChild>
+            <a href="https://drive.google.com/file/d/14hNBWWwp_tZwPdrzwQJcGAJ2LT4-r9Qz/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+              <Download className="mr-2 h-4 w-4" />
+              Download Resume
+            </a>
           </Button>
           <Button size="lg" variant="outline" onClick={() => document.getElementById('contact')?.scrollIntoView({
           behavior: 'smooth'
