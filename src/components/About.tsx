@@ -1,4 +1,4 @@
-import { Code2, Database, BarChart3, Cloud, GitBranch, TrendingUp } from "lucide-react";
+import { Code2, Database, BarChart3, ClipboardCheck, GitBranch, TrendingUp } from "lucide-react";
 const About = () => {
   const skills = [{
     icon: Code2,
@@ -21,9 +21,9 @@ const About = () => {
     title: "Methodologies & Tools",
     description: "Agile/Scrum, Statistical Analysis, Git/GitHub"
   }, {
-    icon: Cloud,
-    title: "Certifications",
-    description: "Google Advanced Data Analytics, Google Business Intelligence, Tableau Fundamentals, AWS Cloud Foundations, HackerRank SQL Intermediate, Amazon Redshift Essentials"
+    icon: ClipboardCheck,
+    title: "Project Management",
+    description: "Agile/Scrum Methodology, JIRA, Stakeholder Management, Requirements Gathering, Project Documentation (BRD, TRD), Cross-functional Collaboration"
   }];
   return <section id="about" className="py-20 px-4">
       <div className="container mx-auto max-w-6xl">
