@@ -9,7 +9,8 @@ const Achievements = () => {
       journal: "International Journal of Innovative Research in Technology",
       date: "Apr 26, 2023",
       description: "Developed a segmentation model using CNN (ResNet50 Architecture) to detect and localize brain tumors in MRI images. The model classifies images and highlights tumor masks for comprehensive diagnostic support.",
-      tags: ["Deep Learning", "CNN", "ResNet50", "Medical Imaging", "Computer Vision"]
+      tags: ["Deep Learning", "CNN", "ResNet50", "Medical Imaging", "Computer Vision"],
+      url: "https://ijirt.org/publishedpaper/IJIRT159463_PAPER.pdf"
     }
   ];
 
@@ -95,7 +96,16 @@ const Achievements = () => {
                       <FileText className="w-6 h-6 text-primary" />
                     </div>
                     <div className="flex-1">
-                      <CardTitle className="text-xl mb-2">{pub.title}</CardTitle>
+                      <CardTitle className="text-xl mb-2">
+                        <a 
+                          href={pub.url} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="hover:text-primary transition-colors underline"
+                        >
+                          {pub.title}
+                        </a>
+                      </CardTitle>
                       <CardDescription className="text-base">
                         {pub.journal} · {pub.date}
                       </CardDescription>
