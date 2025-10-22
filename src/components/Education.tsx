@@ -16,7 +16,28 @@ const Education = () => {
     gpa: "3.5",
     coursework: ["Data Mining", "Machine Learning", "Data Science", "Cloud Computing"]
   }];
-  const certifications = ["Google Data Analytics Professional Certificate", "Tableau Desktop Specialist", "AWS Cloud Practitioner", "Microsoft Power BI Data Analyst", "SQL for Data Science"];
+  const certifications = [
+    {
+      title: "Google Advanced Data Analytics Professional Certificate",
+      url: "https://www.coursera.org/account/accomplishments/specialization/L1UFPKLC27OQ"
+    },
+    {
+      title: "Google Business Intelligence Professional Certificate",
+      url: "https://www.coursera.org/account/accomplishments/specialization/COZ84CYGX9W4"
+    },
+    {
+      title: "Tableau Fundamentals (Skilljar)",
+      url: "https://verify.skilljar.com/c/ait3fsck8x6t"
+    },
+    {
+      title: "AWS Academy Cloud Foundations (Credly Badge)",
+      url: "https://www.credly.com/badges/2a5cd426-8544-46bb-a440-db9e454266ee/linked_in_profile"
+    },
+    {
+      title: "HackerRank SQL (Intermediate) Certificate",
+      url: "https://www.hackerrank.com/certificates/646ec66e4b25"
+    }
+  ];
   return <section id="education" className="py-20 px-4 bg-muted/30">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16 animate-fade-in">
@@ -71,7 +92,14 @@ const Education = () => {
               <ul className="grid md:grid-cols-2 gap-4">
                 {certifications.map((cert, index) => <li key={index} className="flex items-start gap-3">
                     <div className="mt-1 h-2 w-2 rounded-full bg-primary flex-shrink-0" />
-                    <span className="text-muted-foreground">{cert}</span>
+                    <a 
+                      href={cert.url} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-muted-foreground hover:text-primary transition-colors underline"
+                    >
+                      {cert.title}
+                    </a>
                   </li>)}
               </ul>
             </CardContent>
