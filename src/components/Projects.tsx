@@ -25,6 +25,27 @@ const projects = [
     github: "https://github.com/saumyaprasad07",
     live: "#",
   },
+  {
+    title: "Sales Performance Analytics",
+    description: "Built ETL pipelines to process multi-source sales data and created interactive dashboards for tracking KPIs, revenue trends, and customer segmentation across regions.",
+    tech: ["Python", "ETL", "Tableau", "SQL Server"],
+    github: "https://github.com/saumyaprasad07",
+    live: "#",
+  },
+  {
+    title: "Customer Churn Prediction Model",
+    description: "Developed predictive analytics model using Python and machine learning algorithms to identify at-risk customers, achieving 85% accuracy in churn prediction for proactive retention strategies.",
+    tech: ["Python", "Machine Learning", "Pandas", "Scikit-learn"],
+    github: "https://github.com/saumyaprasad07",
+    live: "#",
+  },
+  {
+    title: "Supply Chain Optimization Dashboard",
+    description: "Designed comprehensive dashboard to monitor inventory levels, supplier performance, and delivery metrics. Integrated real-time data streams to enable data-driven decision making and reduce operational costs.",
+    tech: ["Power BI", "DAX", "SQL", "Azure"],
+    github: "https://github.com/saumyaprasad07",
+    live: "#",
+  },
 ];
 
 const Projects = () => {
