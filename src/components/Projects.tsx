@@ -29,12 +29,6 @@ const projects = [
     github: "https://github.com/saumyaprasad07/Gender-Based-Wage-Gap-Analysis",
   },
   {
-    title: "Customer Churn Prediction Model",
-    description: "Developed predictive analytics model using Python and machine learning algorithms to identify at-risk customers, achieving 85% accuracy in churn prediction for proactive retention strategies.",
-    tech: ["Python", "Machine Learning", "Pandas", "Scikit-learn"],
-    github: "https://github.com/saumyaprasad07",
-  },
-  {
     title: "Netflix Recommendation System",
     description: "Interactive dashboard analyzing Netflix user engagement using survey data and Kaggle movie dataset. Created project charter and planner with MS Project, managed tasks using Agile methodologies on MS Azure Boards for efficient tracking and collaboration.",
     tech: ["Streamlit", "Python", "MS Project", "Azure Boards"],
