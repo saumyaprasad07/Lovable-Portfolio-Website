@@ -17,10 +17,10 @@ const projects = [
     github: "https://github.com/saumyaprasad07/Database-Management-System---UPS-Deliveries",
   },
   {
-    title: "Interactive BI Dashboards",
-    description: "Designed automated end-to-end dashboards using SQL, Python, Tableau, and Power BI for real-time visualization, improving reporting efficiency by 25% across multiple departments.",
-    tech: ["Tableau", "Power BI", "Python", "SQL"],
-    github: "https://github.com/saumyaprasad07",
+    title: "Business Analysis on Aggregate Planning",
+    description: "Developed an Excel-based optimization model to minimize total production costs for Green Mills Inc. using Chase, Level, and Optimal strategies. Analyzes workforce management, inventory control, and spot market purchases to identify the most cost-effective aggregate plan.",
+    tech: ["Excel", "Optimization", "Business Analysis", "Operations Research"],
+    github: "https://github.com/saumyaprasad07/Business-Analysis-on-Aggregate-Planning-at-Green-Mills",
   },
   {
     title: "Sales Performance Analytics",
