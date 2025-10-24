@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Github } from "lucide-react";
+import { Github, ExternalLink } from "lucide-react";
 
 
 const projects = [
@@ -39,6 +39,7 @@ const projects = [
     description: "Interactive dashboard analyzing Netflix user engagement using survey data and Kaggle movie dataset. Created project charter and planner with MS Project, managed tasks using Agile methodologies on MS Azure Boards for efficient tracking and collaboration.",
     tech: ["Streamlit", "Python", "MS Project", "Azure Boards"],
     github: "https://github.com/saumyaprasad07/streamlit-app-netflix-recommendation-system",
+    live: "https://netflix-movie-recommendation-system.streamlit.app/",
   },
 ];
 
@@ -82,6 +83,14 @@ const Projects = () => {
                       Code
                     </a>
                   </Button>
+                  {project.live && (
+                    <Button size="sm" asChild>
+                      <a href={project.live} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="h-4 w-4 mr-2" />
+                        Live
+                      </a>
+                    </Button>
+                  )}
                 </div>
               </div>
             </Card>
