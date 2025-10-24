@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github } from "lucide-react";
+import { Github } from "lucide-react";
 
 
 const projects = [
@@ -9,42 +9,36 @@ const projects = [
     description: "Processed 5GB+ Yelp data with scalable ingestion pipelines and complex SQL/BigQuery queries. Validated data quality and modeled sentiment insights for comprehensive reporting.",
     tech: ["SQL", "Snowflake", "AWS", "BigQuery"],
     github: "https://github.com/saumyaprasad07",
-    live: "#",
   },
   {
     title: "Database Management System for UPS",
     description: "Designed and implemented logistics database using EERD and 3NF principles. Optimized SQL queries with indexing and window functions. Authored BRD, TRD, and project charter for cross-functional alignment.",
     tech: ["MySQL", "Business Analysis", "SQL Optimization"],
-    github: "https://github.com/saumyaprasad07",
-    live: "#",
+    github: "https://github.com/saumyaprasad07/Database-Management-System---UPS-Deliveries",
   },
   {
     title: "Interactive BI Dashboards",
     description: "Designed automated end-to-end dashboards using SQL, Python, Tableau, and Power BI for real-time visualization, improving reporting efficiency by 25% across multiple departments.",
     tech: ["Tableau", "Power BI", "Python", "SQL"],
     github: "https://github.com/saumyaprasad07",
-    live: "#",
   },
   {
     title: "Sales Performance Analytics",
     description: "Built ETL pipelines to process multi-source sales data and created interactive dashboards for tracking KPIs, revenue trends, and customer segmentation across regions.",
     tech: ["Python", "ETL", "Tableau", "SQL Server"],
     github: "https://github.com/saumyaprasad07",
-    live: "#",
   },
   {
     title: "Customer Churn Prediction Model",
     description: "Developed predictive analytics model using Python and machine learning algorithms to identify at-risk customers, achieving 85% accuracy in churn prediction for proactive retention strategies.",
     tech: ["Python", "Machine Learning", "Pandas", "Scikit-learn"],
     github: "https://github.com/saumyaprasad07",
-    live: "#",
   },
   {
     title: "Supply Chain Optimization Dashboard",
     description: "Designed comprehensive dashboard to monitor inventory levels, supplier performance, and delivery metrics. Integrated real-time data streams to enable data-driven decision making and reduce operational costs.",
     tech: ["Power BI", "DAX", "SQL", "Azure"],
     github: "https://github.com/saumyaprasad07",
-    live: "#",
   },
 ];
 
@@ -86,12 +80,6 @@ const Projects = () => {
                     <a href={project.github} target="_blank" rel="noopener noreferrer">
                       <Github className="h-4 w-4 mr-2" />
                       Code
-                    </a>
-                  </Button>
-                  <Button size="sm" asChild>
-                    <a href={project.live} target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="h-4 w-4 mr-2" />
-                      Live
                     </a>
                   </Button>
                 </div>
