@@ -8,7 +8,7 @@ const projects = [
     title: "Yelp Business Sentiment Analysis",
     description: "Processed 5GB+ Yelp data with scalable ingestion pipelines and complex SQL/BigQuery queries. Validated data quality and modeled sentiment insights for comprehensive reporting.",
     tech: ["SQL", "Snowflake", "AWS", "BigQuery"],
-    github: "https://github.com/saumyaprasad07",
+    github: "https://github.com/saumyaprasad07/Yelp-Business-Reviews-Analysis",
   },
   {
     title: "Database Management System for UPS",
@@ -40,6 +40,12 @@ const projects = [
     tech: ["Streamlit", "Python", "MS Project", "Azure Boards"],
     github: "https://github.com/saumyaprasad07/streamlit-app-netflix-recommendation-system",
     live: "https://netflix-movie-recommendation-system.streamlit.app/",
+  },
+  {
+    title: "Brain Tumor MRI Image Segmentation",
+    description: "Implemented deep learning models for brain tumor MRI image segmentation. Developed notebook-based solution with comprehensive dataset processing and analysis, including research paper documentation.",
+    tech: ["Deep Learning", "Python", "Image Processing", "TensorFlow"],
+    github: "https://github.com/saumyaprasad07/Brain-Tumor-MRI-Image-Segmentation-using-Deep-Learning",
   },
 ];
 
