@@ -23,10 +23,10 @@ const projects = [
     github: "https://github.com/saumyaprasad07/Business-Analysis-on-Aggregate-Planning-at-Green-Mills",
   },
   {
-    title: "Sales Performance Analytics",
-    description: "Built ETL pipelines to process multi-source sales data and created interactive dashboards for tracking KPIs, revenue trends, and customer segmentation across regions.",
-    tech: ["Python", "ETL", "Tableau", "SQL Server"],
-    github: "https://github.com/saumyaprasad07",
+    title: "Gender-Based Wage Gap Analysis",
+    description: "Comprehensive analysis of wage disparities across gender using statistical methods and data visualization. Identified key factors contributing to pay gaps and provided actionable insights for equity improvement.",
+    tech: ["Python", "Data Analysis", "Statistical Modeling", "Visualization"],
+    github: "https://github.com/saumyaprasad07/Gender-Based-Wage-Gap-Analysis",
   },
   {
     title: "Customer Churn Prediction Model",
