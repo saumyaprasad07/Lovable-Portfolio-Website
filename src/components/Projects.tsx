@@ -35,10 +35,10 @@ const projects = [
     github: "https://github.com/saumyaprasad07",
   },
   {
-    title: "Supply Chain Optimization Dashboard",
-    description: "Designed comprehensive dashboard to monitor inventory levels, supplier performance, and delivery metrics. Integrated real-time data streams to enable data-driven decision making and reduce operational costs.",
-    tech: ["Power BI", "DAX", "SQL", "Azure"],
-    github: "https://github.com/saumyaprasad07",
+    title: "Netflix Recommendation System",
+    description: "Interactive dashboard analyzing Netflix user engagement using survey data and Kaggle movie dataset. Created project charter and planner with MS Project, managed tasks using Agile methodologies on MS Azure Boards for efficient tracking and collaboration.",
+    tech: ["Streamlit", "Python", "MS Project", "Azure Boards"],
+    github: "https://github.com/saumyaprasad07/streamlit-app-netflix-recommendation-system",
   },
 ];
 
