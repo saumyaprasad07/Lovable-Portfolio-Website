@@ -32,7 +32,8 @@ const Achievements = () => {
       highlights: [
         "Managed exhibitor and attendee registrations",
         "Networked with professionals in energy and sustainability sector"
-      ]
+      ],
+      url: "https://www.linkedin.com/in/saumyaprasad07/add-edit/VOLUNTEER/?profileFormEntryPoint=PROFILE_SECTION&entityUrn=urn%3Ali%3Afsd_profileVolunteerExperience%3A%28ACoAADH6KWQBuqjeo84sLwSZIW5slODasZUSK_Q%2C1814216042%29&desktopBackground=PROFILE_DETAIL_SCREEN&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_volunteering_experience_details%3B5s1%2FXGlYSQC3wso%2B3vHUhw%3D%3D"
     },
     {
       role: "Student Volunteer",
@@ -41,7 +42,8 @@ const Achievements = () => {
       highlights: [
         "Supported cybersecurity and governance conference execution",
         "Received CPE certification for active volunteer participation"
-      ]
+      ],
+      url: "https://www.linkedin.com/in/saumyaprasad07/add-edit/VOLUNTEER/?profileFormEntryPoint=PROFILE_SECTION&entityUrn=urn%3Ali%3Afsd_profileVolunteerExperience%3A%28ACoAADH6KWQBuqjeo84sLwSZIW5slODasZUSK_Q%2C833229866%29&desktopBackground=PROFILE_DETAIL_SCREEN&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_volunteering_experience_details%3B5s1%2FXGlYSQC3wso%2B3vHUhw%3D%3D"
     }
   ];
 
