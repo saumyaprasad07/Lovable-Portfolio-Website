@@ -142,7 +142,18 @@ const Achievements = () => {
                     <div>
                       <CardTitle className="text-lg">{exp.role}</CardTitle>
                       <CardDescription className="font-semibold text-foreground mt-1">
-                        {exp.organization}
+                        {exp.url ? (
+                          <a 
+                            href={exp.url} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="hover:text-primary transition-colors underline"
+                          >
+                            {exp.organization}
+                          </a>
+                        ) : (
+                          exp.organization
+                        )}
                       </CardDescription>
                       <CardDescription className="text-sm mt-1">
                         {exp.category}
