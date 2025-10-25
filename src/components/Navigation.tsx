@@ -1,9 +1,14 @@
 import { useState, useEffect } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
@@ -11,11 +16,23 @@ const Navigation = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
   const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    element?.scrollIntoView({
-      behavior: "smooth"
-    });
+    if (!isHomePage) {
+      navigate("/");
+      setTimeout(() => {
+        const element = document.getElementById(id);
+        element?.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+    } else {
+      const element = document.getElementById(id);
+      element?.scrollIntoView({ behavior: "smooth" });
+    }
+    setIsMobileMenuOpen(false);
+  };
+
+  const handleRecommendationsClick = () => {
+    navigate("/recommendations");
     setIsMobileMenuOpen(false);
   };
   return <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-background/95 backdrop-blur-md shadow-lg" : "bg-transparent"}`}>
@@ -39,6 +56,9 @@ const Navigation = () => {
             </button>
             <button onClick={() => scrollToSection("achievements")} className="text-foreground hover:text-primary transition-colors">
               Achievements
+            </button>
+            <button onClick={handleRecommendationsClick} className="text-foreground hover:text-primary transition-colors">
+              Recommendations
             </button>
             <button onClick={() => scrollToSection("contact")} className="text-foreground hover:text-primary transition-colors">
               Contact
@@ -67,6 +87,9 @@ const Navigation = () => {
             </button>
             <button onClick={() => scrollToSection("achievements")} className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors">
               Achievements
+            </button>
+            <button onClick={handleRecommendationsClick} className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors">
+              Recommendations
             </button>
             <button onClick={() => scrollToSection("contact")} className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors">
               Contact
