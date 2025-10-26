@@ -11,19 +11,7 @@ const projects = [
     github: "https://github.com/saumyaprasad07/Yelp-Business-Reviews-Analysis",
   },
   {
-    title: "Database Management System for UPS",
-    description: "Designed and implemented logistics database using EERD and 3NF principles. Optimized SQL queries with indexing and window functions. Authored BRD, TRD, and project charter for cross-functional alignment.",
-    tech: ["MySQL", "Business Analysis", "SQL Optimization"],
-    github: "https://github.com/saumyaprasad07/Database-Management-System---UPS-Deliveries",
-  },
-  {
-    title: "Business Analysis on Aggregate Planning",
-    description: "Developed an Excel-based optimization model to minimize total production costs for Green Mills Inc. using Chase, Level, and Optimal strategies. Analyzes workforce management, inventory control, and spot market purchases to identify the most cost-effective aggregate plan.",
-    tech: ["Excel", "Optimization", "Business Analysis", "Operations Research"],
-    github: "https://github.com/saumyaprasad07/Business-Analysis-on-Aggregate-Planning-at-Green-Mills",
-  },
-  {
-    title: "Gender-Based Wage Gap Analysis",
+    title: "Gender based Wage Gap Analysis",
     description: "Comprehensive analysis of wage disparities across gender using statistical methods and data visualization. Identified key factors contributing to pay gaps and provided actionable insights for equity improvement.",
     tech: ["Python", "Data Analysis", "Statistical Modeling", "Visualization"],
     github: "https://github.com/saumyaprasad07/Gender-Based-Wage-Gap-Analysis",
@@ -34,6 +22,18 @@ const projects = [
     tech: ["Streamlit", "Python", "MS Project", "Azure Boards"],
     github: "https://github.com/saumyaprasad07/streamlit-app-netflix-recommendation-system",
     live: "https://netflix-movie-recommendation-system.streamlit.app/",
+  },
+    {
+    title: "Database Management System for UPS",
+    description: "Designed and implemented logistics database using EERD and 3NF principles. Optimized SQL queries with indexing and window functions. Authored BRD, TRD, and project charter for cross-functional alignment.",
+    tech: ["MySQL", "Business Analysis", "SQL Optimization"],
+    github: "https://github.com/saumyaprasad07/Database-Management-System---UPS-Deliveries",
+  },
+   {
+    title: "Business Analysis on Aggregate Planning",
+    description: "Developed an Excel-based optimization model to minimize total production costs for Green Mills Inc. using Chase, Level, and Optimal strategies. Analyzes workforce management, inventory control, and spot market purchases to identify the most cost-effective aggregate plan.",
+    tech: ["Excel", "Optimization", "Business Analysis"],
+    github: "https://github.com/saumyaprasad07/Business-Analysis-on-Aggregate-Planning-at-Green-Mills",
   },
   {
     title: "Brain Tumor MRI Image Segmentation",
