@@ -14,7 +14,7 @@ const Education = () => {
     location: "Mumbai, India",
     graduation: "May 2023",
     gpa: "3.5",
-    coursework: ["Data Mining", "Machine Learning", "Data Science", "Cloud Computing"]
+    coursework: ["Business Intelligence", "Machine Learning", "Data Science & AI", "Cloud Computing"]
   }];
   const certifications = [
     {
@@ -26,15 +26,15 @@ const Education = () => {
       url: "https://www.coursera.org/account/accomplishments/specialization/COZ84CYGX9W4"
     },
     {
-      title: "Tableau Fundamentals (Skilljar)",
+      title: "Tableau Fundamentals",
       url: "https://verify.skilljar.com/c/ait3fsck8x6t"
     },
     {
-      title: "AWS Academy Cloud Foundations (Credly Badge)",
+      title: "AWS Academy Cloud Foundations",
       url: "https://www.credly.com/badges/2a5cd426-8544-46bb-a440-db9e454266ee/linked_in_profile"
     },
     {
-      title: "HackerRank SQL (Intermediate) Certificate",
+      title: "HackerRank SQL Intermediate",
       url: "https://www.hackerrank.com/certificates/646ec66e4b25"
     }
   ];

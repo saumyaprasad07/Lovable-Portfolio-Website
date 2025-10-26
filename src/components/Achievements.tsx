@@ -10,7 +10,7 @@ const Achievements = () => {
       date: "Apr 26, 2023",
       description: "Developed a segmentation model using CNN (ResNet50 Architecture) to detect and localize brain tumors in MRI images. The model classifies images and highlights tumor masks for comprehensive diagnostic support.",
       tags: ["Deep Learning", "CNN", "ResNet50", "Medical Imaging", "Computer Vision"],
-      url: "https://ijirt.org/publishedpaper/IJIRT159463_PAPER.pdf"
+      url: "https://ijirt.org/article?manuscript=159463"
     }
   ];
 

@@ -25,17 +25,6 @@ const Recommendations = () => {
       recommendation: "I had the pleasure of working with Saumya on multiple data analysis projects. Their technical expertise and collaborative approach made them an invaluable team member.",
       rating: 5,
       relationship: "Direct colleague"
-    },
-    {
-      name: "Michael Chen",
-      title: "ML Engineer",
-      company: "AI Solutions",
-      avatar: "",
-      initials: "MC",
-      linkedinUrl: "#",
-      recommendation: "Saumya's proficiency in deep learning and computer vision is impressive. They consistently deliver high-quality work and are always eager to learn and share knowledge.",
-      rating: 5,
-      relationship: "Team member"
     }
   ];
 
