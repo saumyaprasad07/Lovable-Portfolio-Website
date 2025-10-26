@@ -7,14 +7,14 @@ const Education = () => {
     location: "Long Beach, CA",
     graduation: "May 2025",
     gpa: "3.5",
-    coursework: ["Business Analytics", "Project Management", "Database Management", "Statistics"]
+    coursework: ["Business Data Analytics (Statistics)", "Project Management", "DBMS", "System Design and Analysis", "Information Systems", "Tech Startups & AI"]
   }, {
     degree: "B.E. in Information Technology",
     institution: "University of Mumbai",
     location: "Mumbai, India",
     graduation: "May 2023",
     gpa: "3.5",
-    coursework: ["Business Intelligence", "Machine Learning", "Data Science & AI", "Cloud Computing"]
+    coursework: ["Business Intelligence", "Machine Learning", "Data Science & AI", "Cloud Computing", "Computer Networks"]
   }];
   const certifications = [
     {
