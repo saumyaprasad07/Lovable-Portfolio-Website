@@ -14,7 +14,7 @@ const Education = () => {
     location: "Mumbai, India",
     graduation: "May 2023",
     gpa: "3.5",
-    coursework: ["Business Intelligence", "Machine Learning", "Data Science & AI", "Cloud Computing", "Computer Networks"]
+    coursework: ["Business Intelligence", "Machine Learning & Deep Learning", "Data Science & AI", "Cloud Computing", "Computer Networks"]
   }];
   const certifications = [
     {
