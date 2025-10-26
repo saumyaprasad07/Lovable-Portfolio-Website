@@ -4,7 +4,7 @@ const Experience = () => {
   const experiences = [{
     title: "Project Manager Volunteer",
     company: "Saayam for All",
-    location: "San Jose, CA",
+    location: "Remote",
     duration: "Aug 2025 - Present",
     responsibilities: ["Supported project planning with timelines, resource allocation, and documentation, improving delivery efficiency by 20%", "Coordinate project activities by scheduling and facilitating meetings, preparing agendas and minutes, and managing related documentation across various platforms such as MS Project, Asana, and Trello"]
   }, {
