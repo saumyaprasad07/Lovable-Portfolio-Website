@@ -6,8 +6,8 @@ import { Github, ExternalLink } from "lucide-react";
 const projects = [
   {
     title: "Yelp Business Sentiment Analysis",
-    description: "Processed 5GB+ Yelp data with scalable ingestion pipelines and complex SQL. Validated data quality and modeled sentiment insights for comprehensive reporting.",
-    tech: ["SQL", "Snowflake", "AWS"],
+    description: "Processed 5GB+ Yelp data with scalable ingestion pipelines and complex SQL/BigQuery queries. Validated data quality and modeled sentiment insights for comprehensive reporting.",
+    tech: ["SQL", "Snowflake", "AWS", "BigQuery"],
     github: "https://github.com/saumyaprasad07/Yelp-Business-Reviews-Analysis",
   },
   {
