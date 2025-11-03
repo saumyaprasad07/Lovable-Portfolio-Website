@@ -60,9 +60,6 @@ const Navigation = () => {
             <button onClick={() => handleNavigation("/achievements")} className="text-foreground hover:text-primary transition-colors">
               Achievements
             </button>
-            <button onClick={() => handleNavigation("/recommendations")} className="text-foreground hover:text-primary transition-colors">
-              Recommendations
-            </button>
             {isHomePage && (
               <button onClick={() => scrollToSection("contact")} className="text-foreground hover:text-primary transition-colors">
                 Contact
@@ -95,9 +92,6 @@ const Navigation = () => {
             </button>
             <button onClick={() => handleNavigation("/achievements")} className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors">
               Achievements
-            </button>
-            <button onClick={() => handleNavigation("/recommendations")} className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors">
-              Recommendations
             </button>
             {isHomePage && (
               <button onClick={() => scrollToSection("contact")} className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors">
