@@ -25,6 +25,29 @@ const About = () => {
     title: "Project Management",
     description: "Agile/Scrum Methodology, JIRA, Stakeholder Management, Requirements Gathering, Project Documentation (BRD, TRD), Cross-functional Collaboration"
   }];
+
+  const certifications = [
+    {
+      title: "Google Advanced Data Analytics Professional Certificate",
+      url: "https://www.coursera.org/account/accomplishments/specialization/L1UFPKLC27OQ"
+    },
+    {
+      title: "Google Business Intelligence Professional Certificate",
+      url: "https://www.coursera.org/account/accomplishments/specialization/COZ84CYGX9W4"
+    },
+    {
+      title: "Tableau Fundamentals",
+      url: "https://verify.skilljar.com/c/ait3fsck8x6t"
+    },
+    {
+      title: "AWS Academy Cloud Foundations",
+      url: "https://www.credly.com/badges/2a5cd426-8544-46bb-a440-db9e454266ee/linked_in_profile"
+    },
+    {
+      title: "HackerRank SQL Intermediate",
+      url: "https://www.hackerrank.com/certificates/646ec66e4b25"
+    }
+  ];
   return <section id="about" className="py-20 px-4">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16 animate-fade-in">
@@ -48,7 +71,7 @@ const About = () => {
         </div>
 
         {/* Skills Section */}
-        <div>
+        <div className="mb-12">
           <h3 className="text-2xl font-bold mb-6 text-center">
             Skills & <span className="gradient-text">Expertise</span>
           </h3>
@@ -66,6 +89,30 @@ const About = () => {
                   </div>
                 </div>
               </div>)}
+          </div>
+        </div>
+
+        {/* Certifications Section */}
+        <div>
+          <h3 className="text-2xl font-bold mb-6 text-center">
+            Professional <span className="gradient-text">Certifications</span>
+          </h3>
+          <div className="glass-card p-6">
+            <ul className="grid md:grid-cols-2 gap-4">
+              {certifications.map((cert, index) => (
+                <li key={index} className="flex items-start gap-3">
+                  <div className="mt-1 h-2 w-2 rounded-full bg-primary flex-shrink-0" />
+                  <a 
+                    href={cert.url} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-muted-foreground hover:text-primary transition-colors underline"
+                  >
+                    {cert.title}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>

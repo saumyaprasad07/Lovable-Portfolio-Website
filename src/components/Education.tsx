@@ -1,4 +1,4 @@
-import { GraduationCap, Award } from "lucide-react";
+import { GraduationCap } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 const Education = () => {
   const educationData = [{
@@ -16,39 +16,17 @@ const Education = () => {
     gpa: "3.5",
     coursework: ["Business Intelligence", "Machine Learning & Deep Learning", "Data Science & AI", "Cloud Computing", "Computer Networks"]
   }];
-  const certifications = [
-    {
-      title: "Google Advanced Data Analytics Professional Certificate",
-      url: "https://www.coursera.org/account/accomplishments/specialization/L1UFPKLC27OQ"
-    },
-    {
-      title: "Google Business Intelligence Professional Certificate",
-      url: "https://www.coursera.org/account/accomplishments/specialization/COZ84CYGX9W4"
-    },
-    {
-      title: "Tableau Fundamentals",
-      url: "https://verify.skilljar.com/c/ait3fsck8x6t"
-    },
-    {
-      title: "AWS Academy Cloud Foundations",
-      url: "https://www.credly.com/badges/2a5cd426-8544-46bb-a440-db9e454266ee/linked_in_profile"
-    },
-    {
-      title: "HackerRank SQL Intermediate",
-      url: "https://www.hackerrank.com/certificates/646ec66e4b25"
-    }
-  ];
   return <section id="education" className="py-20 px-4 bg-muted/30">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Education & <span className="gradient-text">Certifications</span>
+            <span className="gradient-text">Education</span>
           </h2>
           
         </div>
 
         {/* Education */}
-        <div className="mb-12">
+        <div>
           <h3 className="text-2xl font-bold mb-6 flex items-center gap-2">
             <GraduationCap className="h-6 w-6 text-primary" />
             Education
@@ -79,31 +57,6 @@ const Education = () => {
                 </CardContent>
               </Card>)}
           </div>
-        </div>
-
-        {/* Certifications */}
-        <div>
-          <h3 className="text-2xl font-bold mb-6 flex items-center gap-2">
-            <Award className="h-6 w-6 text-primary" />
-            Certifications
-          </h3>
-          <Card className="glass-card">
-            <CardContent className="pt-6">
-              <ul className="grid md:grid-cols-2 gap-4">
-                {certifications.map((cert, index) => <li key={index} className="flex items-start gap-3">
-                    <div className="mt-1 h-2 w-2 rounded-full bg-primary flex-shrink-0" />
-                    <a 
-                      href={cert.url} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="text-muted-foreground hover:text-primary transition-colors underline"
-                    >
-                      {cert.title}
-                    </a>
-                  </li>)}
-              </ul>
-            </CardContent>
-          </Card>
         </div>
       </div>
     </section>;

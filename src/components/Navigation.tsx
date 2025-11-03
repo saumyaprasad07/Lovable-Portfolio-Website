@@ -31,8 +31,8 @@ const Navigation = () => {
     setIsMobileMenuOpen(false);
   };
 
-  const handleRecommendationsClick = () => {
-    navigate("/recommendations");
+  const handleNavigation = (path: string) => {
+    navigate(path);
     setIsMobileMenuOpen(false);
   };
   return <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-background/95 backdrop-blur-md shadow-lg" : "bg-transparent"}`}>
@@ -42,27 +42,34 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-6">
-            <button onClick={() => scrollToSection("about")} className="text-foreground hover:text-primary transition-colors">
-              About
+            {isHomePage ? (
+              <button onClick={() => scrollToSection("about")} className="text-foreground hover:text-primary transition-colors">
+                About
+              </button>
+            ) : (
+              <button onClick={() => handleNavigation("/")} className="text-foreground hover:text-primary transition-colors">
+                Home
+              </button>
+            )}
+            <button onClick={() => handleNavigation("/career")} className="text-foreground hover:text-primary transition-colors">
+              Career
             </button>
-            <button onClick={() => scrollToSection("education")} className="text-foreground hover:text-primary transition-colors">
-              Education
-            </button>
-            <button onClick={() => scrollToSection("experience")} className="text-foreground hover:text-primary transition-colors">
-              Experience
-            </button>
-            <button onClick={() => scrollToSection("projects")} className="text-foreground hover:text-primary transition-colors">
+            <button onClick={() => handleNavigation("/projects")} className="text-foreground hover:text-primary transition-colors">
               Projects
             </button>
-            <button onClick={() => scrollToSection("achievements")} className="text-foreground hover:text-primary transition-colors">
-              Achievements
-            </button>
-            <button onClick={handleRecommendationsClick} className="text-foreground hover:text-primary transition-colors">
+            {isHomePage && (
+              <button onClick={() => scrollToSection("achievements")} className="text-foreground hover:text-primary transition-colors">
+                Achievements
+              </button>
+            )}
+            <button onClick={() => handleNavigation("/recommendations")} className="text-foreground hover:text-primary transition-colors">
               Recommendations
             </button>
-            <button onClick={() => scrollToSection("contact")} className="text-foreground hover:text-primary transition-colors">
-              Contact
-            </button>
+            {isHomePage && (
+              <button onClick={() => scrollToSection("contact")} className="text-foreground hover:text-primary transition-colors">
+                Contact
+              </button>
+            )}
           </div>
 
           {/* Mobile Menu Button */}
@@ -73,27 +80,34 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && <div className="md:hidden py-4 space-y-4 border-t border-border">
-            <button onClick={() => scrollToSection("about")} className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors">
-              About
+            {isHomePage ? (
+              <button onClick={() => scrollToSection("about")} className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors">
+                About
+              </button>
+            ) : (
+              <button onClick={() => handleNavigation("/")} className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors">
+                Home
+              </button>
+            )}
+            <button onClick={() => handleNavigation("/career")} className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors">
+              Career
             </button>
-            <button onClick={() => scrollToSection("education")} className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors">
-              Education
-            </button>
-            <button onClick={() => scrollToSection("experience")} className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors">
-              Experience
-            </button>
-            <button onClick={() => scrollToSection("projects")} className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors">
+            <button onClick={() => handleNavigation("/projects")} className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors">
               Projects
             </button>
-            <button onClick={() => scrollToSection("achievements")} className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors">
-              Achievements
-            </button>
-            <button onClick={handleRecommendationsClick} className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors">
+            {isHomePage && (
+              <button onClick={() => scrollToSection("achievements")} className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors">
+                Achievements
+              </button>
+            )}
+            <button onClick={() => handleNavigation("/recommendations")} className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors">
               Recommendations
             </button>
-            <button onClick={() => scrollToSection("contact")} className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors">
-              Contact
-            </button>
+            {isHomePage && (
+              <button onClick={() => scrollToSection("contact")} className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors">
+                Contact
+              </button>
+            )}
           </div>}
       </div>
     </nav>;
