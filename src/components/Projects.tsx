@@ -5,41 +5,89 @@ import { Github, ExternalLink } from "lucide-react";
 
 const projects = [
   {
+    category: "SENTIMENT ANALYSIS",
     title: "Yelp Business Sentiment Analysis",
-    description: "Processed 5GB+ Yelp data with scalable ingestion pipelines and complex SQL/BigQuery queries. Validated data quality and modeled sentiment insights for comprehensive reporting.",
+    subtitle: "SQL | Snowflake | AWS | BigQuery",
+    highlights: [
+      "Processed 5GB+ Yelp data with scalable ingestion pipelines",
+      "Complex SQL/BigQuery queries for data analysis",
+      "Validated data quality and modeled sentiment insights",
+      "Comprehensive reporting for business intelligence"
+    ],
     tech: ["SQL", "Snowflake", "AWS", "BigQuery"],
     github: "https://github.com/saumyaprasad07/Yelp-Business-Reviews-Analysis",
+    imageText: "Yelp Sentiment\nAnalysis"
   },
   {
+    category: "EQUITY ANALYSIS",
     title: "Gender based Wage Gap Analysis",
-    description: "Comprehensive analysis of wage disparities across gender using statistical methods and data visualization. Identified key factors contributing to pay gaps and provided actionable insights for equity improvement.",
+    subtitle: "Python | Data Analysis | Statistical Modeling",
+    highlights: [
+      "Comprehensive analysis of wage disparities across gender",
+      "Statistical methods and data visualization techniques",
+      "Identified key factors contributing to pay gaps",
+      "Provided actionable insights for equity improvement"
+    ],
     tech: ["Python", "Data Analysis", "Statistical Modeling", "Visualization"],
     github: "https://github.com/saumyaprasad07/Gender-Based-Wage-Gap-Analysis",
+    imageText: "Wage Gap\nAnalysis"
   },
   {
+    category: "RECOMMENDATION SYSTEM",
     title: "Netflix Recommendation System",
-    description: "Interactive dashboard analyzing Netflix user engagement using survey data and Kaggle movie dataset. Created project charter and planner with MS Project, managed tasks using Agile methodologies on MS Azure Boards for efficient tracking and collaboration.",
+    subtitle: "Streamlit | Python | MS Project | Azure Boards",
+    highlights: [
+      "Interactive dashboard analyzing Netflix user engagement",
+      "Used survey data and Kaggle movie dataset",
+      "Created project charter and planner with MS Project",
+      "Managed tasks using Agile methodologies on MS Azure Boards"
+    ],
     tech: ["Streamlit", "Python", "MS Project", "Azure Boards"],
     github: "https://github.com/saumyaprasad07/streamlit-app-netflix-recommendation-system",
     live: "https://netflix-movie-recommendation-system.streamlit.app/",
-  },
-    {
-    title: "Database Management System for UPS",
-    description: "Designed and implemented logistics database using EERD and 3NF principles. Optimized SQL queries with indexing and window functions. Authored BRD, TRD, and project charter for cross-functional alignment.",
-    tech: ["MySQL", "Business Analysis", "SQL Optimization"],
-    github: "https://github.com/saumyaprasad07/Database-Management-System---UPS-Deliveries",
-  },
-   {
-    title: "Business Analysis on Aggregate Planning",
-    description: "Developed an Excel-based optimization model to minimize total production costs for Green Mills Inc. using Chase, Level, and Optimal strategies. Analyzes workforce management, inventory control, and spot market purchases to identify the most cost-effective aggregate plan.",
-    tech: ["Excel", "Optimization", "Business Analysis"],
-    github: "https://github.com/saumyaprasad07/Business-Analysis-on-Aggregate-Planning-at-Green-Mills",
+    imageText: "Netflix\nRecommendations"
   },
   {
+    category: "DATABASE MANAGEMENT",
+    title: "Database Management System for UPS",
+    subtitle: "MySQL | Business Analysis | SQL Optimization",
+    highlights: [
+      "Designed and implemented logistics database using EERD and 3NF principles",
+      "Optimized SQL queries with indexing and window functions",
+      "Authored BRD, TRD, and project charter",
+      "Cross-functional alignment for database implementation"
+    ],
+    tech: ["MySQL", "Business Analysis", "SQL Optimization"],
+    github: "https://github.com/saumyaprasad07/Database-Management-System---UPS-Deliveries",
+    imageText: "UPS Database\nSystem"
+  },
+  {
+    category: "BUSINESS OPTIMIZATION",
+    title: "Business Analysis on Aggregate Planning",
+    subtitle: "Excel | Optimization | Business Analysis",
+    highlights: [
+      "Developed Excel-based optimization model for Green Mills Inc.",
+      "Analyzed Chase, Level, and Optimal strategies",
+      "Minimized total production costs through workforce management",
+      "Identified most cost-effective aggregate plan"
+    ],
+    tech: ["Excel", "Optimization", "Business Analysis"],
+    github: "https://github.com/saumyaprasad07/Business-Analysis-on-Aggregate-Planning-at-Green-Mills",
+    imageText: "Aggregate\nPlanning"
+  },
+  {
+    category: "DEEP LEARNING",
     title: "Brain Tumor MRI Image Segmentation",
-    description: "Implemented deep learning models for brain tumor MRI image segmentation. Developed notebook-based solution with comprehensive dataset processing and analysis, including research paper documentation.",
+    subtitle: "Deep Learning | Python | TensorFlow",
+    highlights: [
+      "Implemented deep learning models for MRI image segmentation",
+      "Developed notebook-based solution with comprehensive dataset processing",
+      "Advanced image processing and analysis techniques",
+      "Documented research findings in academic paper format"
+    ],
     tech: ["Deep Learning", "Python", "Image Processing", "TensorFlow"],
     github: "https://github.com/saumyaprasad07/Brain-Tumor-MRI-Image-Segmentation-using-Deep-Learning",
+    imageText: "Brain Tumor\nSegmentation"
   },
 ];
 
@@ -56,41 +104,63 @@ const Projects = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="space-y-12 max-w-7xl mx-auto">
           {projects.map((project, index) => (
             <Card 
               key={index}
               className="glass-card overflow-hidden group hover:shadow-2xl transition-all duration-300 animate-fade-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                <p className="text-muted-foreground mb-4">{project.description}</p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.tech.map((tech, i) => (
-                    <span 
-                      key={i}
-                      className="text-xs px-3 py-1 rounded-full bg-primary/10 text-primary border border-primary/20"
-                    >
-                      {tech}
-                    </span>
-                  ))}
+              <div className="grid md:grid-cols-2 gap-0">
+                {/* Left side - Image with overlay text */}
+                <div className="relative bg-gradient-to-br from-primary/20 to-accent/20 min-h-[400px] flex items-center justify-center p-8">
+                  <div className="absolute inset-0 bg-card/50 backdrop-blur-sm"></div>
+                  <h3 className="relative text-4xl md:text-5xl font-bold text-center whitespace-pre-line z-10">
+                    {project.imageText}
+                  </h3>
                 </div>
-                <div className="flex gap-3">
-                  <Button size="sm" variant="outline" asChild>
-                    <a href={project.github} target="_blank" rel="noopener noreferrer">
-                      <Github className="h-4 w-4 mr-2" />
-                      Code
-                    </a>
-                  </Button>
-                  {project.live && (
-                    <Button size="sm" asChild>
-                      <a href={project.live} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink className="h-4 w-4 mr-2" />
-                        Live
+
+                {/* Right side - Content */}
+                <div className="p-8 md:p-12 flex flex-col justify-between">
+                  <div>
+                    <p className="text-sm font-bold tracking-wider text-muted-foreground mb-4">
+                      {project.category}
+                    </p>
+                    
+                    <h4 className="text-2xl md:text-3xl font-bold mb-4">
+                      {project.title}
+                    </h4>
+                    
+                    <p className="text-lg text-muted-foreground mb-6">
+                      {project.subtitle}
+                    </p>
+
+                    <ul className="space-y-3 mb-8">
+                      {project.highlights.map((highlight, i) => (
+                        <li key={i} className="flex items-start gap-3 text-muted-foreground">
+                          <span className="text-primary mt-1.5">■</span>
+                          <span>{highlight}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div className="flex gap-3">
+                    <Button variant="outline" asChild>
+                      <a href={project.github} target="_blank" rel="noopener noreferrer">
+                        <Github className="h-4 w-4 mr-2" />
+                        VIEW CODE
                       </a>
                     </Button>
-                  )}
+                    {project.live && (
+                      <Button asChild>
+                        <a href={project.live} target="_blank" rel="noopener noreferrer">
+                          <ExternalLink className="h-4 w-4 mr-2" />
+                          LIVE DEMO
+                        </a>
+                      </Button>
+                    )}
+                  </div>
                 </div>
               </div>
             </Card>
