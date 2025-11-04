@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Github, Linkedin, Mail, BookOpen, BarChart3, FileStack } from "lucide-react";
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -65,6 +65,62 @@ const Navigation = () => {
                 Contact
               </button>
             )}
+            
+            {/* Social Links */}
+            <div className="flex items-center gap-2 ml-2 pl-2 border-l border-border">
+              <a 
+                href="https://github.com/saumyaprasad07" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="p-2 rounded-full hover:bg-primary/10 hover:text-primary transition-all"
+                aria-label="GitHub"
+              >
+                <Github className="h-4 w-4" />
+              </a>
+              <a 
+                href="https://linkedin.com/in/saumyaprasad07" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="p-2 rounded-full hover:bg-primary/10 hover:text-primary transition-all"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="h-4 w-4" />
+              </a>
+              <a 
+                href="mailto:saumya.prasad460@gmail.com"
+                className="p-2 rounded-full hover:bg-primary/10 hover:text-primary transition-all"
+                aria-label="Email"
+              >
+                <Mail className="h-4 w-4" />
+              </a>
+              <a 
+                href="https://medium.com/@saumya.prasad07" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="p-2 rounded-full hover:bg-primary/10 hover:text-primary transition-all"
+                aria-label="Medium"
+              >
+                <BookOpen className="h-4 w-4" />
+              </a>
+              <a 
+                href="https://public.tableau.com/app/profile/saumya.prasad/vizzes" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="p-2 rounded-full hover:bg-primary/10 hover:text-primary transition-all"
+                aria-label="Tableau Public"
+              >
+                <BarChart3 className="h-4 w-4" />
+              </a>
+              <a 
+                href="https://www.notion.so/saumyaprasad/Saumya-C-Prasad-275a7b9cbe00802ebf0fe4a418620b45" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="p-2 rounded-full hover:bg-primary/10 hover:text-primary transition-all"
+                aria-label="Notion Portfolio"
+              >
+                <FileStack className="h-4 w-4" />
+              </a>
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
@@ -98,6 +154,62 @@ const Navigation = () => {
                 Contact
               </button>
             )}
+            
+            {/* Social Links */}
+            <div className="flex gap-2 pt-4 border-t border-border">
+              <a 
+                href="https://github.com/saumyaprasad07" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="p-2 rounded-full hover:bg-primary/10 hover:text-primary transition-all"
+                aria-label="GitHub"
+              >
+                <Github className="h-4 w-4" />
+              </a>
+              <a 
+                href="https://linkedin.com/in/saumyaprasad07" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="p-2 rounded-full hover:bg-primary/10 hover:text-primary transition-all"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="h-4 w-4" />
+              </a>
+              <a 
+                href="mailto:saumya.prasad460@gmail.com"
+                className="p-2 rounded-full hover:bg-primary/10 hover:text-primary transition-all"
+                aria-label="Email"
+              >
+                <Mail className="h-4 w-4" />
+              </a>
+              <a 
+                href="https://medium.com/@saumya.prasad07" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="p-2 rounded-full hover:bg-primary/10 hover:text-primary transition-all"
+                aria-label="Medium"
+              >
+                <BookOpen className="h-4 w-4" />
+              </a>
+              <a 
+                href="https://public.tableau.com/app/profile/saumya.prasad/vizzes" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="p-2 rounded-full hover:bg-primary/10 hover:text-primary transition-all"
+                aria-label="Tableau Public"
+              >
+                <BarChart3 className="h-4 w-4" />
+              </a>
+              <a 
+                href="https://www.notion.so/saumyaprasad/Saumya-C-Prasad-275a7b9cbe00802ebf0fe4a418620b45" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="p-2 rounded-full hover:bg-primary/10 hover:text-primary transition-all"
+                aria-label="Notion Portfolio"
+              >
+                <FileStack className="h-4 w-4" />
+              </a>
+            </div>
           </div>}
       </div>
     </nav>;
