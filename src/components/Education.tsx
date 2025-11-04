@@ -20,7 +20,7 @@ const Education = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="gradient-text">Education</span>
+            Education
           </h2>
           
         </div>

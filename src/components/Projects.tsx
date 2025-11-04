@@ -49,7 +49,7 @@ const Projects = () => {
       <div className="container mx-auto">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Featured <span className="gradient-text">Projects</span>
+            Featured Projects
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             A selection of projects showcasing my data analytics and business intelligence expertise.

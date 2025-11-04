@@ -5,7 +5,7 @@ const Contact = () => {
       <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Get In <span className="gradient-text">Touch</span>
+            Get In Touch
           </h2>
           <p className="text-lg text-muted-foreground">
             Have a project in mind? Let's work together to create something amazing.

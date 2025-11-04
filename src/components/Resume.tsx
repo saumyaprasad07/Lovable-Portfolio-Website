@@ -8,7 +8,7 @@ const Resume = () => {
       <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="gradient-text">Resume</span>
+            Resume
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Download my complete resume or view my professional profiles

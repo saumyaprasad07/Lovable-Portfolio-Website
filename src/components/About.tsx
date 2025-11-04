@@ -52,7 +52,7 @@ const About = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            About <span className="gradient-text">Me</span>
+            About Me
           </h2>
           
         </div>
@@ -73,7 +73,7 @@ const About = () => {
         {/* Skills Section */}
         <div className="mb-12">
           <h3 className="text-2xl font-bold mb-6 text-center">
-            Skills & <span className="gradient-text">Expertise</span>
+            Skills & Expertise
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {skills.map((skill, index) => <div key={index} className="glass-card p-6 group hover:border-primary/50 transition-all duration-300 animate-fade-in" style={{
@@ -95,7 +95,7 @@ const About = () => {
         {/* Certifications Section */}
         <div>
           <h3 className="text-2xl font-bold mb-6 text-center">
-            Professional <span className="gradient-text">Certifications</span>
+            Professional Certifications
           </h3>
           <div className="glass-card p-6">
             <ul className="grid md:grid-cols-2 gap-4">

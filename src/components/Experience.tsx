@@ -24,7 +24,7 @@ const Experience = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Professional <span className="gradient-text">Experience</span>
+            Professional Experience
           </h2>
           
         </div>

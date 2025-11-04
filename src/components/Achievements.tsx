@@ -75,7 +75,7 @@ const Achievements = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Achievements & <span className="gradient-text">Impact</span>
+            Achievements & Impact
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Publications, volunteer work, and leadership contributions
