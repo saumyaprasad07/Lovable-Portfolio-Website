@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Projects from "@/components/Projects";
 import Footer from "@/components/Footer";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const ProjectsPage = () => {
   return (
@@ -8,6 +9,7 @@ const ProjectsPage = () => {
       <Navigation />
       <Projects />
       <Footer />
+      <ScrollToTop />
     </div>
   );
 };

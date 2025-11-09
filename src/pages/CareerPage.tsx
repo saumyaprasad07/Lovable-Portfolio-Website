@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import Education from "@/components/Education";
 import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const CareerPage = () => {
   return (
@@ -10,6 +11,7 @@ const CareerPage = () => {
       <Education />
       <Experience />
       <Footer />
+      <ScrollToTop />
     </div>
   );
 };
