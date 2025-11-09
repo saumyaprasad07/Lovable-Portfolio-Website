@@ -1,7 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
-import SkillsTools from "@/components/SkillsTools";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
@@ -12,7 +11,6 @@ const Index = () => {
       <Navigation />
       <Hero />
       <About />
-      <SkillsTools />
       <Contact />
       <Footer />
       <ScrollToTop />
