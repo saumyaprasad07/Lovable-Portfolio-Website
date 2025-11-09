@@ -54,7 +54,6 @@ const About = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             About Me
           </h2>
-          
         </div>
 
         <div className="glass-card p-8 mb-12 animate-fade-in">
@@ -72,19 +71,19 @@ const About = () => {
 
         {/* Skills Section */}
         <div className="mb-12">
-          <h3 className="text-2xl font-bold mb-6 text-center">
+          <h2 className="text-2xl font-bold mb-6 text-center">
             Skills & Expertise
-          </h3>
+          </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {skills.map((skill, index) => <div key={index} className="glass-card p-6 group hover:border-primary/50 transition-all duration-300 animate-fade-in" style={{
             animationDelay: `${index * 0.1}s`
           }}>
                 <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
+                  <div className="p-3 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors" aria-hidden="true">
                     <skill.icon className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <h4 className="text-lg font-semibold mb-2">{skill.title}</h4>
+                    <h3 className="text-lg font-semibold mb-2">{skill.title}</h3>
                     <p className="text-sm text-muted-foreground">{skill.description}</p>
                   </div>
                 </div>
@@ -94,9 +93,9 @@ const About = () => {
 
         {/* Certifications Section */}
         <div>
-          <h3 className="text-2xl font-bold mb-6 text-center">
+          <h2 className="text-2xl font-bold mb-6 text-center">
             Professional Certifications
-          </h3>
+          </h2>
           <div className="glass-card p-6">
             <ul className="grid md:grid-cols-2 gap-4">
               {certifications.map((cert, index) => (

@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Github, Linkedin, Mail, BookOpen, BarChart3, FileStack } from "lucide-react";
+import ThemeToggle from "@/components/ThemeToggle";
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -65,6 +66,9 @@ const Navigation = () => {
                 Contact
               </button>
             )}
+            
+            {/* Theme Toggle */}
+            <ThemeToggle />
             
             {/* Social Links */}
             <div className="flex items-center gap-2 ml-2 pl-2 border-l border-border">
@@ -131,6 +135,11 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && <div className="md:hidden py-4 space-y-4 border-t border-border">
+            {/* Theme Toggle */}
+            <div className="flex items-center gap-2 pb-2">
+              <span className="text-sm text-muted-foreground">Theme:</span>
+              <ThemeToggle />
+            </div>
             {isHomePage ? (
               <button onClick={() => scrollToSection("about")} className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors">
                 About

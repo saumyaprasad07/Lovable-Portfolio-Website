@@ -113,7 +113,7 @@ const Projects = () => {
             >
               <div className="grid md:grid-cols-2 gap-0">
                 {/* Left side - Image with overlay text */}
-                <div className="relative bg-gradient-to-br from-primary/20 to-accent/20 min-h-[400px] flex items-center justify-center p-8">
+                <div className="relative bg-gradient-to-br from-primary/20 to-accent/20 min-h-[400px] flex items-center justify-center p-8" role="img" aria-label={`Project visualization: ${project.title}`}>
                   <div className="absolute inset-0 bg-card/50 backdrop-blur-sm"></div>
                   <h3 className="relative text-4xl md:text-5xl font-bold text-center whitespace-pre-line z-10">
                     {project.imageText}

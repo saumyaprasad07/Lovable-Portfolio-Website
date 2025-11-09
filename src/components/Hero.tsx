@@ -8,7 +8,9 @@ const Hero = () => {
     backgroundPosition: 'center'
   }}>
       {/* Overlay */}
-      <div className="absolute inset-0 bg-background/80 backdrop-blur-sm" />
+      <div className="absolute inset-0 bg-background/80 backdrop-blur-sm" aria-hidden="true" />
+      {/* Background image alt text for accessibility */}
+      <span className="sr-only">Background: Abstract data visualization and analytics workspace</span>
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 py-20 text-center animate-fade-in">
