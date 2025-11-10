@@ -1,6 +1,12 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Github, ExternalLink } from "lucide-react";
+import yelpImage from "@/assets/project-yelp-sentiment.jpg";
+import wageGapImage from "@/assets/project-wage-gap.jpg";
+import netflixImage from "@/assets/project-netflix.jpg";
+import upsImage from "@/assets/project-ups-database.jpg";
+import aggregateImage from "@/assets/project-aggregate-planning.jpg";
+import brainTumorImage from "@/assets/project-brain-tumor.jpg";
 
 
 const projects = [
@@ -16,7 +22,7 @@ const projects = [
     ],
     tech: ["SQL", "Snowflake", "AWS", "BigQuery"],
     github: "https://github.com/saumyaprasad07/Yelp-Business-Reviews-Analysis",
-    imageText: "Yelp Sentiment\nAnalysis"
+    image: yelpImage
   },
   {
     category: "EQUITY ANALYSIS",
@@ -30,7 +36,7 @@ const projects = [
     ],
     tech: ["Python", "Data Analysis", "Statistical Modeling", "Visualization"],
     github: "https://github.com/saumyaprasad07/Gender-Based-Wage-Gap-Analysis",
-    imageText: "Wage Gap\nAnalysis"
+    image: wageGapImage
   },
   {
     category: "RECOMMENDATION SYSTEM",
@@ -45,7 +51,7 @@ const projects = [
     tech: ["Streamlit", "Python", "MS Project", "Azure Boards"],
     github: "https://github.com/saumyaprasad07/streamlit-app-netflix-recommendation-system",
     live: "https://netflix-movie-recommendation-system.streamlit.app/",
-    imageText: "Netflix\nRecommendations"
+    image: netflixImage
   },
   {
     category: "DATABASE MANAGEMENT",
@@ -59,7 +65,7 @@ const projects = [
     ],
     tech: ["MySQL", "Business Analysis", "SQL Optimization"],
     github: "https://github.com/saumyaprasad07/Database-Management-System---UPS-Deliveries",
-    imageText: "UPS Database\nSystem"
+    image: upsImage
   },
   {
     category: "BUSINESS OPTIMIZATION",
@@ -73,7 +79,7 @@ const projects = [
     ],
     tech: ["Excel", "Optimization", "Business Analysis"],
     github: "https://github.com/saumyaprasad07/Business-Analysis-on-Aggregate-Planning-at-Green-Mills",
-    imageText: "Aggregate\nPlanning"
+    image: aggregateImage
   },
   {
     category: "DEEP LEARNING",
@@ -87,7 +93,7 @@ const projects = [
     ],
     tech: ["Deep Learning", "Python", "Image Processing", "TensorFlow"],
     github: "https://github.com/saumyaprasad07/Brain-Tumor-MRI-Image-Segmentation-using-Deep-Learning",
-    imageText: "Brain Tumor\nSegmentation"
+    image: brainTumorImage
   },
 ];
 
@@ -112,12 +118,13 @@ const Projects = () => {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="grid md:grid-cols-2 gap-0">
-                {/* Left side - Image with overlay text */}
-                <div className="relative bg-gradient-to-br from-primary/20 to-accent/20 min-h-[400px] flex items-center justify-center p-8" role="img" aria-label={`Project visualization: ${project.title}`}>
-                  <div className="absolute inset-0 bg-card/50 backdrop-blur-sm"></div>
-                  <h3 className="relative text-4xl md:text-5xl font-bold text-center whitespace-pre-line z-10">
-                    {project.imageText}
-                  </h3>
+                {/* Left side - Image */}
+                <div className="relative min-h-[400px] overflow-hidden">
+                  <img 
+                    src={project.image} 
+                    alt={`${project.title} visualization showing ${project.subtitle}`}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
                 </div>
 
                 {/* Right side - Content */}
