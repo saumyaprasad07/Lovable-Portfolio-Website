@@ -2,17 +2,11 @@ import { Briefcase } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 const Experience = () => {
   const experiences = [{
-    title: "Project Manager Volunteer",
+    title: "Project Manager",
     company: "Saayam for All",
     location: "Remote",
     duration: "Aug 2025 - Present",
     responsibilities: ["Supported project planning with timelines, resource allocation, and documentation, improving delivery efficiency by 20%", "Coordinate project activities by scheduling and facilitating meetings, preparing agendas and minutes, and managing related documentation across various platforms such as MS Project, Asana, and Trello"]
-  }, {
-    title: "Data Analyst",
-    company: "California State University Long Beach",
-    location: "Long Beach, CA",
-    duration: "Aug 2024 - Apr 2025",
-    responsibilities: ["Partnered with stakeholders to gather requirements and deliver 5+ data visualization dashboards in Tableau/Power BI, improving strategic customer experience for campus services", "Normalized databases and optimized SQL queries, improving performance by 10%+ and enabling faster data analytics reporting; collaborated with product managers and engineers to analyze results of pilot initiatives and shape product design decisions"]
   }, {
     title: "Market Research Data Analyst",
     company: "California State University Long Beach",
@@ -28,7 +22,6 @@ const Experience = () => {
           </h2>
           
         </div>
-
         <div className="space-y-6">
           {experiences.map((exp, index) => <Card key={index} className="glass-card hover:shadow-lg transition-all animate-fade-in">
               <CardHeader>
