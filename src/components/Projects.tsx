@@ -81,12 +81,6 @@ const CompactProjects = () => {
             <Sparkles className="w-4 h-4 text-primary" />
             <span className="text-sm font-semibold text-primary">Portfolio Showcase</span>
           </div>
-          <h2 className="text-5xl md:text-6xl font-bold mb-6">
-            Featured Projects
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Transforming data into actionable insights
-          </p>
         </div>
 
         {/* Projects Grid */}
