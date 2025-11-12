@@ -16,40 +16,56 @@ const Education = () => {
     gpa: "3.5",
     coursework: ["Business Intelligence", "Machine Learning & Deep Learning", "Data Science & AI", "Cloud Computing", "Computer Networks"]
   }];
-  return <section id="education" className="py-20 px-4 bg-muted/30">
-      <div className="container mx-auto max-w-6xl">
+  return <section id="education" className="py-20 px-4 relative overflow-hidden">
+      {/* Background decoration */}
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5 pointer-events-none" />
+      
+      <div className="container mx-auto max-w-6xl relative">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
+            <GraduationCap className="w-5 h-5 text-primary" />
+            <span className="text-sm font-semibold text-primary">Academic Background</span>
+          </div>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
             Education
           </h2>
-          
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Building a strong foundation in information systems, data analytics, and business intelligence
+          </p>
         </div>
 
-        {/* Education */}
-        <div>
-          <h3 className="text-2xl font-bold mb-6 flex items-center gap-2">
-            <GraduationCap className="h-6 w-6 text-primary" />
-            Education
-          </h3>
-          <div className="grid gap-6 md:grid-cols-2">
-            {educationData.map((edu, index) => <Card key={index} className="glass-card hover:shadow-lg transition-shadow">
+        <div className="grid gap-8 md:grid-cols-2">
+            {educationData.map((edu, index) => <Card key={index} 
+                className="glass-card hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in border-primary/20"
+                style={{ animationDelay: `${index * 150}ms` }}>
                 <CardHeader>
-                  <CardTitle className="text-xl">{edu.degree}</CardTitle>
-                  <CardDescription className="text-base font-semibold text-foreground">
-                    {edu.institution}
-                  </CardDescription>
-                  <CardDescription>
-                    {edu.location} • {edu.graduation}
+                  <div className="flex items-start justify-between gap-4 mb-2">
+                    <div className="flex-1">
+                      <CardTitle className="text-xl mb-2 text-white">{edu.degree}</CardTitle>
+                      <CardDescription className="text-base font-semibold text-primary">
+                        {edu.institution}
+                      </CardDescription>
+                    </div>
+                    <div className="p-2 rounded-lg bg-primary/10 border border-primary/20">
+                      <GraduationCap className="h-6 w-6 text-primary" />
+                    </div>
+                  </div>
+                  <CardDescription className="flex items-center gap-2 text-sm">
+                    <span>{edu.location}</span>
+                    <span className="text-primary">•</span>
+                    <span>{edu.graduation}</span>
                   </CardDescription>
                 </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground mb-3">
-                    <span className="font-semibold">GPA:</span> {edu.gpa}
-                  </p>
+                <CardContent className="space-y-4">
+                  <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary/20 border border-secondary/30">
+                    <span className="font-semibold text-sm">GPA:</span>
+                    <span className="text-sm font-bold text-primary">{edu.gpa}</span>
+                  </div>
                   <div>
-                    <p className="font-semibold mb-2">Key Coursework:</p>
+                    <p className="font-semibold text-white mb-3">Key Coursework:</p>
                     <div className="flex flex-wrap gap-2">
-                      {edu.coursework.map((course, i) => <span key={i} className="text-xs px-3 py-1 rounded-full bg-primary/10 text-primary border border-primary/20">
+                      {edu.coursework.map((course, i) => <span key={i} 
+                          className="text-xs px-3 py-1.5 rounded-full bg-primary/10 text-primary border border-primary/20 hover:bg-primary/20 transition-colors">
                           {course}
                         </span>)}
                     </div>
@@ -57,7 +73,6 @@ const Education = () => {
                 </CardContent>
               </Card>)}
           </div>
-        </div>
       </div>
     </section>;
 };

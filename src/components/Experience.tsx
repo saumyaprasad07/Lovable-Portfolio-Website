@@ -14,40 +14,55 @@ const Experience = () => {
     duration: "Mar 2024 - May 2024",
     responsibilities: ["Conducted market research on CSU PACE programs, performing data analytics on 25K+ rows to identify trends and stakeholder needs", "Developed business cases with actionable insights that increased student enrollment by 10%", "Built interactive Excel dashboards with slicers and KPIs, providing leadership with real-time visibility for strategic pivots"]
   }];
-  return <section id="experience" className="py-20 px-4">
-      <div className="container mx-auto max-w-6xl">
+  return <section id="experience" className="py-20 px-4 relative overflow-hidden">
+      {/* Background decoration */}
+      <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 via-transparent to-primary/5 pointer-events-none" />
+      
+      <div className="container mx-auto max-w-6xl relative">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/10 border border-secondary/20 mb-6">
+            <Briefcase className="w-5 h-5 text-secondary" />
+            <span className="text-sm font-semibold text-secondary">Career Path</span>
+          </div>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
             Professional Experience
           </h2>
-          
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Delivering data-driven solutions and driving business impact through analytics
+          </p>
         </div>
-        <div className="space-y-6">
-          {experiences.map((exp, index) => <Card key={index} className="glass-card hover:shadow-lg transition-all animate-fade-in">
+        <div className="space-y-8">
+          {experiences.map((exp, index) => <Card key={index} 
+              className="glass-card hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in border-secondary/20 group"
+              style={{ animationDelay: `${index * 150}ms` }}>
               <CardHeader>
-                <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-2">
-                  <div>
-                    <CardTitle className="text-xl flex items-center gap-2">
-                      <Briefcase className="h-5 w-5 text-primary" />
-                      {exp.title}
-                    </CardTitle>
-                    <CardDescription className="text-base font-semibold text-primary mt-1">
-                      {exp.company}
-                    </CardDescription>
-                    <CardDescription className="text-sm mt-1">
-                      {exp.location}
+                <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+                  <div className="flex-1">
+                    <div className="flex items-start gap-3 mb-3">
+                      <div className="p-2.5 rounded-lg bg-secondary/10 border border-secondary/20 group-hover:bg-secondary/20 transition-colors">
+                        <Briefcase className="h-5 w-5 text-secondary" />
+                      </div>
+                      <div className="flex-1">
+                        <CardTitle className="text-xl mb-1 text-white">{exp.title}</CardTitle>
+                        <CardDescription className="text-base font-semibold text-secondary">
+                          {exp.company}
+                        </CardDescription>
+                      </div>
+                    </div>
+                    <CardDescription className="flex items-center gap-2 text-sm">
+                      <span>{exp.location}</span>
                     </CardDescription>
                   </div>
-                  <span className="text-sm text-muted-foreground whitespace-nowrap">
-                    {exp.duration}
-                  </span>
+                  <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-muted/50 border border-border whitespace-nowrap">
+                    <span className="text-sm font-medium">{exp.duration}</span>
+                  </div>
                 </div>
               </CardHeader>
               <CardContent>
-                <ul className="space-y-2">
-                  {exp.responsibilities.map((resp, idx) => <li key={idx} className="flex gap-3 text-muted-foreground">
-                      <span className="text-primary mt-1">•</span>
-                      <span>{resp}</span>
+                <ul className="space-y-3">
+                  {exp.responsibilities.map((resp, idx) => <li key={idx} className="flex gap-3 text-muted-foreground hover:text-foreground transition-colors">
+                      <span className="text-secondary mt-1 font-bold">•</span>
+                      <span className="leading-relaxed">{resp}</span>
                     </li>)}
                 </ul>
               </CardContent>
