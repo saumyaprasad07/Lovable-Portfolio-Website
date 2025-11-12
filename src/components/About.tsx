@@ -48,15 +48,15 @@ const About = () => {
       url: "https://www.hackerrank.com/certificates/646ec66e4b25"
     }
   ];
-  return <section id="about" className="py-20 px-4">
-      <div className="container mx-auto max-w-6xl">
+  return <section id="about" className="section-spacing bg-gradient-to-b from-background to-muted/20">
+      <div className="container-wide">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="mb-4">
             About Me
           </h2>
         </div>
 
-        <div className="glass-card p-8 mb-12 animate-fade-in">
+        <div className="glass-card p-8 md:p-10 mb-16 animate-fade-in max-w-4xl mx-auto">
           <p className="text-lg text-muted-foreground leading-relaxed mb-6">
             I'm a Data Analyst with expertise in business analytics, data visualization, and database management. 
             I have graduated from California State University Long Beach with a Master of Science in Information Systems, 
@@ -70,10 +70,10 @@ const About = () => {
         </div>
 
         {/* Skills Section */}
-        <div className="mb-12">
-          <h2 className="text-2xl font-bold mb-6 text-center">
+        <div className="mb-16">
+          <h3 className="text-center mb-8">
             Skills & Expertise
-          </h2>
+          </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {skills.map((skill, index) => <div key={index} className="glass-card p-6 group hover:border-primary/50 transition-all duration-300 animate-fade-in" style={{
             animationDelay: `${index * 0.1}s`
@@ -93,10 +93,10 @@ const About = () => {
 
         {/* Certifications Section */}
         <div>
-          <h2 className="text-2xl font-bold mb-6 text-center">
+          <h3 className="text-center mb-8">
             Professional Certifications
-          </h2>
-          <div className="glass-card p-6">
+          </h3>
+          <div className="glass-card p-6 md:p-8 max-w-4xl mx-auto">
             <ul className="grid md:grid-cols-2 gap-4">
               {certifications.map((cert, index) => (
                 <li key={index} className="flex items-start gap-3">

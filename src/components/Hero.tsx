@@ -14,14 +14,15 @@ const Hero = () => {
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 py-20 text-center animate-fade-in">
-        <h1 className="text-5xl md:text-7xl font-bold mb-6">
+        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 max-w-4xl mx-auto">
           Hi, I'm Saumya Prasad
         </h1>
-        <p className="text-xl md:text-2xl text-muted-foreground mb-4">Data / BI Analytics & Product Analytics Enthusiast</p>
-        
+        <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">
+          Data / BI Analytics & Product Analytics Enthusiast
+        </p>
         
         {/* CTA Buttons */}
-        <div className="flex flex-wrap gap-4 justify-center mb-12">
+        <div className="flex flex-wrap gap-4 justify-center mb-16">
           <Button size="lg" className="group bg-primary hover:bg-primary/90" onClick={() => document.getElementById('projects')?.scrollIntoView({
           behavior: 'smooth'
         })}>

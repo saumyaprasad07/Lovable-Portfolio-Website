@@ -8,80 +8,103 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Light mode colors */
+    /* Light mode colors - Professional & Data-Focused */
     --background: 0 0% 100%;
-    --foreground: 222 47% 11%;
+    --foreground: 220 15% 20%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
+    --card-foreground: 220 15% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
+    --popover-foreground: 220 15% 20%;
 
     --primary: 199 89% 48%;
-    --primary-foreground: 210 40% 98%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96%;
-    --secondary-foreground: 222 47% 11%;
+    --secondary: 217 19% 27%;
+    --secondary-foreground: 0 0% 100%;
 
     --muted: 210 40% 96%;
-    --muted-foreground: 215 16% 47%;
+    --muted-foreground: 220 9% 46%;
 
-    --accent: 271 91% 65%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 271 81% 56%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
     --ring: 199 89% 48%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
+
+    /* Consistent spacing scale */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    --spacing-2xl: 4rem;
+
+    /* Typography scale */
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.25rem;
+    --font-size-2xl: 1.5rem;
+    --font-size-3xl: 1.875rem;
+    --font-size-4xl: 2.25rem;
+    --font-size-5xl: 3rem;
 
     /* Custom design tokens - light mode */
-    --gradient-primary: linear-gradient(135deg, hsl(199 89% 48%) 0%, hsl(271 91% 65%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(210 40% 98%) 0%, hsl(214 32% 91%) 100%);
-    --shadow-glow: 0 0 40px hsl(199 89% 48% / 0.3);
-    --shadow-card: 0 8px 32px hsl(220 13% 91% / 0.4);
+    --gradient-primary: linear-gradient(135deg, hsl(199 89% 48%) 0%, hsl(271 81% 56%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(210 40% 98%) 100%);
+    --shadow-sm: 0 1px 2px hsl(220 15% 20% / 0.05);
+    --shadow-md: 0 4px 6px hsl(220 15% 20% / 0.07);
+    --shadow-lg: 0 10px 15px hsl(220 15% 20% / 0.1);
+    --shadow-glow: 0 0 24px hsl(199 89% 48% / 0.15);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .dark {
-    /* Dark mode colors */
-    --background: 222 47% 11%;
+    /* Dark mode colors - Professional & Data-Focused */
+    --background: 220 27% 8%;
     --foreground: 210 40% 98%;
 
-    --card: 217 33% 17%;
+    --card: 220 23% 12%;
     --card-foreground: 210 40% 98%;
 
-    --popover: 222 47% 11%;
+    --popover: 220 27% 8%;
     --popover-foreground: 210 40% 98%;
 
     --primary: 199 89% 48%;
-    --primary-foreground: 210 40% 98%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 217 33% 17%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 217 19% 27%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 217 33% 17%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 220 20% 16%;
+    --muted-foreground: 220 9% 65%;
 
-    --accent: 271 91% 65%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 271 81% 56%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 217 33% 24%;
-    --input: 217 33% 24%;
+    --border: 220 20% 20%;
+    --input: 220 20% 20%;
     --ring: 199 89% 48%;
 
     /* Custom design tokens - dark mode */
-    --gradient-primary: linear-gradient(135deg, hsl(199 89% 48%) 0%, hsl(271 91% 65%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(222 47% 11%) 0%, hsl(217 33% 17%) 100%);
-    --shadow-glow: 0 0 40px hsl(199 89% 48% / 0.3);
-    --shadow-card: 0 8px 32px hsl(222 47% 8% / 0.4);
+    --gradient-primary: linear-gradient(135deg, hsl(199 89% 48%) 0%, hsl(271 81% 56%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(220 27% 8%) 0%, hsl(220 23% 12%) 100%);
+    --shadow-sm: 0 1px 2px hsl(0 0% 0% / 0.3);
+    --shadow-md: 0 4px 6px hsl(0 0% 0% / 0.4);
+    --shadow-lg: 0 10px 15px hsl(0 0% 0% / 0.5);
+    --shadow-glow: 0 0 24px hsl(199 89% 48% / 0.2);
   }
 }
 
@@ -91,7 +114,19 @@ All colors MUST be HSL.
   }
 
   .glass-card {
-    @apply bg-card/50 backdrop-blur-sm border border-border/50;
+    @apply bg-card/80 backdrop-blur-md border border-border shadow-sm;
+  }
+
+  .section-spacing {
+    @apply py-20 px-4;
+  }
+
+  .container-narrow {
+    @apply container mx-auto max-w-4xl;
+  }
+
+  .container-wide {
+    @apply container mx-auto max-w-7xl;
   }
 }
 
@@ -101,10 +136,27 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "liga" 1, "calt" 1;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    @apply text-foreground;
+  h1 {
+    @apply text-foreground text-5xl md:text-6xl font-bold tracking-tight leading-tight;
+  }
+
+  h2 {
+    @apply text-foreground text-3xl md:text-4xl font-bold tracking-tight leading-tight;
+  }
+
+  h3 {
+    @apply text-foreground text-xl md:text-2xl font-semibold tracking-tight;
+  }
+
+  h4 {
+    @apply text-foreground text-lg md:text-xl font-semibold;
+  }
+
+  p {
+    @apply text-base leading-relaxed;
   }
 }

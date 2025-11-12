@@ -14,26 +14,26 @@ const Experience = () => {
     duration: "Mar 2024 - May 2024",
     responsibilities: ["Conducted market research on CSU PACE programs, performing data analytics on 25K+ rows to identify trends and stakeholder needs", "Developed business cases with actionable insights that increased student enrollment by 10%", "Built interactive Excel dashboards with slicers and KPIs, providing leadership with real-time visibility for strategic pivots"]
   }];
-  return <section id="experience" className="py-20 px-4 relative overflow-hidden">
+  return <section id="experience" className="section-spacing relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 via-transparent to-primary/5 pointer-events-none" />
       
-      <div className="container mx-auto max-w-6xl relative">
+      <div className="container-wide relative">
         <div className="text-center mb-16 animate-fade-in">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/10 border border-secondary/20 mb-6">
-            <Briefcase className="w-5 h-5 text-secondary" />
-            <span className="text-sm font-semibold text-secondary">Career Path</span>
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary/10 border border-secondary/20 mb-6">
+            <Briefcase className="w-4 h-4 text-secondary" />
+            <span className="text-xs font-semibold text-secondary uppercase tracking-wide">Career Path</span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+          <h2 className="mb-4 text-white">
             Professional Experience
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-base text-muted-foreground max-w-2xl mx-auto">
             Delivering data-driven solutions and driving business impact through analytics
           </p>
         </div>
-        <div className="space-y-8">
+        <div className="space-y-6 max-w-5xl mx-auto">
           {experiences.map((exp, index) => <Card key={index} 
-              className="glass-card hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in border-secondary/20 group"
+              className="glass-card hover:shadow-lg transition-all duration-300 hover:-translate-y-1 animate-fade-in border-secondary/20 group"
               style={{ animationDelay: `${index * 150}ms` }}>
               <CardHeader>
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">

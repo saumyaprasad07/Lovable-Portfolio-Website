@@ -67,20 +67,21 @@ const projects = [
 
 const CompactProjects = () => {
   return (
-    <section className="py-20 px-4 relative overflow-hidden">
+    <section className="section-spacing relative overflow-hidden bg-gradient-to-b from-background to-muted/20">
       {/* Background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
       </div>
 
-      <div className="container mx-auto relative z-10 max-w-7xl">
+      <div className="container-wide relative z-10">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-4">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 mb-6">
             <Sparkles className="w-4 h-4 text-primary" />
-            <span className="text-sm font-semibold text-primary">Portfolio Showcase</span>
+            <span className="text-xs font-semibold text-primary uppercase tracking-wide">Portfolio Showcase</span>
           </div>
+          <h2 className="mb-4">Featured Projects</h2>
         </div>
 
         {/* Projects Grid */}
