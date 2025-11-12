@@ -49,20 +49,20 @@ const About = () => {
     }
   ];
   return <section id="about" className="section-spacing bg-gradient-to-b from-background to-muted/20">
-      <div className="container-wide">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="mb-4">
+      <div className="container-wide px-4 md:px-6">
+        <div className="text-center mb-12 md:mb-16 animate-fade-in">
+          <h2 className="mb-4 px-4">
             About Me
           </h2>
         </div>
 
-        <div className="glass-card p-8 md:p-10 mb-16 animate-fade-in max-w-4xl mx-auto">
-          <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+        <div className="glass-card p-6 md:p-8 lg:p-10 mb-12 md:mb-16 animate-fade-in max-w-4xl mx-auto">
+          <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-4 md:mb-6">
             I'm a Data Analyst with expertise in business analytics, data visualization, and database management. 
             I have graduated from California State University Long Beach with a Master of Science in Information Systems, 
             where I combined technical proficiency with business acumen to deliver data-driven insights.
           </p>
-          <p className="text-lg text-muted-foreground leading-relaxed">
+          <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
             I specialize in SQL, Python, Tableau, and Power BI, creating automated dashboards and conducting 
             comprehensive analyses that drive strategic decision-making. My background includes roles at 
             California State University and experience in market research and project management.
@@ -70,21 +70,21 @@ const About = () => {
         </div>
 
         {/* Skills Section */}
-        <div className="mb-16">
-          <h3 className="text-center mb-8">
+        <div className="mb-12 md:mb-16">
+          <h3 className="text-center mb-6 md:mb-8 px-4">
             Skills & Expertise
           </h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {skills.map((skill, index) => <div key={index} className="glass-card p-6 group hover:border-primary/50 transition-all duration-300 animate-fade-in" style={{
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+            {skills.map((skill, index) => <div key={index} className="glass-card p-4 md:p-6 group hover:border-primary/50 transition-all duration-300 animate-fade-in" style={{
             animationDelay: `${index * 0.1}s`
           }}>
-                <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors" aria-hidden="true">
-                    <skill.icon className="h-6 w-6 text-primary" />
+                <div className="flex items-start gap-3 md:gap-4">
+                  <div className="p-2 md:p-3 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors flex-shrink-0" aria-hidden="true">
+                    <skill.icon className="h-5 w-5 md:h-6 md:w-6 text-primary" />
                   </div>
-                  <div>
-                    <h3 className="text-lg font-semibold mb-2">{skill.title}</h3>
-                    <p className="text-sm text-muted-foreground">{skill.description}</p>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-2">{skill.title}</h3>
+                    <p className="text-xs md:text-sm text-muted-foreground leading-relaxed">{skill.description}</p>
                   </div>
                 </div>
               </div>)}
@@ -93,19 +93,19 @@ const About = () => {
 
         {/* Certifications Section */}
         <div>
-          <h3 className="text-center mb-8">
+          <h3 className="text-center mb-6 md:mb-8 px-4">
             Professional Certifications
           </h3>
-          <div className="glass-card p-6 md:p-8 max-w-4xl mx-auto">
-            <ul className="grid md:grid-cols-2 gap-4">
+          <div className="glass-card p-5 md:p-6 lg:p-8 max-w-4xl mx-auto">
+            <ul className="grid md:grid-cols-2 gap-3 md:gap-4">
               {certifications.map((cert, index) => (
-                <li key={index} className="flex items-start gap-3">
-                  <div className="mt-1 h-2 w-2 rounded-full bg-primary flex-shrink-0" />
+                <li key={index} className="flex items-start gap-2 md:gap-3">
+                  <div className="mt-1.5 md:mt-1 h-2 w-2 rounded-full bg-primary flex-shrink-0" />
                   <a 
                     href={cert.url} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="text-muted-foreground hover:text-primary transition-colors underline"
+                    className="text-sm md:text-base text-muted-foreground hover:text-primary transition-colors underline break-words"
                   >
                     {cert.title}
                   </a>

@@ -10,12 +10,12 @@ const CareerPage = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4">
+      <section className="pt-24 md:pt-32 pb-12 md:pb-20 px-4">
         <div className="container-narrow text-center animate-fade-in">
-          <h1 className="mb-6 text-white">
+          <h1 className="mb-4 md:mb-6 text-white px-4">
             My Journey
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-sm md:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
             A path of continuous learning, growth, and impactful experiences in data analytics and business intelligence
           </p>
         </div>

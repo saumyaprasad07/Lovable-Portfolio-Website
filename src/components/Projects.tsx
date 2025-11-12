@@ -74,64 +74,64 @@ const CompactProjects = () => {
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
       </div>
 
-      <div className="container-wide relative z-10">
+      <div className="container-wide relative z-10 px-4 md:px-6">
         {/* Header */}
-        <div className="text-center mb-16 animate-fade-in">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 mb-6">
+        <div className="text-center mb-12 md:mb-16 animate-fade-in">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 mb-4 md:mb-6">
             <Sparkles className="w-4 h-4 text-primary" />
             <span className="text-xs font-semibold text-primary uppercase tracking-wide">Portfolio Showcase</span>
           </div>
-          <h2 className="mb-4">Featured Projects</h2>
+          <h2 className="mb-4 px-4">Featured Projects</h2>
         </div>
 
         {/* Projects Grid */}
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
           {projects.map((project, index) => (
             <div 
               key={index}
               className="group relative animate-fade-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="relative rounded-2xl overflow-hidden bg-card/80 backdrop-blur-sm border border-border/50 hover:border-primary/50 transition-all duration-500 hover:shadow-xl hover:shadow-primary/10 h-full">
+              <div className="relative rounded-xl md:rounded-2xl overflow-hidden bg-card/80 backdrop-blur-sm border border-border/50 hover:border-primary/50 transition-all duration-500 hover:shadow-xl hover:shadow-primary/10 h-full">
                 
                 {/* Gradient overlay */}
                 <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}></div>
                 
-                <div className="p-6 relative flex flex-col h-full">
+                <div className="p-4 md:p-6 relative flex flex-col h-full">
                   {/* Header */}
-                  <div className="mb-4">
-                    <span className="text-xs font-bold tracking-wider text-muted-foreground mb-2 block">
+                  <div className="mb-3 md:mb-4">
+                    <span className="text-[10px] md:text-xs font-bold tracking-wider text-muted-foreground mb-1.5 md:mb-2 block">
                       {project.category}
                     </span>
-                    <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">
+                    <h3 className="text-base md:text-xl font-bold mb-1.5 md:mb-2 group-hover:text-primary transition-colors leading-tight">
                       {project.title}
                     </h3>
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-xs md:text-sm text-muted-foreground leading-relaxed">
                       {project.subtitle}
                     </p>
                   </div>
 
                   {/* Impact badge */}
-                  <div className="mb-4">
-                    <div className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-gradient-to-r ${project.gradient} bg-opacity-10 border border-current border-opacity-20`}>
+                  <div className="mb-3 md:mb-4">
+                    <div className={`inline-flex items-center gap-1.5 md:gap-2 px-2.5 md:px-3 py-1 md:py-1.5 rounded-full bg-gradient-to-r ${project.gradient} bg-opacity-10 border border-current border-opacity-20`}>
                       <Sparkles className="w-3 h-3" />
-                      <span className="text-xs font-semibold">{project.impact}</span>
+                      <span className="text-[10px] md:text-xs font-semibold">{project.impact}</span>
                     </div>
                   </div>
 
                   {/* Outcome */}
-                  <div className="p-4 rounded-xl bg-muted/30 border border-border/50 mb-4 flex-grow">
-                    <p className="text-sm text-muted-foreground leading-relaxed">
+                  <div className="p-3 md:p-4 rounded-lg md:rounded-xl bg-muted/30 border border-border/50 mb-3 md:mb-4 flex-grow">
+                    <p className="text-xs md:text-sm text-muted-foreground leading-relaxed">
                       {project.outcome}
                     </p>
                   </div>
 
                   {/* Tech stack */}
-                  <div className="flex flex-wrap gap-2 mb-4">
+                  <div className="flex flex-wrap gap-1.5 md:gap-2 mb-3 md:mb-4">
                     {project.tech.map((tech, i) => (
                       <span 
                         key={i}
-                        className="px-3 py-1 text-xs font-medium rounded-full bg-muted/50 border border-border/50"
+                        className="px-2 md:px-3 py-0.5 md:py-1 text-[10px] md:text-xs font-medium rounded-full bg-muted/50 border border-border/50"
                       >
                         {tech}
                       </span>
@@ -144,9 +144,9 @@ const CompactProjects = () => {
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg bg-background border border-border hover:border-primary hover:bg-primary/5 transition-all duration-300 text-sm"
+                      className="flex-1 inline-flex items-center justify-center gap-1.5 md:gap-2 px-3 md:px-4 py-2 rounded-lg bg-background border border-border hover:border-primary hover:bg-primary/5 transition-all duration-300 text-xs md:text-sm"
                     >
-                      <Github className="w-4 h-4" />
+                      <Github className="w-3.5 h-3.5 md:w-4 md:h-4" />
                       <span className="font-medium">Code</span>
                     </a>
                     {project.live && (
@@ -154,9 +154,9 @@ const CompactProjects = () => {
                         href={project.live}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={`flex-1 inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r ${project.gradient} text-white hover:shadow-lg hover:shadow-primary/20 transition-all duration-300 text-sm`}
+                        className={`flex-1 inline-flex items-center justify-center gap-1.5 md:gap-2 px-3 md:px-4 py-2 rounded-lg bg-gradient-to-r ${project.gradient} text-white hover:shadow-lg hover:shadow-primary/20 transition-all duration-300 text-xs md:text-sm`}
                       >
-                        <ExternalLink className="w-4 h-4" />
+                        <ExternalLink className="w-3.5 h-3.5 md:w-4 md:h-4" />
                         <span className="font-medium">Demo</span>
                       </a>
                     )}
