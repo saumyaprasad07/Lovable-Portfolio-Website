@@ -27,36 +27,12 @@ const CareerTimeline = () => {
       description: "Conducted market research on CSU PACE programs, performing data analytics on 25K+ rows to identify trends"
     },
     {
-      type: "certification",
-      icon: Award,
-      title: "Google Advanced Data Analytics",
-      organization: "Coursera",
-      date: "2024",
-      description: "Professional Certificate in Advanced Data Analytics"
-    },
-    {
-      type: "certification",
-      icon: Award,
-      title: "Google Business Intelligence",
-      organization: "Coursera",
-      date: "2024",
-      description: "Professional Certificate in Business Intelligence"
-    },
-    {
       type: "education",
       icon: GraduationCap,
       title: "B.E. in Information Technology",
       organization: "University of Mumbai",
       date: "May 2023",
       description: "GPA: 3.5 | Focus: Business Intelligence, Machine Learning, Data Science & AI"
-    },
-    {
-      type: "certification",
-      icon: Award,
-      title: "AWS Academy Cloud Foundations",
-      organization: "AWS",
-      date: "2023",
-      description: "Cloud computing fundamentals and AWS services"
     }
   ];
 

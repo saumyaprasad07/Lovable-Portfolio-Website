@@ -46,7 +46,8 @@ const About = () => {
     {
       title: "HackerRank SQL Intermediate",
       url: "https://www.hackerrank.com/certificates/646ec66e4b25"
-    }
+    },
+    
   ];
   return <section id="about" className="section-spacing bg-gradient-to-b from-background to-muted/20">
       <div className="container-wide px-4 md:px-6">
