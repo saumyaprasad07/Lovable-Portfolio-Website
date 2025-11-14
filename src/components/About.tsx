@@ -51,22 +51,45 @@ const About = () => {
   return <section id="about" className="section-spacing bg-gradient-to-b from-background to-muted/20">
       <div className="container-wide px-4 md:px-6">
         <div className="text-center mb-12 md:mb-16 animate-fade-in">
-          <h2 className="mb-4 px-4">
+          <h2 className="heading-2 mb-4">
             About Me
           </h2>
         </div>
 
-        <div className="glass-card p-6 md:p-8 lg:p-10 mb-12 md:mb-16 animate-fade-in max-w-4xl mx-auto">
-          <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-4 md:mb-6">
-            I'm a Data Analyst with expertise in business analytics, data visualization, and database management. 
-            I have graduated from California State University Long Beach with a Master of Science in Information Systems, 
-            where I combined technical proficiency with business acumen to deliver data-driven insights.
-          </p>
-          <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-            I specialize in SQL, Python, Tableau, and Power BI, creating automated dashboards and conducting 
-            comprehensive analyses that drive strategic decision-making. My background includes roles at 
-            California State University and experience in market research and project management.
-          </p>
+        {/* Two-column layout */}
+        <div className="glass-card p-6 md:p-8 lg:p-10 mb-12 md:mb-16 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-[300px_1fr] lg:grid-cols-[350px_1fr] gap-8 md:gap-10 lg:gap-12 items-start">
+            {/* Left column - Avatar/Photo */}
+            <div className="flex justify-center md:justify-start animate-fade-in">
+              <div className="relative w-48 h-48 md:w-64 md:h-64 lg:w-full lg:h-auto lg:aspect-square rounded-2xl bg-gradient-to-br from-primary/20 via-secondary/20 to-accent/20 border-2 border-primary/30 overflow-hidden group">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="text-6xl md:text-7xl lg:text-8xl opacity-50 group-hover:scale-110 transition-transform duration-500">
+                    👨‍💼
+                  </div>
+                </div>
+                {/* Replace the emoji above with an actual image when available:
+                <img 
+                  src="/path-to-your-photo.jpg" 
+                  alt="Saumya Prasad" 
+                  className="w-full h-full object-cover"
+                /> */}
+              </div>
+            </div>
+
+            {/* Right column - Text content */}
+            <div className="space-y-5 md:space-y-6 animate-fade-in" style={{ animationDelay: "150ms" }}>
+              <p className="body-large leading-relaxed text-muted-foreground">
+                I'm a <span className="font-bold text-primary">Data Analyst</span> with expertise in business analytics, data visualization, and database management. 
+                I have graduated from California State University Long Beach with a Master of Science in Information Systems, 
+                where I combined technical proficiency with business acumen to deliver <span className="font-bold text-secondary">data-driven insights</span>.
+              </p>
+              <p className="body-large leading-relaxed text-muted-foreground">
+                I specialize in <span className="font-bold text-accent">SQL</span>, <span className="font-bold text-accent">Python</span>, <span className="font-bold text-accent">Tableau</span>, and <span className="font-bold text-accent">Power BI</span>, creating automated dashboards and conducting 
+                comprehensive analyses that drive strategic decision-making. My background includes roles at 
+                California State University and experience in market research and project management, focused on turning complex <span className="font-bold text-primary">Data Analytics</span> into actionable business strategies.
+              </p>
+            </div>
+          </div>
         </div>
 
         {/* Skills Section */}
