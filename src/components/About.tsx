@@ -62,6 +62,12 @@ const About = () => {
       logo: hackerrankLogo,
       url: "https://www.hackerrank.com/certificates/646ec66e4b25"
     },
+    {
+      title: "Oracle Analytics Cloud 2025 Certified Professional",
+      provider: "Oracle",
+      logo: hackerrankLogo,
+      url: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=1D743272F69487A1E287924BF22D0C5F638E9DAB20AE2868D9570F333DD8E9FA"
+    }
   ];
   return <section id="about" className="section-spacing bg-gradient-to-b from-background to-muted/20">
       <div className="container-wide px-4 md:px-6">
