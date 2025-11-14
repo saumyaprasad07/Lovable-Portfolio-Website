@@ -1,4 +1,9 @@
-import { Code2, Database, BarChart3, ClipboardCheck, GitBranch, TrendingUp } from "lucide-react";
+import { Code2, Database, BarChart3, ClipboardCheck, GitBranch, TrendingUp, CheckCircle2 } from "lucide-react";
+import googleLogo from "@/assets/cert-google.png";
+import tableauLogo from "@/assets/cert-tableau.svg";
+import awsLogo from "@/assets/cert-aws.svg";
+import hackerrankLogo from "@/assets/cert-hackerrank.png";
+
 const About = () => {
   const skills = [{
     icon: Code2,
@@ -28,26 +33,35 @@ const About = () => {
 
   const certifications = [
     {
-      title: "Google Advanced Data Analytics Professional Certificate",
+      title: "Google Advanced Data Analytics",
+      provider: "Google",
+      logo: googleLogo,
       url: "https://www.coursera.org/account/accomplishments/specialization/L1UFPKLC27OQ"
     },
     {
-      title: "Google Business Intelligence Professional Certificate",
+      title: "Google Business Intelligence",
+      provider: "Google",
+      logo: googleLogo,
       url: "https://www.coursera.org/account/accomplishments/specialization/COZ84CYGX9W4"
     },
     {
       title: "Tableau Fundamentals",
+      provider: "Tableau",
+      logo: tableauLogo,
       url: "https://verify.skilljar.com/c/ait3fsck8x6t"
     },
     {
       title: "AWS Academy Cloud Foundations",
+      provider: "AWS",
+      logo: awsLogo,
       url: "https://www.credly.com/badges/2a5cd426-8544-46bb-a440-db9e454266ee/linked_in_profile"
     },
     {
       title: "HackerRank SQL Intermediate",
+      provider: "HackerRank",
+      logo: hackerrankLogo,
       url: "https://www.hackerrank.com/certificates/646ec66e4b25"
     },
-    
   ];
   return <section id="about" className="section-spacing bg-gradient-to-b from-background to-muted/20">
       <div className="container-wide px-4 md:px-6">
@@ -120,22 +134,40 @@ const About = () => {
           <h3 className="text-center mb-6 md:mb-8 px-4">
             Professional Certifications
           </h3>
-          <div className="glass-card p-5 md:p-6 lg:p-8 max-w-4xl mx-auto">
-            <ul className="grid md:grid-cols-2 gap-3 md:gap-4">
-              {certifications.map((cert, index) => (
-                <li key={index} className="flex items-start gap-2 md:gap-3">
-                  <div className="mt-1.5 md:mt-1 h-2 w-2 rounded-full bg-primary flex-shrink-0" />
-                  <a 
-                    href={cert.url} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-sm md:text-base text-muted-foreground hover:text-primary transition-colors underline break-words"
-                  >
+          <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+            {certifications.map((cert, index) => (
+              <a
+                key={index}
+                href={cert.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="glass-card p-6 group hover:border-primary/50 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 animate-fade-in flex flex-col items-center text-center gap-4"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                {/* Logo */}
+                <div className="w-16 h-16 flex items-center justify-center bg-background/50 rounded-xl p-3 group-hover:scale-110 transition-transform duration-300">
+                  <img 
+                    src={cert.logo} 
+                    alt={`${cert.provider} logo`}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                
+                {/* Title */}
+                <div className="flex-1">
+                  <h4 className="text-sm md:text-base font-semibold mb-1 group-hover:text-primary transition-colors">
                     {cert.title}
-                  </a>
-                </li>
-              ))}
-            </ul>
+                  </h4>
+                  <p className="text-xs text-muted-foreground">{cert.provider}</p>
+                </div>
+                
+                {/* Verified Badge */}
+                <div className="flex items-center gap-1.5 text-accent">
+                  <CheckCircle2 className="h-4 w-4" />
+                  <span className="text-xs font-medium">Verified</span>
+                </div>
+              </a>
+            ))}
           </div>
         </div>
       </div>
