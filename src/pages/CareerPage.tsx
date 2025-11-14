@@ -1,6 +1,5 @@
 import Navigation from "@/components/Navigation";
-import Education from "@/components/Education";
-import Experience from "@/components/Experience";
+import CareerTimeline from "@/components/CareerTimeline";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 
@@ -8,21 +7,7 @@ const CareerPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-background via-background to-muted/20">
       <Navigation />
-      
-      {/* Hero Section */}
-      <section className="pt-24 md:pt-32 pb-12 md:pb-20 px-4">
-        <div className="container-narrow text-center animate-fade-in">
-          <h1 className="mb-4 md:mb-6 text-white px-4">
-            My Journey
-          </h1>
-          <p className="text-sm md:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
-            A path of continuous learning, growth, and impactful experiences in data analytics and business intelligence
-          </p>
-        </div>
-      </section>
-
-      <Education />
-      <Experience />
+      <CareerTimeline />
       <Footer />
       <ScrollToTop />
     </div>
