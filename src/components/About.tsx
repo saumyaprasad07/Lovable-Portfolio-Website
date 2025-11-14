@@ -131,40 +131,46 @@ const About = () => {
 
         {/* Certifications Section */}
         <div>
-          <h3 className="text-center mb-6 md:mb-8 px-4">
+          <h3 className="text-center mb-8 md:mb-12 px-4 text-3xl md:text-4xl font-bold">
             Professional Certifications
           </h3>
-          <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+          <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
             {certifications.map((cert, index) => (
               <a
                 key={index}
                 href={cert.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="glass-card p-6 group hover:border-primary/50 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 animate-fade-in flex flex-col items-center text-center gap-4"
+                className="glass-card p-6 md:p-8 group hover:border-primary/50 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 animate-fade-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                {/* Logo */}
-                <div className="w-16 h-16 flex items-center justify-center bg-background/50 rounded-xl p-3 group-hover:scale-110 transition-transform duration-300">
-                  <img 
-                    src={cert.logo} 
-                    alt={`${cert.provider} logo`}
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-                
-                {/* Title */}
-                <div className="flex-1">
-                  <h4 className="text-sm md:text-base font-semibold mb-1 group-hover:text-primary transition-colors">
-                    {cert.title}
-                  </h4>
-                  <p className="text-xs text-muted-foreground">{cert.provider}</p>
-                </div>
-                
-                {/* Verified Badge */}
-                <div className="flex items-center gap-1.5 text-accent">
-                  <CheckCircle2 className="h-4 w-4" />
-                  <span className="text-xs font-medium">Verified</span>
+                {/* Horizontal layout: Logo + Content */}
+                <div className="flex items-start gap-5 md:gap-6">
+                  {/* Logo */}
+                  <div className="w-20 h-20 md:w-24 md:h-24 flex items-center justify-center bg-background/50 rounded-xl p-4 group-hover:scale-105 transition-transform duration-300 flex-shrink-0">
+                    <img 
+                      src={cert.logo} 
+                      alt={`${cert.provider} logo`}
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                  
+                  {/* Content */}
+                  <div className="flex-1 flex flex-col justify-between min-h-[80px] md:min-h-[96px]">
+                    {/* Title and Subtitle */}
+                    <div>
+                      <h4 className="text-lg md:text-xl lg:text-2xl font-bold mb-1 group-hover:text-primary transition-colors leading-tight">
+                        {cert.title}
+                      </h4>
+                      <p className="text-sm md:text-base text-muted-foreground">Professional Certificate</p>
+                    </div>
+                    
+                    {/* Verified Badge */}
+                    <div className="flex items-center gap-2 mt-3">
+                      <CheckCircle2 className="h-4 w-4 md:h-5 md:w-5 text-accent" />
+                      <span className="text-sm font-medium text-foreground">Verified</span>
+                    </div>
+                  </div>
                 </div>
               </a>
             ))}
