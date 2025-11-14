@@ -15,11 +15,9 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 py-16 md:py-20 text-center animate-fade-in">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 max-w-5xl mx-auto leading-tight px-4">
-          Hi, I'm Saumya Prasad — Data & Business Analyst | BI | SQL | Python | Tableau
+          Hi, I'm Saumya Prasad    
         </h1>
-        <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground/90 mb-3 md:mb-4 max-w-2xl mx-auto font-medium px-4">
-          Transforming data into strategic insights
-        </p>
+        
         
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row flex-wrap gap-3 md:gap-4 justify-center mb-12 md:mb-16 px-4 max-w-2xl mx-auto">
