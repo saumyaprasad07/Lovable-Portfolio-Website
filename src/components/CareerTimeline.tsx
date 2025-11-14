@@ -1,41 +1,34 @@
 import { GraduationCap, Briefcase, Award } from "lucide-react";
-
 const CareerTimeline = () => {
-  const timelineItems = [
-    {
-      type: "experience",
-      icon: Briefcase,
-      title: "Project Manager",
-      organization: "Saayam for All",
-      date: "Aug 2025 - Present",
-      description: "Supported project planning with timelines, resource allocation, and documentation, improving delivery efficiency by 20%"
-    },
-    {
-      type: "education",
-      icon: GraduationCap,
-      title: "Master of Science in Information Systems",
-      organization: "California State University Long Beach",
-      date: "May 2025",
-      description: "GPA: 3.5 | Focus: Business Data Analytics, Project Management, DBMS"
-    },
-    {
-      type: "experience",
-      icon: Briefcase,
-      title: "Market Research Data Analyst",
-      organization: "California State University Long Beach",
-      date: "Mar 2024 - May 2024",
-      description: "Conducted market research on CSU PACE programs, performing data analytics on 25K+ rows to identify trends"
-    },
-    {
-      type: "education",
-      icon: GraduationCap,
-      title: "B.E. in Information Technology",
-      organization: "University of Mumbai",
-      date: "May 2023",
-      description: "GPA: 3.5 | Focus: Business Intelligence, Machine Learning, Data Science & AI"
-    }
-  ];
-
+  const timelineItems = [{
+    type: "experience",
+    icon: Briefcase,
+    title: "Project Manager",
+    organization: "Saayam for All",
+    date: "Aug 2025 - Present",
+    description: "Supported project planning with timelines, resource allocation, and documentation, improving delivery efficiency by 20%"
+  }, {
+    type: "education",
+    icon: GraduationCap,
+    title: "Master of Science in Information Systems",
+    organization: "California State University Long Beach",
+    date: "May 2025",
+    description: "GPA: 3.5 | Focus: Business Data Analytics, Project Management, DBMS"
+  }, {
+    type: "experience",
+    icon: Briefcase,
+    title: "Market Research Data Analyst",
+    organization: "California State University Long Beach",
+    date: "Mar 2024 - May 2024",
+    description: "Conducted market research on CSU PACE programs, performing data analytics on 25K+ rows to identify trends"
+  }, {
+    type: "education",
+    icon: GraduationCap,
+    title: "B.E. in Information Technology",
+    organization: "University of Mumbai",
+    date: "May 2023",
+    description: "GPA: 3.5 | Focus: Business Intelligence, Machine Learning, Data Science & AI"
+  }];
   const getTypeColor = (type: string) => {
     switch (type) {
       case "education":
@@ -48,9 +41,7 @@ const CareerTimeline = () => {
         return "border-muted bg-muted/10 text-muted-foreground";
     }
   };
-
-  return (
-    <section className="section-spacing relative overflow-hidden">
+  return <section className="section-spacing relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-background via-muted/5 to-background pointer-events-none" />
       
       <div className="container-wide relative px-4 md:px-6">
@@ -58,9 +49,7 @@ const CareerTimeline = () => {
           <h2 className="heading-2 mb-4">
             My Journey
           </h2>
-          <p className="body-large text-muted-foreground max-w-2xl mx-auto">
-            A timeline of continuous learning, growth, and impactful experiences
-          </p>
+          
         </div>
 
         <div className="max-w-4xl mx-auto relative">
@@ -69,13 +58,10 @@ const CareerTimeline = () => {
 
           <div className="space-y-8">
             {timelineItems.map((item, index) => {
-              const Icon = item.icon;
-              return (
-                <div
-                  key={index}
-                  className="relative pl-16 md:pl-20 animate-fade-in group"
-                  style={{ animationDelay: `${index * 100}ms` }}
-                >
+            const Icon = item.icon;
+            return <div key={index} className="relative pl-16 md:pl-20 animate-fade-in group" style={{
+              animationDelay: `${index * 100}ms`
+            }}>
                   {/* Icon node */}
                   <div className={`absolute left-0 p-3 md:p-4 rounded-full border-2 ${getTypeColor(item.type)} transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg z-10`}>
                     <Icon className="h-5 w-5 md:h-6 md:w-6" />
@@ -88,11 +74,7 @@ const CareerTimeline = () => {
                         <h3 className="text-lg md:text-xl font-semibold text-foreground mb-1">
                           {item.title}
                         </h3>
-                        <p className={`text-sm md:text-base font-medium ${
-                          item.type === "education" ? "text-primary" :
-                          item.type === "experience" ? "text-secondary" :
-                          "text-accent"
-                        }`}>
+                        <p className={`text-sm md:text-base font-medium ${item.type === "education" ? "text-primary" : item.type === "experience" ? "text-secondary" : "text-accent"}`}>
                           {item.organization}
                         </p>
                       </div>
@@ -104,14 +86,11 @@ const CareerTimeline = () => {
                       {item.description}
                     </p>
                   </div>
-                </div>
-              );
-            })}
+                </div>;
+          })}
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default CareerTimeline;
