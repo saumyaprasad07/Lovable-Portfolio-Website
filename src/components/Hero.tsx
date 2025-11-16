@@ -30,7 +30,7 @@ const Hero = () => {
             <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
           </Button>
           <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground w-full sm:w-auto text-base font-semibold shadow-lg hover:shadow-xl transition-all" asChild>
-            <a href="https://drive.google.com/file/d/14hNBWWwp_tZwPdrzwQJcGAJ2LT4-r9Qz/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+            <a href="https://drive.google.com/file/d/1saA4L0ZsKbRDAtk3bgZMmBMenAzZAOBo/view?usp=sharing" target="_blank" rel="noopener noreferrer">
               <Download className="mr-2 h-5 w-5" />
               Download Resume
             </a>
