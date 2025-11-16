@@ -5,13 +5,17 @@ const CareerTimeline = () => {
     {
       type: "experience",
       icon: Briefcase,
-      title: "Project Manager",
-      organization: "Saayam for All",
+      title: "Product Analyst",
+      organization: "ServiceNow",
       location: "Remote",
       date: "Aug 2025 - Present",
       responsibilities: [
-        "Supported project planning with timelines, resource allocation, and documentation, improving delivery efficiency by 20%",
-        "Coordinate project activities by scheduling and facilitating meetings, preparing agendas and minutes, and managing related documentation across various platforms such as MS Project, Asana, and Trello"
+        "Defined key product KPIs and success metrics—including feature activation, time-to-value, workflow completion, and retention rate—for a simulated SaaS platform to measure feature adoption and overall product performance.",
+        "Designed a complete event-tracking and instrumentation schema, mapping end-to-end workflow steps to measurable behavioral events, enabling accurate product analytics and usage attribution.",
+        "Extracted, cleaned, and modeled product-usage datasets using SQL and Python, creating funnel, cohort, and segmentation analyses to identify user drop-off points and behavioral patterns.",
+        "Conducted A/B testing and experimentation analysis, measuring conversion lift, running statistical significance tests, and determining the optimal feature variant for rollout.",
+        "Built interactive dashboards in Power BI visualizing adoption trends, workflow efficiency, retention cohorts, and segment-level performance for stakeholder visibility.",
+        "Delivered actionable insights through root-cause analysis, identifying workflow friction and low-adoption segments, and recommending product optimizations that informed roadmap prioritization."
       ]
     },
     {
