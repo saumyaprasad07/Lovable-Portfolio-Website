@@ -10,7 +10,7 @@ const CareerTimeline = () => {
       location: "Remote",
       date: "Aug 2025 - Present",
       responsibilities: [
-        "Defined key product KPIs and success metrics—including feature activation, time-to-value, workflow completion, and retention rate—for a simulated SaaS platform to measure feature adoption and overall product performance.",
+        "Defined key product KPIs and success metrics—including feature activation, time-to-value, workflow completion, and retention rate - for a simulated SaaS platform to measure feature adoption and overall product performance.",
         "Designed a complete event-tracking and instrumentation schema, mapping end-to-end workflow steps to measurable behavioral events, enabling accurate product analytics and usage attribution.",
         "Extracted, cleaned, and modeled product-usage datasets using SQL and Python, creating funnel, cohort, and segmentation analyses to identify user drop-off points and behavioral patterns.",
         "Conducted A/B testing and experimentation analysis, measuring conversion lift, running statistical significance tests, and determining the optimal feature variant for rollout.",
