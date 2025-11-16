@@ -18,7 +18,7 @@ const Hero = () => {
           Hi, I'm Saumya Prasad  
         </h1>
         <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground/90 mb-3 md:mb-4 max-w-2xl mx-auto font-medium px-4">
-          Data & Business Analytics | Product & Growth Analyst                                                    
+          Data | Business | Product                                                   
         </p>
         
         {/* CTA Buttons */}
@@ -41,12 +41,7 @@ const Hero = () => {
             Get In Touch
           </Button>
         </div>
-        
-        {/* Portfolio PDF Link */}
-        <div className="flex justify-center mb-12 md:mb-16 px-4">
-          
-        </div>
-
+      
         {/* Social Links */}
         <div className="flex gap-3 md:gap-4 justify-center px-4">
           <a href="https://github.com/saumyaprasad07" target="_blank" rel="noopener noreferrer" className="p-2.5 md:p-3 rounded-full border border-border hover:border-primary hover:bg-primary/10 transition-all duration-300">
