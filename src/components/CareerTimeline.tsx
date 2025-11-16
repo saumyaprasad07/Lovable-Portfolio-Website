@@ -56,7 +56,7 @@ const CareerTimeline = () => {
       title: "Product Analyst",
       organization: "Orion Technolab",
       location: "India",
-      date: "Mar 2024 - May 2024",
+      date: "Jan 2020 - Jul 2023",
       responsibilities: [
         "Led end-to-end conversion and retention analysis for a high-volume grocery delivery app, identifying key friction points—including a 35% drop-off from checkout to payment—and uncovering segment-specific issues across cities, devices, and payment methods.",
         "Designed, analyzed, and optimized A/B experiments (homepage banners, checkout flows, delivery threshold tests), achieving a 7% lift in add-to-cart → order conversions and reducing COD-related drop-offs through targeted UX improvements.",
