@@ -8,7 +8,7 @@ const CareerTimeline = () => {
       title: "Product Analyst",
       organization: "ServiceNow",
       location: "Remote",
-      date: "Aug 2025 - Present",
+      date: "Nov 2024 - Present",
       responsibilities: [
         "Defined key product KPIs and success metrics—including feature activation, time-to-value, workflow completion, and retention rate - for a simulated SaaS platform to measure feature adoption and overall product performance.",
         "Designed a complete event-tracking and instrumentation schema, mapping end-to-end workflow steps to measurable behavioral events, enabling accurate product analytics and usage attribution.",
@@ -50,6 +50,18 @@ const CareerTimeline = () => {
       date: "May 2023",
       gpa: "3.5",
       coursework: ["Business Intelligence", "Machine Learning & Deep Learning", "Data Science & AI", "Cloud Computing", "Computer Networks"]
+    },{
+      type: "experience",
+      icon: Briefcase,
+      title: "Product Analyst",
+      organization: "Orion Technolab",
+      location: "India",
+      date: "Mar 2024 - May 2024",
+      responsibilities: [
+        "Led end-to-end conversion and retention analysis for a high-volume grocery delivery app, identifying key friction points—including a 35% drop-off from checkout to payment—and uncovering segment-specific issues across cities, devices, and payment methods.",
+        "Designed, analyzed, and optimized A/B experiments (homepage banners, checkout flows, delivery threshold tests), achieving a 7% lift in add-to-cart → order conversions and reducing COD-related drop-offs through targeted UX improvements.",
+        "Built SQL-based product and operations dashboards, diagnosing delivery inefficiencies and identifying dark-store locations causing 20–25% slower deliveries, enabling faster data-driven decisions across product, engineering, and ops teams."
+      ]
     }
   ];
 
