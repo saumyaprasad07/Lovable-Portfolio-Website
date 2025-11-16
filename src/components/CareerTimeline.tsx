@@ -31,7 +31,7 @@ const CareerTimeline = () => {
     {
       type: "experience",
       icon: Briefcase,
-      title: "Market Research Data Analyst",
+      title: "Data Analyst",
       organization: "California State University Long Beach",
       location: "Long Beach, CA",
       date: "Mar 2024 - May 2024",
