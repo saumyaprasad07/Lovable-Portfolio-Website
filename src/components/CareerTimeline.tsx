@@ -9,14 +9,10 @@ const CareerTimeline = () => {
       organization: "ServiceNow",
       location: "Remote",
       date: "Nov 2024 - Present",
-      responsibilities: [
-        "Defined key product KPIs and success metrics—including feature activation, time-to-value, workflow completion, and retention rate - for a simulated SaaS platform to measure feature adoption and overall product performance.",
-        "Designed a complete event-tracking and instrumentation schema, mapping end-to-end workflow steps to measurable behavioral events, enabling accurate product analytics and usage attribution.",
-        "Extracted, cleaned, and modeled product-usage datasets using SQL and Python, creating funnel, cohort, and segmentation analyses to identify user drop-off points and behavioral patterns.",
-        "Conducted A/B testing and experimentation analysis, measuring conversion lift, running statistical significance tests, and determining the optimal feature variant for rollout.",
-        "Built interactive dashboards in Power BI visualizing adoption trends, workflow efficiency, retention cohorts, and segment-level performance for stakeholder visibility.",
-        "Delivered actionable insights through root-cause analysis, identifying workflow friction and low-adoption segments, and recommending product optimizations that informed roadmap prioritization."
-      ]
+      responsibilities: ["Defined product KPIs, built event-tracking schemas, and analyzed usage data (funnels, cohorts, segmentation) using SQL & Python to uncover drop-offs and drive feature adoption.",
+                    "Led A/B testing and experimentation analysis, measuring conversion lift, running statistical-significance tests, and recommending the highest-impact feature variants.",
+                    "Created interactive Power BI dashboards and delivered actionable product insights, identifying workflow friction and informing roadmap priorities through data-driven recommendations."
+          ]
     },
     {
       type: "education",
