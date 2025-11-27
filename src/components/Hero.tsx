@@ -106,7 +106,7 @@ const Hero = () => {
         </div>
 
         {/* Stats Preview */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto">
+        <div className="flex flex-wrap justify-center gap-6 max-w-3xl mx-auto">
           {[
             { number: "3+", label: "Years Experience", icon: Award },
             { number: "15+", label: "Projects Completed", icon: TrendingUp },
@@ -116,7 +116,7 @@ const Hero = () => {
             return (
               <div
                 key={stat.label}
-                className="text-center p-4 soft-card hover-lift-subtle"
+                className="text-center p-4 soft-card hover-lift-subtle w-44"
               >
                 <div className="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-primary/10 mb-3">
                   <IconComponent className="w-5 h-5 text-primary" />
