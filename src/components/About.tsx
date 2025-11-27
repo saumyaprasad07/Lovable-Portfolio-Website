@@ -164,31 +164,17 @@ const About = () => {
               Comprehensive toolkit for end-to-end data analytics and business intelligence
             </p>
           </div>
-          
+
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {skills.map((skill, index) => (
               <div key={index} className="soft-card p-6 hover-lift-subtle">
-                <div className="flex items-start gap-4 mb-4">
-                  <div className="p-3 rounded-xl bg-primary/10">
-                    <skill.icon className="h-6 w-6 text-primary" />
+                <div className="flex items-start gap-4">
+                  <div className="p-4 rounded-full bg-blue-500/10 border border-blue-500/20 flex-shrink-0">
+                    <skill.icon className="h-6 w-6 text-blue-500" />
                   </div>
                   <div className="flex-1">
                     <h4 className="font-semibold text-foreground mb-2">{skill.title}</h4>
-                    <p className="text-sm text-muted-foreground mb-3">{skill.description}</p>
-                  </div>
-                </div>
-                
-                {/* Skill Level */}
-                <div className="space-y-2">
-                  <div className="flex justify-between items-center">
-                    <span className="text-xs font-medium text-muted-foreground">Proficiency</span>
-                    <span className="text-xs font-semibold text-primary">{skill.level}%</span>
-                  </div>
-                  <div className="w-full bg-muted rounded-full h-2">
-                    <div 
-                      className="h-full bg-gradient-to-r from-primary to-secondary rounded-full transition-all duration-1000"
-                      style={{ width: `${skill.level}%` }}
-                    />
+                    <p className="text-sm text-muted-foreground">{skill.description}</p>
                   </div>
                 </div>
               </div>
