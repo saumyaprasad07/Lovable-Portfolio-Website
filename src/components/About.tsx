@@ -5,42 +5,46 @@ import tableauCertIcon from "@/assets/cert-tableau.svg";
 import hackerrankCertIcon from "@/assets/cert-hackerrank.png";
 
 const About = () => {
-  const skills = [
+  const skillCategories = [
     {
       icon: Code2,
-      title: "Programming & Tools",
-      description: "Python (Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn), SQL (MySQL, PostgreSQL), R, Excel (Advanced Analytics)",
-      level: 95
+      title: "Programming Languages",
+      skills: ["Python", "SQL", "R", "JavaScript", "HTML/CSS"]
     },
     {
       icon: Database,
-      title: "Databases",
-      description: "MySQL, PostgreSQL, Snowflake, BigQuery, MongoDB, SQL Server",
-      level: 90
+      title: "Databases & Data Warehouses",
+      skills: ["MySQL", "PostgreSQL", "Snowflake", "BigQuery", "MongoDB", "SQL Server", "Oracle"]
     },
     {
       icon: TrendingUp,
-      title: "Cloud Platforms",
-      description: "AWS (S3, Redshift, Lambda, EC2), Google Cloud Platform (BigQuery, Cloud Storage), Microsoft Azure",
-      level: 85
+      title: "Cloud & Infrastructure",
+      skills: ["AWS (S3, Redshift, Lambda, EC2)", "Google Cloud Platform", "Microsoft Azure", "Cloud Storage Solutions"]
     },
     {
       icon: BarChart3,
-      title: "BI & Visualization Tools",
-      description: "Tableau, Power BI, Looker, Google Data Studio, Oracle Analytics Cloud, D3.js",
-      level: 92
+      title: "BI & Visualization",
+      skills: ["Tableau", "Power BI", "Looker", "Google Data Studio", "Oracle Analytics Cloud", "D3.js", "Matplotlib", "Seaborn"]
     },
     {
       icon: GitBranch,
-      title: "ETL & Data Processing",
-      description: "Apache Spark, Airflow, dbt, Data Pipeline Development, ETL Workflows",
-      level: 85
+      title: "ETL & Data Engineering",
+      skills: ["Apache Spark", "Apache Airflow", "dbt", "Data Pipeline Development", "ETL Workflows", "Data Integration"]
     },
     {
       icon: ClipboardCheck,
+      title: "Analytics & Frameworks",
+      skills: ["Python (Pandas, NumPy, Scikit-learn)", "Advanced Excel (Power Query, Pivot Tables, VBA)", "Statistical Analysis", "Predictive Modeling"]
+    },
+    {
+      icon: Lightbulb,
+      title: "AI & ML Tools",
+      skills: ["Scikit-learn", "TensorFlow", "Machine Learning Models", "Predictive Analytics", "NLP", "Data Mining Algorithms"]
+    },
+    {
+      icon: Target,
       title: "Product & Business Analytics",
-      description: "Product KPIs, Funnel Analysis, A/B Testing, Cohort Analysis, Market Research, Statistical Modeling",
-      level: 93
+      skills: ["KPI Development", "Funnel Analysis", "A/B Testing", "Cohort Analysis", "User Behavior Analytics", "Market Research", "Statistical Hypothesis Testing"]
     }
   ];
 
@@ -158,24 +162,30 @@ const About = () => {
         {/* Skills Section */}
         <div className="mb-16">
           <div className="text-center mb-12">
-            <h3 className="heading-2 mb-4">Technical Skills</h3>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Comprehensive toolkit for end-to-end data analytics and business intelligence
+            <h3 className="text-2xl font-bold mb-2">Technical Skills</h3>
+            <div className="w-24 h-1 bg-blue-500 mx-auto mb-4"></div>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Comprehensive expertise across modern data analytics, business intelligence, and product analytics technologies
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {skills.map((skill, index) => (
-              <div key={index} className="soft-card p-6 hover-lift-subtle">
-                <div className="flex items-start gap-4">
-                  <div className="p-4 rounded-full bg-blue-500/10 border border-blue-500/20 flex-shrink-0">
-                    <skill.icon className="h-6 w-6 text-blue-500" />
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+            {skillCategories.map((category, index) => (
+              <div key={index} className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="p-3 rounded-full bg-blue-500/10 border border-blue-500/20 flex-shrink-0">
+                    <category.icon className="h-5 w-5 text-blue-500" />
                   </div>
-                  <div className="flex-1">
-                    <h4 className="font-semibold text-foreground mb-2">{skill.title}</h4>
-                    <p className="text-sm text-muted-foreground">{skill.description}</p>
-                  </div>
+                  <h4 className="font-bold text-gray-900 text-sm leading-tight">{category.title}</h4>
                 </div>
+                <ul className="space-y-2">
+                  {category.skills.map((skill, skillIndex) => (
+                    <li key={skillIndex} className="text-sm text-gray-700 flex items-start">
+                      <span className="text-blue-500 mr-2">•</span>
+                      <span>{skill}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             ))}
           </div>
