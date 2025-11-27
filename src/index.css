@@ -3,6 +3,29 @@
 @tailwind utilities;
 
 /* Soft Modern Design System */
+/* --- FORCE LIGHT MODE ON LOVABLE --- */
+html,
+body {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+/* Even if Lovable injects `class="dark"`, override it */
+html.dark,
+body.dark {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+/* Prevent dark mode CSS variables from taking effect */
+html.dark {
+  --background: 0 0% 100% !important;
+  --foreground: 220 13% 18% !important;
+  --card: 0 0% 100% !important;
+  --card-foreground: 220 13% 18% !important;
+  --muted: 220 14% 96% !important;
+  --muted-foreground: 220 9% 46% !important;
+}
 
 @layer base {
   :root {
