@@ -154,12 +154,7 @@ const About = () => {
                       <highlight.icon className="h-5 w-5 text-primary" />
                     </div>
                     <div className="flex-1">
-                      <div className="flex items-center justify-between mb-2">
-                        <h4 className="font-semibold text-foreground">{highlight.title}</h4>
-                        <span className="px-2 py-1 bg-primary/10 rounded-full text-xs font-semibold text-primary">
-                          {highlight.metric}
-                        </span>
-                      </div>
+                      <h4 className="font-semibold text-foreground mb-2">{highlight.title}</h4>
                       <p className="text-sm text-muted-foreground">{highlight.description}</p>
                     </div>
                   </div>
