@@ -40,7 +40,7 @@ const Hero = () => {
         
         {/* Main Heading */}
         <div className="mb-8 space-y-4">
-          <h1 className="heading-display leading-tight !text-black !bg-transparent !text-opacity-100"">
+          <h1 className="heading-display leading-tight !text-black !bg-transparent !text-opacity-100">
             Saumya Prasad
           </h1>
 
