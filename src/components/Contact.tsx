@@ -6,7 +6,7 @@ const Contact = () => {
     <section id="contact" className="section-spacing bg-muted/30">
       <div className="container mx-auto max-w-4xl px-4">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="heading-1 mb-6">Let's Connect</h2>
+          <h2 className="heading-1 mb-6">Let's Work Together 🤝</h2>
           <p className="text-lg text-muted-foreground">
             Open to data analyst, BI analyst, and product analyst opportunities. Let's discuss how I can add value to your team.
           </p>
@@ -19,7 +19,7 @@ const Contact = () => {
                 <Mail className="h-6 w-6 text-primary" />
               </div>
               <div>
-                <h3 className="font-semibold mb-1">Email</h3>
+                <h3 className="font-semibold mb-1">📨 Email</h3>
                 <a
                   href="mailto:saumya.prasad460@gmail.com"
                   className="text-muted-foreground hover:text-primary transition-colors text-sm"
@@ -34,8 +34,8 @@ const Contact = () => {
                 <MapPin className="h-6 w-6 text-primary" />
               </div>
               <div>
-                <h3 className="font-semibold mb-1">Location</h3>
-                <p className="text-muted-foreground text-sm">New York, NY</p>
+                <h3 className="font-semibold mb-1">📍 Based in</h3>
+                <p className="text-muted-foreground text-sm">New York, USA</p>
               </div>
             </div>
           </div>
@@ -48,7 +48,7 @@ const Contact = () => {
               className="soft-card p-4 flex items-center gap-3 hover:text-primary transition-all hover-lift"
             >
               <Github className="h-5 w-5" />
-              <span className="font-medium">GitHub</span>
+              <span className="font-medium">💻 GitHub</span>
               <ExternalLink className="h-4 w-4 ml-auto" />
             </a>
 
@@ -59,18 +59,18 @@ const Contact = () => {
               className="soft-card p-4 flex items-center gap-3 hover:text-primary transition-all hover-lift"
             >
               <Linkedin className="h-5 w-5" />
-              <span className="font-medium">LinkedIn</span>
+              <span className="font-medium">🔗 LinkedIn</span>
               <ExternalLink className="h-4 w-4 ml-auto" />
             </a>
 
             <a
-              href="https://saumyaprasad.netlify.app/"
+              href="https://saumyaprasad.lovable.app"
               target="_blank"
               rel="noopener noreferrer"
               className="soft-card p-4 flex items-center gap-3 hover:text-primary transition-all hover-lift"
             >
               <ExternalLink className="h-5 w-5" />
-              <span className="font-medium">Portfolio</span>
+              <span className="font-medium">🌐 Portfolio Website</span>
               <ExternalLink className="h-4 w-4 ml-auto" />
             </a>
           </div>
