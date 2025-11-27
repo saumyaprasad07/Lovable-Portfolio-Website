@@ -152,20 +152,6 @@ const About = () => {
                 </p>
               </div>
 
-              {/* Key Highlights */}
-              <div className="grid gap-4">
-                {highlights.map((highlight, index) => (
-                  <div key={index} className="flex items-start gap-4 p-4 rounded-xl bg-muted/50 border border-border">
-                    <div className="p-2 rounded-lg bg-primary/10 flex-shrink-0">
-                      <highlight.icon className="h-5 w-5 text-primary" />
-                    </div>
-                    <div className="flex-1">
-                      <h4 className="font-semibold text-foreground mb-2">{highlight.title}</h4>
-                      <p className="text-sm text-muted-foreground">{highlight.description}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
             </div>
           </div>
         </div>
