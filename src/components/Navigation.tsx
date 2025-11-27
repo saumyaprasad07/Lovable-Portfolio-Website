@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-import ThemeToggle from "@/components/ThemeToggle";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -89,16 +88,14 @@ const Navigation = () => {
             </button>
             
             {isHomePage && (
-              <button 
-                onClick={() => scrollToSection("contact")} 
+              <button
+                onClick={() => scrollToSection("contact")}
                 className="text-foreground hover:text-primary transition-colors font-medium"
               >
                 Contact
               </button>
             )}
-            
-            <ThemeToggle />
-            
+
             <Button 
               className="button-primary"
               onClick={() => isHomePage ? scrollToSection("contact") : handleNavigation("/")}
@@ -109,9 +106,8 @@ const Navigation = () => {
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center gap-4">
-            <ThemeToggle />
-            <button 
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} 
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="p-2"
             >
               {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
