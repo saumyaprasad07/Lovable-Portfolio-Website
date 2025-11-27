@@ -2,12 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
-/* ------------------------ */
-/* BASE COLOR VARIABLES     */
-/* ------------------------ */
 @layer base {
   :root {
+    /* Soft Light Mode Colors */
     --background: 0 0% 100%;
     --foreground: 220 13% 18%;
 
@@ -17,6 +14,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 220 13% 18%;
 
+    /* Soft Modern Color Palette */
     --primary: 220 70% 50%;
     --primary-foreground: 0 0% 100%;
 
@@ -38,12 +36,14 @@
 
     --radius: 0.75rem;
 
+    /* Soft shadows */
     --shadow-soft: 0 2px 8px rgba(0, 0, 0, 0.04);
     --shadow-medium: 0 4px 16px rgba(0, 0, 0, 0.08);
     --shadow-large: 0 8px 32px rgba(0, 0, 0, 0.12);
   }
 
   .dark {
+    /* Soft Dark Mode */
     --background: 220 27% 8%;
     --foreground: 220 9% 95%;
 
@@ -74,15 +74,13 @@
   }
 }
 
-
-/* ------------------------ */
-/* UTILITIES                */
-/* ------------------------ */
 @layer utilities {
+  /* Soft gradient text */
   .gradient-text {
     @apply bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent;
   }
 
+  /* Soft cards */
   .soft-card {
     @apply bg-card border border-border rounded-2xl shadow-soft hover:shadow-medium transition-all duration-300;
   }
@@ -91,6 +89,7 @@
     @apply bg-card border border-border rounded-3xl shadow-medium hover:shadow-large transition-all duration-300;
   }
 
+  /* Soft spacing */
   .section-spacing {
     @apply py-16 md:py-24;
   }
@@ -99,6 +98,7 @@
     @apply container mx-auto max-w-7xl;
   }
 
+  /* Modern typography */
   .heading-display {
     @apply text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight;
   }
@@ -123,6 +123,7 @@
     @apply text-base md:text-lg leading-relaxed;
   }
 
+  /* Soft hover effects */
   .hover-lift {
     @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-medium;
   }
@@ -131,6 +132,7 @@
     @apply transition-all duration-300 hover:-translate-y-0.5 hover:shadow-soft;
   }
 
+  /* Modern buttons */
   .button-primary {
     @apply bg-gradient-to-r from-primary to-secondary text-white font-semibold px-6 py-3 rounded-xl shadow-soft hover:shadow-medium transition-all duration-300 border border-primary/20;
   }
@@ -140,10 +142,6 @@
   }
 }
 
-
-/* ------------------------ */
-/* GLOBAL ELEMENTS          */
-/* ------------------------ */
 @layer base {
   * {
     @apply border-border;
@@ -174,11 +172,13 @@
     @apply body-base text-muted-foreground;
   }
 
+  /* Smooth scrolling */
   html {
     scroll-behavior: smooth;
     scroll-padding-top: 80px;
   }
 
+  /* Custom scrollbar */
   ::-webkit-scrollbar {
     width: 8px;
   }
@@ -195,19 +195,18 @@
     @apply bg-primary;
   }
 
+  /* Selection styling */
   ::selection {
     @apply bg-primary/20 text-primary;
   }
 
+  /* Focus styles */
   :focus-visible {
     @apply outline-2 outline-offset-2 outline-primary;
   }
 }
 
-
-/* ------------------------ */
-/* ANIMATIONS               */
-/* ------------------------ */
+/* Simple animations */
 @keyframes fade-in {
   0% { opacity: 0; transform: translateY(20px); }
   100% { opacity: 1; transform: translateY(0); }
@@ -235,17 +234,26 @@
   animation: slide-in-right 0.6s ease-out;
 }
 
-
-/* ------------------------ */
-/* RESPONSIVE STYLES        */
-/* ------------------------ */
+/* Responsive design */
 @media (max-width: 768px) {
-  .section-spacing { @apply py-12; }
-  .heading-display { @apply text-3xl; }
-  .heading-1 { @apply text-2xl; }
-  .heading-2 { @apply text-xl; }
+  .section-spacing {
+    @apply py-12;
+  }
+  
+  .heading-display {
+    @apply text-3xl;
+  }
+  
+  .heading-1 {
+    @apply text-2xl;
+  }
+
+  .heading-2 {
+    @apply text-xl;
+  }
 }
 
+/* Reduced motion support */
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;
@@ -254,24 +262,21 @@
   }
 }
 
-
-/* -------------------------------------------------------- */
-/*      ⭐ FORCE LIGHT MODE ON LOVABLE (FINAL WORKING FIX)  */
-/* -------------------------------------------------------- */
-
-/* Do NOT override text colors → preserves gradient text */
+/* --- FORCE LIGHT MODE ON LOVABLE --- */
 html,
 body {
   background-color: #ffffff !important;
+  color: #000000 !important;
 }
 
-/* Lovable injects .dark → override ONLY variables, not text */
+/* Even if Lovable injects `class="dark"`, override it */
 html.dark,
 body.dark {
   background-color: #ffffff !important;
+  color: #000000 !important;
 }
 
-/* Override only dark theme variables */
+/* Prevent dark mode CSS variables from taking effect */
 html.dark {
   --background: 0 0% 100% !important;
   --foreground: 220 13% 18% !important;
@@ -279,9 +284,4 @@ html.dark {
   --card-foreground: 220 13% 18% !important;
   --muted: 220 14% 96% !important;
   --muted-foreground: 220 9% 46% !important;
-
-  /* Keep your gradients */
-  --primary: 220 70% 50% !important;
-  --secondary: 260 60% 45% !important;
-  --accent: 200 70% 40% !important;
 }
