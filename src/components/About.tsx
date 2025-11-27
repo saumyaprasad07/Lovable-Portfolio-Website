@@ -194,12 +194,13 @@ const About = () => {
         {/* Certifications Section */}
         <div>
           <div className="text-center mb-12">
-            <h3 className="heading-2 mb-4">Professional Certifications</h3>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Validated expertise from industry-leading organizations
+            <h3 className="text-2xl font-bold mb-2">Professional Certifications</h3>
+            <div className="w-24 h-1 bg-blue-500 mx-auto mb-4"></div>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Industry-recognized credentials validating expertise in data analytics, business intelligence, and cloud technologies
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {certifications.map((cert, index) => (
               <a
@@ -207,22 +208,35 @@ const About = () => {
                 href={cert.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="soft-card p-6 hover-lift text-center flex flex-col items-center justify-center min-h-[220px]"
+                className="bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-blue-400 hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group"
               >
                 {/* Logo */}
-                <div className="w-16 h-16 flex items-center justify-center bg-muted rounded-xl p-3 mb-4">
+                <div className="w-20 h-20 flex items-center justify-center bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-4 mb-4 group-hover:scale-110 transition-transform duration-300">
                   {cert.icon ? (
-                    <img src={cert.icon} alt={`${cert.provider} certification`} className="w-full h-full object-contain" />
+                    <img
+                      src={cert.icon}
+                      alt={`${cert.provider} certification`}
+                      className="w-full h-full object-contain"
+                    />
                   ) : (
-                    <Award className="w-8 h-8 text-primary" />
+                    <Award className="w-10 h-10 text-blue-600" />
                   )}
                 </div>
 
                 {/* Content */}
-                <div>
-                  <h4 className="font-semibold text-foreground mb-2 leading-tight">{cert.title}</h4>
-                  <p className="text-muted-foreground mb-1">{cert.provider}</p>
-                  <p className="text-sm text-muted-foreground">{cert.year}</p>
+                <div className="flex-1">
+                  <h4 className="font-bold text-gray-900 mb-2 leading-tight group-hover:text-blue-600 transition-colors">
+                    {cert.title}
+                  </h4>
+                  <div className="space-y-1">
+                    <p className="text-sm font-medium text-gray-700">{cert.provider}</p>
+                    <p className="text-xs text-gray-500 uppercase tracking-wide">{cert.year}</p>
+                  </div>
+                </div>
+
+                {/* Hover indicator */}
+                <div className="mt-4 text-blue-500 opacity-0 group-hover:opacity-100 transition-opacity text-xs font-medium">
+                  View Credential →
                 </div>
               </a>
             ))}
