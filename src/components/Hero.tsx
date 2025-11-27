@@ -4,14 +4,37 @@ import { useState, useEffect } from "react";
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [currentRole, setCurrentRole] = useState(0);
+  const [displayedText, setDisplayedText] = useState("");
+  const [isTyping, setIsTyping] = useState(true);
   const roles = ["Data Analyst", "Business Analyst", "Product Analyst"];
+
   useEffect(() => {
     setIsVisible(true);
-    const interval = setInterval(() => {
-      setCurrentRole(prev => (prev + 1) % roles.length);
-    }, 3000);
-    return () => clearInterval(interval);
   }, []);
+
+  useEffect(() => {
+    const currentText = roles[currentRole];
+    let charIndex = 0;
+
+    if (isTyping) {
+      setDisplayedText("");
+      const typeInterval = setInterval(() => {
+        if (charIndex < currentText.length) {
+          setDisplayedText(currentText.slice(0, charIndex + 1));
+          charIndex++;
+        } else {
+          clearInterval(typeInterval);
+          setIsTyping(false);
+          setTimeout(() => {
+            setIsTyping(true);
+            setCurrentRole(prev => (prev + 1) % roles.length);
+          }, 2000);
+        }
+      }, 100);
+
+      return () => clearInterval(typeInterval);
+    }
+  }, [currentRole, isTyping]);
   return <section className="min-h-screen flex items-center justify-center bg-background">
       <div className={`container-wide mx-auto px-4 py-20 text-center transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
         
@@ -25,8 +48,9 @@ const Hero = () => {
           <div className="h-16 flex items-center justify-center">
             <p className="body-large text-muted-foreground">
               <span className="inline-block min-w-[280px] text-center">
-                <span key={currentRole} className="font-bold text-black dark:text-white text-xl md:text-2xl">
-                  {roles[currentRole]}
+                <span className="font-bold text-black dark:text-white text-xl md:text-2xl">
+                  {displayedText}
+                  <span className="inline-block w-0.5 h-6 bg-black dark:bg-white ml-1 animate-pulse"></span>
                 </span>
               </span>
             </p>
