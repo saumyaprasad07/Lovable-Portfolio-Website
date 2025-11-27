@@ -110,12 +110,11 @@ const Hero = () => {
           {[
             { number: "3+", label: "Years Experience", icon: Award },
             { number: "15+", label: "Projects Completed", icon: TrendingUp },
-            { number: "6", label: "Certifications", icon: Award },
-            { number: "100%", label: "Client Satisfaction", icon: Database }
+            { number: "6", label: "Certifications", icon: Award }
           ].map((stat, index) => {
             const IconComponent = stat.icon;
             return (
-              <div 
+              <div
                 key={stat.label}
                 className="text-center p-4 soft-card hover-lift-subtle"
               >
