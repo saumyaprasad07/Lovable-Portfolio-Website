@@ -83,20 +83,17 @@ const About = () => {
     {
       icon: Target,
       title: "Results-Driven Approach",
-      description: "Delivered 10% increase in student enrollment through comprehensive data analysis and strategic insights",
-      metric: "10% Growth"
+      description: "Delivered 10% increase in student enrollment through comprehensive data analysis and strategic insights"
     },
     {
       icon: Lightbulb,
       title: "Innovation & Automation",
-      description: "Built automated dashboards and analytics pipelines, reducing manual analysis time by 80%",
-      metric: "80% Efficiency"
+      description: "Built automated dashboards and analytics pipelines, reducing manual analysis time by 80%"
     },
     {
       icon: Award,
       title: "Proven Expertise",
-      description: "6+ professional certifications from industry leaders including Google, AWS, and Tableau",
-      metric: "6+ Certs"
+      description: "6+ professional certifications from industry leaders including Google, AWS, and Tableau"
     }
   ];
 
