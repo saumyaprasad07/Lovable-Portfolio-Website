@@ -150,9 +150,6 @@ const About = () => {
           <div className="text-center mb-12">
             <h3 className="text-2xl font-bold mb-2">Technical Skills</h3>
             <div className="w-24 h-1 bg-blue-500 mx-auto mb-4"></div>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Comprehensive expertise across modern data analytics, business intelligence, and product analytics technologies
-            </p>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
