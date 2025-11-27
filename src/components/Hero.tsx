@@ -45,18 +45,16 @@ const Hero = () => {
           </h1>
 
           {/* Animated Role Switcher */}
-                {/* Animated Role Switcher */}
           <div className="h-16 flex items-center justify-center">
             <p className="body-large text-muted-foreground">
               <span className="inline-block min-w-[280px] text-center">
                 <span className="font-bold text-[black] !text-black dark:!text-white text-xl md:text-2xl">
                   {displayedText}
-                  <span className="inline-block w-0.5 h-6 bg-[black] dark:bg-[white] ml-1 animate-pulse"></span>
+                <span className="inline-block w-0.5 h-6 bg-[black] dark:bg-[white] ml-1 animate-pulse"></span>
                 </span>
+
               </span>
             </p>
-          </div>
-
           </div>
         </div>
 
