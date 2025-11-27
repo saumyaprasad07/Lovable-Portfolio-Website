@@ -37,7 +37,7 @@ const Hero = () => {
               <span className="inline-block min-w-[280px] text-center">
                 <span
                   key={currentRole}
-                  className="font-bold text-primary text-xl md:text-2xl"
+                  className="font-bold text-black dark:text-white text-xl md:text-2xl"
                 >
                   {roles[currentRole]}
                 </span>
