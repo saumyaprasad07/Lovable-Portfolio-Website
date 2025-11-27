@@ -27,7 +27,7 @@ const Hero = () => {
         
         {/* Main Heading */}
         <div className="mb-8 space-y-4">
-          <h1 className="heading-display gradient-text leading-tight">
+          <h1 className="heading-display leading-tight text-black dark:text-white">
             Saumya Prasad
           </h1>
 
