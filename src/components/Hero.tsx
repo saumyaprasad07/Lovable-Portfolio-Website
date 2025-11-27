@@ -8,9 +8,8 @@ const Hero = () => {
   
   const roles = [
     "Data Analyst",
-    "Business Intelligence Expert", 
-    "Product Analyst",
-    "Data Storyteller"
+    "Business Analyst",
+    "Product Analyst"
   ];
 
   useEffect(() => {
