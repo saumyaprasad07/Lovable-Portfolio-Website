@@ -227,28 +227,22 @@ const About = () => {
                 href={cert.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="soft-card p-6 hover-lift text-center"
+                className="soft-card p-6 hover-lift text-center flex flex-col items-center justify-center min-h-[220px]"
               >
                 {/* Logo */}
-                <div className="w-16 h-16 flex items-center justify-center bg-muted rounded-xl p-3 mb-4 mx-auto">
+                <div className="w-16 h-16 flex items-center justify-center bg-muted rounded-xl p-3 mb-4">
                   {cert.icon ? (
                     <img src={cert.icon} alt={`${cert.provider} certification`} className="w-full h-full object-contain" />
                   ) : (
                     <Award className="w-8 h-8 text-primary" />
                   )}
                 </div>
-                
+
                 {/* Content */}
-                <div className="mb-4">
+                <div>
                   <h4 className="font-semibold text-foreground mb-2 leading-tight">{cert.title}</h4>
                   <p className="text-muted-foreground mb-1">{cert.provider}</p>
                   <p className="text-sm text-muted-foreground">{cert.year}</p>
-                </div>
-                
-                {/* Verified Badge */}
-                <div className="flex items-center justify-center gap-2 px-3 py-1 rounded-full bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800">
-                  <CheckCircle2 className="h-4 w-4 text-green-600" />
-                  <span className="text-sm font-medium text-green-700 dark:text-green-400">Verified</span>
                 </div>
               </a>
             ))}
