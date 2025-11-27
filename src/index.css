@@ -2,20 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Soft Modern Design System */
-/* --- FORCE LIGHT MODE ON LOVABLE --- */
-html,
-body {
+/* Force light background everywhere */
+html, body {
   background-color: #ffffff !important;
   color: #000000 !important;
 }
 
-/* Even if Lovable injects `class="dark"`, override it */
-html.dark,
-body.dark {
+/* Prevent Tailwind dark: classes from triggering */
+html.dark {
   background-color: #ffffff !important;
-  color: #000000 !important;
 }
+
 
 @layer base {
   :root {
