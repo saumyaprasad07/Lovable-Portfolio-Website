@@ -108,7 +108,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="section-spacing bg-muted/30">
+    <section id="about" className="section-spacing bg-white dark:bg-muted/30">
       <div className="container-wide px-4 md:px-6">
         {/* Section Header */}
         <div className="text-center mb-16 animate-fade-in">
