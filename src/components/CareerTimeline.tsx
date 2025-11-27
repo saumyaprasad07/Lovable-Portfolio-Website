@@ -9,10 +9,11 @@ const CareerTimeline = () => {
       organization: "ServiceNow",
       location: "Remote",
       date: "Nov 2024 - Present",
-      responsibilities: ["Defined product KPIs, built event-tracking schemas, and analyzed usage data (funnels, cohorts, segmentation) using SQL & Python to uncover drop-offs and drive feature adoption.",
-                    "Led A/B testing and experimentation analysis, measuring conversion lift, running statistical-significance tests, and recommending the highest-impact feature variants.",
-                    "Created interactive Power BI dashboards and delivered actionable product insights, identifying workflow friction and informing roadmap priorities through data-driven recommendations."
-          ]
+      responsibilities: [
+        "Defined product KPIs, built event-tracking schemas, and analyzed usage data using SQL & Python",
+        "Led A/B testing and experimentation analysis, measuring conversion lift and statistical significance",
+        "Created interactive Power BI dashboards and delivered actionable product insights"
+      ]
     },
     {
       type: "education",
@@ -22,7 +23,7 @@ const CareerTimeline = () => {
       location: "Long Beach, CA",
       date: "May 2025",
       gpa: "3.5",
-      coursework: ["Business Data Analytics (Statistics)", "Project Management", "DBMS", "System Design and Analysis", "Information Systems", "Tech Startups & AI"]
+      coursework: ["Business Data Analytics", "Project Management", "DBMS", "System Design", "Information Systems"]
     },
     {
       type: "experience",
@@ -32,9 +33,9 @@ const CareerTimeline = () => {
       location: "Long Beach, CA",
       date: "Mar 2024 - May 2024",
       responsibilities: [
-        "Conducted market research on CSU PACE programs, performing data analytics on 25K+ rows to identify trends and stakeholder needs",
+        "Conducted market research on CSU PACE programs, analyzing 25K+ rows of data",
         "Developed business cases with actionable insights that increased student enrollment by 10%",
-        "Built interactive Excel dashboards with slicers and KPIs, providing leadership with real-time visibility for strategic pivots"
+        "Built interactive Excel dashboards providing leadership with real-time visibility"
       ]
     },
     {
@@ -45,8 +46,9 @@ const CareerTimeline = () => {
       location: "Mumbai, India",
       date: "May 2023",
       gpa: "3.5",
-      coursework: ["Business Intelligence", "Machine Learning & Deep Learning", "Data Science & AI", "Cloud Computing", "Computer Networks"]
-    },{
+      coursework: ["Business Intelligence", "Machine Learning", "Data Science", "Cloud Computing"]
+    },
+    {
       type: "experience",
       icon: Briefcase,
       title: "Product Analyst",
@@ -54,115 +56,81 @@ const CareerTimeline = () => {
       location: "India",
       date: "Jan 2020 - Jul 2023",
       responsibilities: [
-        "Led end-to-end conversion and retention analysis for a high-volume grocery delivery app, identifying key friction points—including a 35% drop-off from checkout to payment—and uncovering segment-specific issues across cities, devices, and payment methods.",
-        "Designed, analyzed, and optimized A/B experiments (homepage banners, checkout flows, delivery threshold tests), achieving a 7% lift in add-to-cart → order conversions and reducing COD-related drop-offs through targeted UX improvements.",
-        "Built SQL-based product and operations dashboards, diagnosing delivery inefficiencies and identifying dark-store locations causing 20–25% slower deliveries, enabling faster data-driven decisions across product, engineering, and ops teams."
+        "Led end-to-end conversion and retention analysis for grocery delivery app",
+        "Designed and analyzed A/B experiments achieving 7% lift in conversions",
+        "Built SQL-based dashboards diagnosing delivery inefficiencies"
       ]
     }
   ];
 
-  const getTypeColor = (type: string) => {
-    switch (type) {
-      case "education":
-        return {
-          border: "border-primary",
-          bg: "bg-primary/10",
-          text: "text-primary",
-          glow: "shadow-primary/20",
-          hoverGlow: "group-hover:shadow-primary/40"
-        };
-      case "experience":
-        return {
-          border: "border-secondary",
-          bg: "bg-secondary/10",
-          text: "text-secondary",
-          glow: "shadow-secondary/20",
-          hoverGlow: "group-hover:shadow-secondary/40"
-        };
-      default:
-        return {
-          border: "border-accent",
-          bg: "bg-accent/10",
-          text: "text-accent",
-          glow: "shadow-accent/20",
-          hoverGlow: "group-hover:shadow-accent/40"
-        };
-    }
-  };
-
   return (
-    <section className="section-spacing relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-muted/5 to-background pointer-events-none" />
-
-      <div className="container-wide relative px-4 md:px-6">
-        <div className="text-center mb-16 md:mb-20 animate-fade-in">
-          <h2 className="heading-2 mb-4">
-            My Journey
-          </h2>
-          <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">
+    <section className="section-spacing bg-background">
+      <div className="container-wide px-4 md:px-6">
+        <div className="text-center mb-16 animate-fade-in">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
+            <div className="w-2 h-2 bg-primary rounded-full"></div>
+            <span className="text-sm font-medium text-primary">My Journey</span>
+          </div>
+          <h2 className="heading-1 mb-6">Career Timeline</h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             A timeline of my professional experience and academic achievements
           </p>
         </div>
 
-        {/* Desktop alternating timeline */}
-        <div className="hidden md:block max-w-6xl mx-auto relative">
-          {/* Center glowing line */}
-          <div className="absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-primary via-secondary to-accent opacity-20" />
-          <div className="absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-secondary to-accent animate-pulse" />
+        {/* Desktop Timeline */}
+        <div className="hidden md:block max-w-4xl mx-auto relative">
+          <div className="absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-0.5 bg-border" />
 
-          <div className="space-y-16">
+          <div className="space-y-12">
             {timelineItems.map((item, index) => {
               const Icon = item.icon;
-              const colors = getTypeColor(item.type);
               const isLeft = index % 2 === 0;
 
               return (
-                <div
-                  key={index}
-                  className="relative group"
-                  style={{
-                    animation: `fade-in 0.8s ease-out ${index * 0.15}s both, ${isLeft ? 'slide-in-left' : 'slide-in-right'} 0.8s ease-out ${index * 0.15}s both`
-                  }}
-                >
-                  {/* Glowing center node */}
-                  <div className="absolute left-1/2 -translate-x-1/2 top-8 z-20">
-                    <div className={`relative p-4 rounded-full border-4 ${colors.border} ${colors.bg} backdrop-blur-sm transition-all duration-500 group-hover:scale-125 shadow-lg ${colors.glow} ${colors.hoverGlow}`}>
-                      <Icon className={`h-6 w-6 ${colors.text}`} />
-                      <div className={`absolute inset-0 rounded-full ${colors.bg} animate-ping opacity-20`} />
+                <div key={index} className="relative">
+                  {/* Center Icon */}
+                  <div className="absolute left-1/2 -translate-x-1/2 top-6 z-10">
+                    <div className={`p-3 rounded-full border-4 ${
+                      item.type === 'education' ? 'border-primary bg-primary/10' : 'border-secondary bg-secondary/10'
+                    }`}>
+                      <Icon className={`h-5 w-5 ${
+                        item.type === 'education' ? 'text-primary' : 'text-secondary'
+                      }`} />
                     </div>
                   </div>
 
-                  {/* Content card - alternating sides */}
+                  {/* Content Card */}
                   <div className={`flex items-start ${isLeft ? 'justify-start pr-[52%]' : 'justify-end pl-[52%]'}`}>
-                    <div className={`w-full glass-card p-6 rounded-2xl border-2 ${colors.border} hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 ${colors.hoverGlow} relative`}>
-                      {/* Accent highlight bar */}
-                      <div className={`absolute ${isLeft ? 'right-0 rounded-l-full' : 'left-0 rounded-r-full'} top-0 bottom-0 w-1.5 ${colors.bg} ${colors.border} border-2`} />
-
-                      {/* Date pill */}
-                      <div className={`inline-flex items-center gap-2 px-4 py-2 rounded-full ${colors.bg} ${colors.border} border-2 mb-4 shadow-md`}>
-                        <div className={`w-2 h-2 rounded-full ${colors.text} bg-current animate-pulse`} />
-                        <span className={`text-sm font-bold ${colors.text}`}>{item.date}</span>
+                    <div className="w-full soft-card p-6 hover-lift-subtle">
+                      {/* Date Badge */}
+                      <div className={`inline-flex items-center gap-2 px-3 py-1 rounded-full mb-4 ${
+                        item.type === 'education' ? 'bg-primary/10 border border-primary/20' : 'bg-secondary/10 border border-secondary/20'
+                      }`}>
+                        <div className={`w-2 h-2 rounded-full ${
+                          item.type === 'education' ? 'bg-primary' : 'bg-secondary'
+                        }`} />
+                        <span className={`text-sm font-semibold ${
+                          item.type === 'education' ? 'text-primary' : 'text-secondary'
+                        }`}>{item.date}</span>
                       </div>
 
                       {/* Content */}
                       <div className="mb-4">
-                        <h3 className="text-xl font-bold text-foreground mb-2 leading-tight">
-                          {item.title}
-                        </h3>
-                        <p className={`text-base font-semibold ${colors.text} mb-1`}>
-                          {item.organization}
-                        </p>
-                        <p className="text-sm text-muted-foreground">
-                          {item.location}
-                        </p>
+                        <h3 className="text-xl font-bold text-foreground mb-2">{item.title}</h3>
+                        <p className={`font-semibold mb-1 ${
+                          item.type === 'education' ? 'text-primary' : 'text-secondary'
+                        }`}>{item.organization}</p>
+                        <p className="text-sm text-muted-foreground">{item.location}</p>
                       </div>
 
                       {/* Details */}
                       {item.responsibilities && (
-                        <ul className="space-y-2 mb-4">
+                        <ul className="space-y-2">
                           {item.responsibilities.map((resp, idx) => (
-                            <li key={idx} className="flex gap-3 text-sm text-muted-foreground leading-relaxed">
-                              <span className={`${colors.text} mt-1 font-bold flex-shrink-0`}>•</span>
+                            <li key={idx} className="flex gap-3 text-sm text-muted-foreground">
+                              <span className={`mt-1 font-bold flex-shrink-0 ${
+                                item.type === 'education' ? 'text-primary' : 'text-secondary'
+                              }`}>•</span>
                               <span>{resp}</span>
                             </li>
                           ))}
@@ -171,19 +139,16 @@ const CareerTimeline = () => {
 
                       {item.gpa && (
                         <div className="space-y-3">
-                          <div className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-full ${colors.bg} ${colors.border} border`}>
+                          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20">
                             <span className="font-semibold text-sm">GPA:</span>
-                            <span className={`text-sm font-bold ${colors.text}`}>{item.gpa}</span>
+                            <span className="text-sm font-bold text-primary">{item.gpa}</span>
                           </div>
                           {item.coursework && (
                             <div>
                               <p className="font-semibold text-sm mb-2">Key Coursework:</p>
                               <div className="flex flex-wrap gap-2">
                                 {item.coursework.map((course, i) => (
-                                  <span
-                                    key={i}
-                                    className={`text-xs px-3 py-1 rounded-full ${colors.bg} ${colors.text} ${colors.border} border hover:scale-105 transition-transform`}
-                                  >
+                                  <span key={i} className="text-xs px-2 py-1 rounded-full bg-muted border border-border">
                                     {course}
                                   </span>
                                 ))}
@@ -192,9 +157,6 @@ const CareerTimeline = () => {
                           )}
                         </div>
                       )}
-
-                      {/* Connecting line to center */}
-                      <div className={`absolute top-10 ${isLeft ? 'left-full' : 'right-full'} w-8 h-0.5 ${colors.bg} hidden group-hover:block transition-all`} />
                     </div>
                   </div>
                 </div>
@@ -203,45 +165,46 @@ const CareerTimeline = () => {
           </div>
         </div>
 
-        {/* Mobile vertical timeline */}
+        {/* Mobile Timeline */}
         <div className="md:hidden max-w-2xl mx-auto relative">
-          <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-secondary to-accent opacity-30" />
+          <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-border" />
 
           <div className="space-y-8">
             {timelineItems.map((item, index) => {
               const Icon = item.icon;
-              const colors = getTypeColor(item.type);
 
               return (
-                <div
-                  key={index}
-                  className="relative pl-16 group animate-fade-in"
-                  style={{ animationDelay: `${index * 0.15}s` }}
-                >
-                  <div className={`absolute left-0 p-3 rounded-full border-2 ${colors.border} ${colors.bg} transition-all duration-300 group-hover:scale-110 ${colors.glow} z-10`}>
-                    <Icon className={`h-5 w-5 ${colors.text}`} />
+                <div key={index} className="relative pl-16">
+                  <div className={`absolute left-0 p-3 rounded-full border-2 ${
+                    item.type === 'education' ? 'border-primary bg-primary/10' : 'border-secondary bg-secondary/10'
+                  } z-10`}>
+                    <Icon className={`h-4 w-4 ${
+                      item.type === 'education' ? 'text-primary' : 'text-secondary'
+                    }`} />
                   </div>
 
-                  <div className={`glass-card p-5 rounded-xl border-2 ${colors.border} hover:shadow-lg transition-all duration-300 hover:-translate-y-1`}>
-                    <div className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-full ${colors.bg} ${colors.border} border mb-3`}>
-                      <span className={`text-xs font-bold ${colors.text}`}>{item.date}</span>
+                  <div className="soft-card p-4">
+                    <div className={`inline-flex items-center gap-2 px-3 py-1 rounded-full mb-3 ${
+                      item.type === 'education' ? 'bg-primary/10 border border-primary/20' : 'bg-secondary/10 border border-secondary/20'
+                    }`}>
+                      <span className={`text-xs font-semibold ${
+                        item.type === 'education' ? 'text-primary' : 'text-secondary'
+                      }`}>{item.date}</span>
                     </div>
 
-                    <h3 className="text-lg font-bold text-foreground mb-1">
-                      {item.title}
-                    </h3>
-                    <p className={`text-sm font-semibold ${colors.text} mb-1`}>
-                      {item.organization}
-                    </p>
-                    <p className="text-xs text-muted-foreground mb-3">
-                      {item.location}
-                    </p>
+                    <h3 className="font-bold text-foreground mb-1">{item.title}</h3>
+                    <p className={`text-sm font-semibold mb-1 ${
+                      item.type === 'education' ? 'text-primary' : 'text-secondary'
+                    }`}>{item.organization}</p>
+                    <p className="text-xs text-muted-foreground mb-3">{item.location}</p>
 
                     {item.responsibilities && (
                       <ul className="space-y-2 mb-3">
                         {item.responsibilities.map((resp, idx) => (
-                          <li key={idx} className="flex gap-2 text-xs text-muted-foreground leading-relaxed">
-                            <span className={`${colors.text} mt-0.5 font-bold flex-shrink-0`}>•</span>
+                          <li key={idx} className="flex gap-2 text-xs text-muted-foreground">
+                            <span className={`mt-0.5 font-bold flex-shrink-0 ${
+                              item.type === 'education' ? 'text-primary' : 'text-secondary'
+                            }`}>•</span>
                             <span>{resp}</span>
                           </li>
                         ))}
@@ -250,19 +213,16 @@ const CareerTimeline = () => {
 
                     {item.gpa && (
                       <div className="space-y-2">
-                        <div className={`inline-flex items-center gap-2 px-2.5 py-1 rounded-full ${colors.bg} ${colors.border} border`}>
+                        <div className="inline-flex items-center gap-2 px-2 py-1 rounded-full bg-primary/10 border border-primary/20">
                           <span className="font-semibold text-xs">GPA:</span>
-                          <span className={`text-xs font-bold ${colors.text}`}>{item.gpa}</span>
+                          <span className="text-xs font-bold text-primary">{item.gpa}</span>
                         </div>
                         {item.coursework && (
                           <div>
                             <p className="font-semibold text-xs mb-2">Key Coursework:</p>
-                            <div className="flex flex-wrap gap-1.5">
+                            <div className="flex flex-wrap gap-1">
                               {item.coursework.map((course, i) => (
-                                <span
-                                  key={i}
-                                  className={`text-[10px] px-2 py-1 rounded-full ${colors.bg} ${colors.text} ${colors.border} border`}
-                                >
+                                <span key={i} className="text-[10px] px-2 py-1 rounded-full bg-muted">
                                   {course}
                                 </span>
                               ))}
