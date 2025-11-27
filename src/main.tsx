@@ -7,3 +7,6 @@ createRoot(document.getElementById("root")!).render(<App />);
 document.addEventListener("DOMContentLoaded", () => {
   document.documentElement.classList.remove("dark");
 });
+document.addEventListener("DOMContentLoaded", () => {
+  document.documentElement.classList.remove("dark");
+});
