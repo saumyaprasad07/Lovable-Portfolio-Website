@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Github, Linkedin, Mail, Download, BarChart3, Database, TrendingUp, Award } from "lucide-react";
+import { ArrowRight, Github, Linkedin, Mail, Download, ChartBar as BarChart3, Database, TrendingUp, Award } from "lucide-react";
 import { useState, useEffect } from "react";
 
 const Hero = () => {

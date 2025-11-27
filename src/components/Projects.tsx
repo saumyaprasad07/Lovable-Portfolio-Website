@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, ExternalLink, TrendingUp, Award, Database, Brain, BarChart3, Zap } from 'lucide-react';
+import { Github, ExternalLink, TrendingUp, Award, Database, Brain, ChartBar as BarChart3, Zap } from 'lucide-react';
 
 const projects = [
   {

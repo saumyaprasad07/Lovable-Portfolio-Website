@@ -1,4 +1,4 @@
-import { Code2, Database, BarChart3, ClipboardCheck, GitBranch, TrendingUp, CheckCircle2, Award, Target, Lightbulb } from "lucide-react";
+import { Code as Code2, Database, ChartBar as BarChart3, ClipboardCheck, GitBranch, TrendingUp, CircleCheck as CheckCircle2, Award, Target, Lightbulb } from "lucide-react";
 
 const About = () => {
   const skills = [
