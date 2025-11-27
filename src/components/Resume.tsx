@@ -7,11 +7,11 @@ const Resume = () => {
     <section id="resume" className="py-20 px-4">
       <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Resume
+          <h2 className="heading-1 mb-6">
+            Resume & Links
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Download my complete resume or view my professional profiles
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            Download my complete resume or connect through my professional profiles
           </p>
         </div>
 
@@ -32,12 +32,14 @@ const Resume = () => {
               </div>
             </CardHeader>
             <CardContent>
-              <Button className="w-full" size="lg">
-                <Download className="mr-2 h-5 w-5" />
-                Download PDF Resume
+              <Button className="w-full button-primary" size="lg" asChild>
+                <a href="https://drive.google.com/file/d/1JVH3S6MtrlNB7Gq-RNhBLnowYmHIPeJD/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                  <Download className="mr-2 h-5 w-5" />
+                  Download PDF Resume
+                </a>
               </Button>
               <p className="text-xs text-muted-foreground text-center mt-4">
-                Last updated: October 2025
+                Last updated: November 2024
               </p>
             </CardContent>
           </Card>
@@ -135,12 +137,12 @@ const Resume = () => {
                 <p className="text-sm text-muted-foreground">Projects Completed</p>
               </div>
               <div>
-                <p className="text-3xl font-bold text-primary mb-1">5+</p>
+                <p className="text-3xl font-bold text-primary mb-1">6</p>
                 <p className="text-sm text-muted-foreground">Certifications</p>
               </div>
               <div>
-                <p className="text-3xl font-bold text-primary mb-1">3.5</p>
-                <p className="text-sm text-muted-foreground">GPA</p>
+                <p className="text-3xl font-bold text-primary mb-1">15+</p>
+                <p className="text-sm text-muted-foreground">Projects Delivered</p>
               </div>
             </div>
           </CardContent>

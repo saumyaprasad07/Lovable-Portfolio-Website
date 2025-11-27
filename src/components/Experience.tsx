@@ -1,19 +1,34 @@
 import { Briefcase } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 const Experience = () => {
-  const experiences = [{
+  const experiences = [
+  {
     title: "Product Analyst",
     company: "ServiceNow",
     location: "New York",
     duration: "Nov 2024 - Present",
-    responsibilities: ["• Defined key product KPIs and success metrics—including feature activation, time-to-value, workflow completion, and retention rate—for a simulated SaaS platform to measure feature adoption and overall product performance. • Designed a complete event-tracking and instrumentation schema, mapping end-to-end workflow steps to measurable behavioral events, enabling accurate product analytics and usage attribution. • Extracted, cleaned, and modeled product-usage datasets using SQL and Python, creating funnel, cohort, and segmentation analyses to identify user drop-off points and behavioral patterns.• Conducted A/B testing and experimentation analysis, measuring conversion lift, running statistical significance tests, and determining the optimal feature variant for rollout.• Built interactive dashboards in Power BI visualizing adoption trends, workflow efficiency, retention cohorts, and segment-level performance for stakeholder visibility.• Delivered actionable insights through root-cause analysis, identifying workflow friction and low-adoption segments, and recommending product optimizations that informed roadmap prioritization."]
-  }, {
+    responsibilities: [
+      "Defined comprehensive product KPIs and success metrics (feature activation, time-to-value, workflow completion, retention rate) for SaaS platform, establishing measurement framework for product performance tracking",
+      "Designed end-to-end event-tracking and instrumentation schema, mapping workflow steps to behavioral events for accurate product analytics and usage attribution",
+      "Extracted, cleaned, and modeled product-usage datasets using SQL and Python, creating funnel, cohort, and segmentation analyses to identify user drop-off points and behavioral patterns",
+      "Conducted A/B testing and experimentation analysis, measuring conversion lift and running statistical significance tests to determine optimal feature variants for rollout",
+      "Built interactive Power BI dashboards visualizing adoption trends, workflow efficiency, retention cohorts, and segment-level performance for cross-functional stakeholder visibility",
+      "Delivered actionable insights through root-cause analysis, identifying workflow friction and low-adoption segments to inform product roadmap prioritization"
+    ]
+  },
+  {
     title: "Market Research Data Analyst",
     company: "California State University Long Beach",
     location: "Long Beach, CA",
     duration: "Mar 2024 - May 2024",
-    responsibilities: ["Conducted market research on CSU PACE programs, performing data analytics on 25K+ rows to identify trends and stakeholder needs", "Developed business cases with actionable insights that increased student enrollment by 10%", "Built interactive Excel dashboards with slicers and KPIs, providing leadership with real-time visibility for strategic pivots"]
-  }];
+    responsibilities: [
+      "Conducted comprehensive market research analyzing CSU PACE programs, performing statistical analysis on 25K+ data rows to identify enrollment trends, student demographics, and stakeholder needs",
+      "Developed data-driven business cases with actionable strategic recommendations that contributed to 10% increase in student enrollment quarter-over-quarter",
+      "Built interactive Excel dashboards featuring dynamic slicers, pivot tables, and KPI tracking, providing executive leadership with real-time program performance visibility",
+      "Synthesized qualitative and quantitative research findings into executive presentations, influencing strategic program expansion decisions"
+    ]
+  }
+];
   return <section id="experience" className="section-spacing relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 via-transparent to-primary/5 pointer-events-none" />

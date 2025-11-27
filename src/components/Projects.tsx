@@ -6,7 +6,7 @@ const projects = [
     category: "SENTIMENT ANALYSIS",
     title: "Yelp Business Sentiment Analysis",
     subtitle: "SQL | Snowflake | AWS | BigQuery",
-    outcome: "Processed 5GB+ Yelp data, reducing manual analysis time by 80% across 100K+ reviews",
+    outcome: "Engineered scalable data pipeline processing 5GB+ Yelp dataset across 100K+ reviews. Built sentiment classification model and cloud-based analytics infrastructure, reducing manual review analysis time by 80%.",
     impact: "80% faster analysis",
     tech: ["SQL", "Snowflake", "AWS", "BigQuery"],
     github: "https://github.com/saumyaprasad07/Yelp-Business-Reviews-Analysis",
@@ -14,10 +14,10 @@ const projects = [
     featured: true
   },
   {
-    category: "EQUITY ANALYSIS", 
+    category: "EQUITY ANALYSIS",
     title: "Gender based Wage Gap Analysis",
     subtitle: "Python | Data Analysis | Statistical Modeling",
-    outcome: "Identified 3 key factors contributing to wage gaps with strategic equity recommendations",
+    outcome: "Conducted comprehensive statistical analysis on compensation data using Python. Applied regression modeling, hypothesis testing, and data visualization to identify 3 primary drivers of wage disparity. Delivered actionable recommendations for organizational equity improvements.",
     impact: "3 key factors identified",
     tech: ["Python", "Data Analysis", "Statistics"],
     github: "https://github.com/saumyaprasad07/Gender-Based-Wage-Gap-Analysis",
@@ -25,9 +25,9 @@ const projects = [
   },
   {
     category: "RECOMMENDATION SYSTEM",
-    title: "Netflix Recommendation System", 
+    title: "Netflix Recommendation System",
     subtitle: "Streamlit | Python | MS Project",
-    outcome: "Built personalized engine analyzing 10K+ movies, improving discovery accuracy by 45%",
+    outcome: "Developed ML-powered recommendation engine processing 10K+ movies using collaborative filtering and content-based algorithms. Built interactive web application with Streamlit, improving content discovery accuracy by 45%. Deployed on cloud infrastructure for real-time recommendations.",
     impact: "45% accuracy boost",
     tech: ["Streamlit", "Python", "Azure"],
     github: "https://github.com/saumyaprasad07/streamlit-app-netflix-recommendation-system",
@@ -38,8 +38,8 @@ const projects = [
   {
     category: "DATABASE MANAGEMENT",
     title: "Database Management System for UPS",
-    subtitle: "MySQL | Business Analysis | SQL Optimization", 
-    outcome: "Reduced query time by 65%, enabling real-time tracking of 50K+ daily deliveries",
+    subtitle: "MySQL | Business Analysis | SQL Optimization",
+    outcome: "Designed and optimized relational database architecture for logistics operations handling 50K+ daily deliveries. Implemented indexing strategies, query optimization, and stored procedures, reducing query execution time by 65%. Enabled real-time package tracking and operational reporting.",
     impact: "65% query optimization",
     tech: ["MySQL", "SQL", "Optimization"],
     github: "https://github.com/saumyaprasad07/Database-Management-System---UPS-Deliveries",
@@ -49,8 +49,8 @@ const projects = [
     category: "BUSINESS OPTIMIZATION",
     title: "Aggregate Planning Analysis",
     subtitle: "Excel | Optimization | Business Analysis",
-    outcome: "Reduced production costs by 22% annually ($340K savings) through optimal planning",
-    impact: "$340K annual savings", 
+    outcome: "Performed operations research analysis using linear programming and optimization techniques. Built Excel-based decision support model analyzing production scenarios, inventory costs, and workforce planning. Achieved 22% cost reduction translating to $340K in annual savings.",
+    impact: "$340K annual savings",
     tech: ["Excel", "Optimization", "Analytics"],
     github: "https://github.com/saumyaprasad07/Business-Analysis-on-Aggregate-Planning-at-Green-Mills",
     icon: BarChart3
@@ -59,7 +59,7 @@ const projects = [
     category: "DEEP LEARNING",
     title: "Brain Tumor MRI Segmentation",
     subtitle: "Deep Learning | Python | TensorFlow",
-    outcome: "Achieved 92% accuracy, reducing manual MRI analysis time by 70%",
+    outcome: "Built deep learning model using convolutional neural networks for automated medical image segmentation. Trained on MRI dataset with data augmentation techniques, achieving 92% segmentation accuracy. Reduced manual radiology analysis time by 70%, demonstrating AI application in healthcare diagnostics.",
     impact: "92% segmentation accuracy",
     tech: ["TensorFlow", "Python", "Deep Learning"],
     github: "https://github.com/saumyaprasad07/Brain-Tumor-MRI-Image-Segmentation-using-Deep-Learning",
@@ -77,9 +77,9 @@ const Projects = () => {
       <div className="container-wide px-4 md:px-6">
         {/* Section Header */}
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="heading-1 mb-6">Featured Projects</h2>
+          <h2 className="heading-1 mb-6">Data Projects</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Explore my portfolio of data-driven solutions that have delivered measurable business impact
+            Real-world analytics solutions delivering measurable business value through data-driven insights
           </p>
         </div>
 

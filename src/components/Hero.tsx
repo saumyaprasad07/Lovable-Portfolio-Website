@@ -28,15 +28,14 @@ const Hero = () => {
         {/* Main Heading */}
         <div className="mb-8 space-y-4">
           <h1 className="heading-display gradient-text leading-tight">
-            Hi, I'm Saumya Prasad
+            Saumya Prasad
           </h1>
-          
+
           {/* Animated Role Switcher */}
           <div className="h-16 flex items-center justify-center">
             <p className="body-large text-muted-foreground">
-              Transforming data into insights as a{" "}
-              <span className="inline-block min-w-[280px] text-left">
-                <span 
+              <span className="inline-block min-w-[280px] text-center">
+                <span
                   key={currentRole}
                   className="font-bold text-primary text-xl md:text-2xl"
                 >
@@ -50,30 +49,31 @@ const Hero = () => {
         {/* Value Proposition */}
         <div className="max-w-3xl mx-auto mb-12">
           <p className="text-xl text-muted-foreground leading-relaxed mb-4">
-            I specialize in turning complex data into actionable business insights using 
-            <span className="font-semibold text-primary mx-1">SQL</span>, 
-            <span className="font-semibold text-secondary mx-1">Python</span>, and 
-            <span className="font-semibold text-accent mx-1">advanced analytics tools</span>.
+            Transforming complex data into actionable insights that drive business growth. Specialized in
+            <span className="font-semibold text-primary mx-1">SQL</span>,
+            <span className="font-semibold text-secondary mx-1">Python</span>,
+            <span className="font-semibold text-accent mx-1">Tableau</span>, and
+            <span className="font-semibold text-primary mx-1">Power BI</span>.
           </p>
           <p className="text-lg text-muted-foreground">
-            Let's unlock the power of your data together.
+            Proven track record in product analytics, business intelligence, and data-driven decision making.
           </p>
         </div>
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16 max-w-2xl mx-auto">
-          <Button 
-            size="lg" 
+          <Button
+            size="lg"
             className="button-primary"
             onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
           >
             <BarChart3 className="mr-2 h-5 w-5" />
-            View My Work
+            View Projects
             <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
-          
-          <Button 
-            size="lg" 
+
+          <Button
+            size="lg"
             variant="outline"
             className="button-secondary"
             asChild

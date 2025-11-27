@@ -8,39 +8,39 @@ const About = () => {
   const skills = [
     {
       icon: Code2,
-      title: "Programming & Analytics",
-      description: "Python (Pandas, NumPy, Scikit-learn, Matplotlib), SQL, R",
+      title: "Programming & Tools",
+      description: "Python (Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn), SQL (MySQL, PostgreSQL), R, Excel (Advanced Analytics)",
       level: 95
     },
     {
-      icon: BarChart3,
-      title: "Data Visualization & BI",
-      description: "Tableau, Power BI, Google Data Studio, Excel, D3.js",
+      icon: Database,
+      title: "Databases",
+      description: "MySQL, PostgreSQL, Snowflake, BigQuery, MongoDB, SQL Server",
       level: 90
     },
     {
-      icon: Database,
-      title: "Databases & Cloud",
-      description: "MySQL, Snowflake, AWS (S3, Redshift, Lambda), GCP, Azure",
+      icon: TrendingUp,
+      title: "Cloud Platforms",
+      description: "AWS (S3, Redshift, Lambda, EC2), Google Cloud Platform (BigQuery, Cloud Storage), Microsoft Azure",
       level: 85
     },
     {
-      icon: TrendingUp,
-      title: "Business Analysis",
-      description: "Market Research, KPI Dashboards, A/B Testing, Statistical Analysis",
+      icon: BarChart3,
+      title: "BI & Visualization Tools",
+      description: "Tableau, Power BI, Looker, Google Data Studio, Oracle Analytics Cloud, D3.js",
       level: 92
     },
     {
       icon: GitBranch,
-      title: "Methodologies & Tools",
-      description: "Agile/Scrum, Statistical Analysis, Git/GitHub, JIRA",
-      level: 88
+      title: "ETL & Data Processing",
+      description: "Apache Spark, Airflow, dbt, Data Pipeline Development, ETL Workflows",
+      level: 85
     },
     {
       icon: ClipboardCheck,
-      title: "Project Management",
-      description: "Stakeholder Management, Requirements Gathering, Process Optimization",
-      level: 87
+      title: "Product & Business Analytics",
+      description: "Product KPIs, Funnel Analysis, A/B Testing, Cohort Analysis, Market Research, Statistical Modeling",
+      level: 93
     }
   ];
 
@@ -92,18 +92,18 @@ const About = () => {
   const highlights = [
     {
       icon: Target,
-      title: "Results-Driven Approach",
-      description: "Delivered 10% increase in student enrollment through comprehensive data analysis and strategic insights"
+      title: "Product Analytics Excellence",
+      description: "Expert in defining KPIs, building event-tracking schemas, and conducting funnel, cohort, and segmentation analyses to optimize product performance and user retention"
     },
     {
       icon: Lightbulb,
-      title: "Innovation & Automation",
-      description: "Built automated dashboards and analytics pipelines, reducing manual analysis time by 80%"
+      title: "Proven Business Impact",
+      description: "Delivered 10% enrollment increase through market research analytics; reduced query time by 65% and manual analysis time by 80% through optimization and automation"
     },
     {
       icon: Award,
-      title: "Proven Expertise",
-      description: "6+ professional certifications from industry leaders including Google, AWS, and Tableau"
+      title: "Industry-Certified Expertise",
+      description: "6 professional certifications: Google Advanced Data Analytics, Google Business Intelligence, AWS Cloud Foundations, Tableau, Oracle Analytics Cloud, HackerRank SQL"
     }
   ];
 
@@ -136,20 +136,19 @@ const About = () => {
             <div className="space-y-6">
               <div className="space-y-4">
                 <p className="text-lg leading-relaxed">
-                  I'm a <span className="font-semibold text-primary">Data Analyst</span> with expertise in business analytics, 
-                  data visualization, and database management. I graduated from California State University Long Beach 
-                  with a Master of Science in Information Systems.
+                  I'm a results-driven <span className="font-semibold text-primary">Data Analyst</span> and <span className="font-semibold text-primary">Product Analyst</span> specializing in transforming complex datasets into strategic business insights. With a Master of Science in Information Systems from California State University Long Beach, I bring a strong technical foundation combined with business acumen.
                 </p>
                 <p className="text-lg leading-relaxed">
-                  I specialize in <span className="font-semibold text-accent">SQL</span>, 
-                  <span className="font-semibold text-primary mx-1">Python</span>, 
-                  <span className="font-semibold text-secondary mx-1">Tableau</span>, and 
-                  <span className="font-semibold text-accent">Power BI</span>, 
-                  creating automated dashboards and conducting comprehensive analyses.
+                  I excel at <span className="font-semibold text-accent">SQL</span> and
+                  <span className="font-semibold text-primary mx-1">Python</span> for data modeling,
+                  <span className="font-semibold text-secondary mx-1">Tableau</span> and
+                  <span className="font-semibold text-accent">Power BI</span> for visualization, plus cloud platforms like
+                  <span className="font-semibold text-primary mx-1">AWS</span>,
+                  <span className="font-semibold text-secondary mx-1">Snowflake</span>, and
+                  <span className="font-semibold text-accent">BigQuery</span> for scalable data solutions.
                 </p>
                 <p className="leading-relaxed text-muted-foreground">
-                  My background includes roles at California State University and ServiceNow, with extensive experience 
-                  in market research, product analytics, and project management.
+                  Currently a Product Analyst at ServiceNow, I've delivered impactful analytics solutions including product KPI tracking, A/B testing, funnel analysis, and cross-functional dashboard development. Previously at California State University, I drove 10% enrollment growth through market research and data-driven insights.
                 </p>
               </div>
 
@@ -174,9 +173,9 @@ const About = () => {
         {/* Skills Section */}
         <div className="mb-16">
           <div className="text-center mb-12">
-            <h3 className="heading-2 mb-4">Skills & Expertise</h3>
+            <h3 className="heading-2 mb-4">Technical Skills</h3>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Technologies and methodologies I use to solve complex data challenges
+              Comprehensive toolkit for end-to-end data analytics and business intelligence
             </p>
           </div>
           
