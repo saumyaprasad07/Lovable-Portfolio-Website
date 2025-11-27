@@ -122,7 +122,7 @@ const About = () => {
 
         {/* Main About Section */}
         <div className="max-w-7xl mx-auto mb-16">
-          <div className="grid lg:grid-cols-3 gap-12 items-start">
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
             {/* Photo Placeholder */}
             <div className="flex justify-center items-start">
               <div className="w-64 h-64 rounded-2xl bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-900/30 dark:to-blue-800/30 flex items-center justify-center border-4 border-blue-500/20">
@@ -130,7 +130,7 @@ const About = () => {
               </div>
             </div>
 
-            {/* Left Content */}
+            {/* Content */}
             <div className="space-y-6">
               <p className="text-gray-700 leading-relaxed">
                 I'm a passionate Product Data Analyst with a Master's degree in Information Systems from California State University Long Beach, currently working at ServiceNow in New York. My expertise lies in transforming complex data into actionable product insights that drive business decisions.
@@ -141,27 +141,6 @@ const About = () => {
               <p className="text-gray-700 leading-relaxed">
                 My approach combines technical rigor with business acumen, enabling me to bridge the gap between data and strategy. I'm driven by curiosity and the challenge of uncovering insights that shape product roadmaps and enhance user experiences.
               </p>
-            </div>
-
-            {/* Education */}
-            <div>
-              <h3 className="text-2xl font-bold mb-6">Education</h3>
-
-              <div className="space-y-6">
-                <div className="border-l-4 border-blue-500 pl-6">
-                  <h4 className="text-lg font-bold mb-1">Master of Science in Information Systems</h4>
-                  <p className="text-gray-600 mb-2">California State University Long Beach</p>
-                  <p className="text-sm text-gray-500 mb-2">May 2025 • GPA: 3.5</p>
-                  <p className="text-sm text-gray-600">Business Analytics, Project Management, Database Management, Statistics</p>
-                </div>
-
-                <div className="border-l-4 border-teal-500 pl-6">
-                  <h4 className="text-lg font-bold mb-1">B.E. in Information Technology</h4>
-                  <p className="text-gray-600 mb-2">University of Mumbai, India</p>
-                  <p className="text-sm text-gray-500 mb-2">May 2023 • GPA: 3.5</p>
-                  <p className="text-sm text-gray-600">Data Mining & BI, Machine Learning, Data Science and AI, Cloud Computing</p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
