@@ -67,10 +67,6 @@ const CareerTimeline = () => {
     <section className="section-spacing bg-background">
       <div className="container-wide px-4 md:px-6">
         <div className="text-center mb-16 animate-fade-in">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
-            <div className="w-2 h-2 bg-primary rounded-full"></div>
-            <span className="text-sm font-medium text-primary">My Journey</span>
-          </div>
           <h2 className="heading-1 mb-6">Career Timeline</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             A timeline of my professional experience and academic achievements

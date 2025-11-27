@@ -6,10 +6,6 @@ const Contact = () => {
     <section id="contact" className="section-spacing bg-muted/30">
       <div className="container mx-auto max-w-4xl px-4">
         <div className="text-center mb-16 animate-fade-in">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
-            <div className="w-2 h-2 bg-primary rounded-full"></div>
-            <span className="text-sm font-medium text-primary">Let's connect</span>
-          </div>
           <h2 className="heading-1 mb-6">Get In Touch</h2>
           <p className="text-lg text-muted-foreground">
             Have a project in mind? Let's work together to create something amazing.

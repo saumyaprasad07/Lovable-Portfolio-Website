@@ -105,10 +105,6 @@ const About = () => {
       <div className="container-wide px-4 md:px-6">
         {/* Section Header */}
         <div className="text-center mb-16 animate-fade-in">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
-            <div className="w-2 h-2 bg-primary rounded-full"></div>
-            <span className="text-sm font-medium text-primary">Get to know me</span>
-          </div>
           <h2 className="heading-1 mb-6">About Me</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Passionate about transforming complex data into actionable business insights
