@@ -1,4 +1,8 @@
 import { Code as Code2, Database, ChartBar as BarChart3, ClipboardCheck, GitBranch, TrendingUp, CircleCheck as CheckCircle2, Award, Target, Lightbulb } from "lucide-react";
+import googleCertIcon from "@/assets/cert-google.png";
+import awsCertIcon from "@/assets/cert-aws.svg";
+import tableauCertIcon from "@/assets/cert-tableau.svg";
+import hackerrankCertIcon from "@/assets/cert-hackerrank.png";
 
 const About = () => {
   const skills = [
@@ -45,37 +49,43 @@ const About = () => {
       title: "Google Advanced Data Analytics",
       provider: "Google",
       url: "https://www.coursera.org/account/accomplishments/specialization/L1UFPKLC27OQ",
-      year: "2024"
+      year: "2024",
+      icon: googleCertIcon
     },
     {
       title: "Google Business Intelligence",
-      provider: "Google", 
+      provider: "Google",
       url: "https://www.coursera.org/account/accomplishments/specialization/COZ84CYGX9W4",
-      year: "2024"
+      year: "2024",
+      icon: googleCertIcon
     },
     {
       title: "Tableau Fundamentals",
       provider: "Tableau",
       url: "https://verify.skilljar.com/c/ait3fsck8x6t",
-      year: "2024"
+      year: "2024",
+      icon: tableauCertIcon
     },
     {
       title: "AWS Academy Cloud Foundations",
       provider: "AWS",
       url: "https://www.credly.com/badges/2a5cd426-8544-46bb-a440-db9e454266ee/linked_in_profile",
-      year: "2023"
+      year: "2023",
+      icon: awsCertIcon
     },
     {
       title: "HackerRank SQL Intermediate",
       provider: "HackerRank",
       url: "https://www.hackerrank.com/certificates/646ec66e4b25",
-      year: "2023"
+      year: "2023",
+      icon: hackerrankCertIcon
     },
     {
       title: "Oracle Analytics Cloud 2025 Certified Professional",
       provider: "Oracle",
       url: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=1D743272F69487A1E287924BF22D0C5F638E9DAB20AE2868D9570F333DD8E9FA",
-      year: "2025"
+      year: "2025",
+      icon: null
     }
   ];
 
@@ -221,7 +231,11 @@ const About = () => {
               >
                 {/* Logo */}
                 <div className="w-16 h-16 flex items-center justify-center bg-muted rounded-xl p-3 mb-4 mx-auto">
-                  <Award className="w-8 h-8 text-primary" />
+                  {cert.icon ? (
+                    <img src={cert.icon} alt={`${cert.provider} certification`} className="w-full h-full object-contain" />
+                  ) : (
+                    <Award className="w-8 h-8 text-primary" />
+                  )}
                 </div>
                 
                 {/* Content */}
