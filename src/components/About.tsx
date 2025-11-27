@@ -181,7 +181,6 @@ const About = () => {
                 <ul className="space-y-2">
                   {category.skills.map((skill, skillIndex) => (
                     <li key={skillIndex} className="text-sm text-gray-700 flex items-start">
-                      <span className="text-blue-500 mr-2">•</span>
                       <span>{skill}</span>
                     </li>
                   ))}
