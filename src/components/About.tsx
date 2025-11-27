@@ -9,7 +9,7 @@ const About = () => {
     {
       icon: Code2,
       title: "Programming Languages",
-      skills: ["Python", "SQL", "R", "HTML/CSS"]
+      skills: ["Python", "SQL", "HTML/CSS"]
     },
     {
       icon: Database,
@@ -122,7 +122,14 @@ const About = () => {
 
         {/* Main About Section */}
         <div className="max-w-7xl mx-auto mb-16">
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
+          <div className="grid lg:grid-cols-3 gap-12 items-start">
+            {/* Photo Placeholder */}
+            <div className="flex justify-center items-start">
+              <div className="w-64 h-64 rounded-2xl bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-900/30 dark:to-blue-800/30 flex items-center justify-center border-4 border-blue-500/20">
+                <span className="text-gray-500 dark:text-gray-400 text-sm">Your Photo Here</span>
+              </div>
+            </div>
+
             {/* Left Content */}
             <div className="space-y-6">
               <p className="text-gray-700 leading-relaxed">
@@ -136,7 +143,7 @@ const About = () => {
               </p>
             </div>
 
-            {/* Right Content - Education */}
+            {/* Education */}
             <div>
               <h3 className="text-2xl font-bold mb-6">Education</h3>
 
