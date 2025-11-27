@@ -25,12 +25,6 @@ const Hero = () => {
     <section className="min-h-screen flex items-center justify-center bg-background">
       <div className={`container-wide mx-auto px-4 py-20 text-center transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
         
-        {/* Greeting Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-muted border border-border mb-8">
-          <div className="w-2 h-2 bg-primary rounded-full"></div>
-          <span className="text-sm font-medium text-muted-foreground">Welcome to my portfolio</span>
-        </div>
-
         {/* Main Heading */}
         <div className="mb-8 space-y-4">
           <h1 className="heading-display gradient-text leading-tight">
