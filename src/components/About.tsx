@@ -112,46 +112,45 @@ const About = () => {
       <div className="container-wide px-4 md:px-6">
         {/* Section Header */}
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="heading-1 mb-6">About Me</h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Passionate about transforming complex data into actionable business insights
-          </p>
+          <h2 className="text-5xl font-bold mb-2">About Me</h2>
+          <div className="w-24 h-1 bg-blue-500 mx-auto"></div>
         </div>
 
         {/* Main About Section */}
-        <div className="premium-card p-8 md:p-12 mb-16 max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-[300px_1fr] gap-12 items-start">
-            {/* Profile Section */}
-            <div className="flex justify-center lg:justify-start">
-              <div className="relative">
-                <div className="w-64 h-64 lg:w-full lg:aspect-square rounded-2xl bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10 border border-border overflow-hidden">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-8xl opacity-70">👨‍💼</div>
-                  </div>
-                </div>
-              </div>
+        <div className="max-w-7xl mx-auto mb-16">
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+            {/* Left Content */}
+            <div className="space-y-6">
+              <p className="text-gray-700 leading-relaxed">
+                I'm a passionate Product Data Analyst with a Master's degree in Information Systems from California State University Long Beach, currently working at ServiceNow in New York. My expertise lies in transforming complex data into actionable product insights that drive business decisions.
+              </p>
+              <p className="text-gray-700 leading-relaxed">
+                With a strong foundation in SQL, Python, and modern BI tools, I specialize in product analytics, experimentation, and building data models that reveal user behavior patterns. I've successfully delivered insights that contributed to a 10% increase in student enrollment and optimized database performance by 40%.
+              </p>
+              <p className="text-gray-700 leading-relaxed">
+                My approach combines technical rigor with business acumen, enabling me to bridge the gap between data and strategy. I'm driven by curiosity and the challenge of uncovering insights that shape product roadmaps and enhance user experiences.
+              </p>
             </div>
 
-            {/* Content */}
-            <div className="space-y-6">
-              <div className="space-y-4">
-                <p className="text-lg leading-relaxed">
-                  I'm a results-driven <span className="font-semibold text-primary">Data Analyst</span> and <span className="font-semibold text-primary">Product Analyst</span> specializing in transforming complex datasets into strategic business insights. With a Master of Science in Information Systems from California State University Long Beach, I bring a strong technical foundation combined with business acumen.
-                </p>
-                <p className="text-lg leading-relaxed">
-                  I excel at <span className="font-semibold text-accent">SQL</span> and
-                  <span className="font-semibold text-primary mx-1">Python</span> for data modeling,
-                  <span className="font-semibold text-secondary mx-1">Tableau</span> and
-                  <span className="font-semibold text-accent">Power BI</span> for visualization, plus cloud platforms like
-                  <span className="font-semibold text-primary mx-1">AWS</span>,
-                  <span className="font-semibold text-secondary mx-1">Snowflake</span>, and
-                  <span className="font-semibold text-accent">BigQuery</span> for scalable data solutions.
-                </p>
-                <p className="leading-relaxed text-muted-foreground">
-                  Currently a Product Analyst at ServiceNow, I've delivered impactful analytics solutions including product KPI tracking, A/B testing, funnel analysis, and cross-functional dashboard development. Previously at California State University, I drove 10% enrollment growth through market research and data-driven insights.
-                </p>
-              </div>
+            {/* Right Content - Education */}
+            <div>
+              <h3 className="text-2xl font-bold mb-6">Education</h3>
 
+              <div className="space-y-6">
+                <div className="border-l-4 border-blue-500 pl-6">
+                  <h4 className="text-lg font-bold mb-1">Master of Science in Information Systems</h4>
+                  <p className="text-gray-600 mb-2">California State University Long Beach</p>
+                  <p className="text-sm text-gray-500 mb-2">May 2025 • GPA: 3.5</p>
+                  <p className="text-sm text-gray-600">Business Analytics, Project Management, Database Management, Statistics</p>
+                </div>
+
+                <div className="border-l-4 border-teal-500 pl-6">
+                  <h4 className="text-lg font-bold mb-1">B.E. in Information Technology</h4>
+                  <p className="text-gray-600 mb-2">University of Mumbai, India</p>
+                  <p className="text-sm text-gray-500 mb-2">May 2023 • GPA: 3.5</p>
+                  <p className="text-sm text-gray-600">Data Mining & BI, Machine Learning, Data Science and AI, Cloud Computing</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
