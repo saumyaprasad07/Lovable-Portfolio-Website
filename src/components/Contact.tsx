@@ -7,10 +7,6 @@ const Contact = () => {
       <div className="container mx-auto max-w-5xl px-4">
         <div className="text-center mb-12 animate-fade-in">
           <h2 className="heading-1 mb-4">Let's Work Together</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Open to data analyst, BI analyst, and product analyst opportunities.
-            Let's discuss how I can help drive data-informed decisions for your team.
-          </p>
         </div>
 
         <div className="max-w-3xl mx-auto space-y-8">
