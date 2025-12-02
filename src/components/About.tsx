@@ -89,7 +89,7 @@ const About = () => {
       title: "HackerRank SQL Intermediate",
       provider: "HackerRank",
       url: "https://www.hackerrank.com/certificates/646ec66e4b25",
-      year: "2023",
+      year: "2025",
       icon: hackerrankCertIcon
     }
   ];
