@@ -3,6 +3,7 @@ import googleCertIcon from "@/assets/cert-google.png";
 import awsCertIcon from "@/assets/cert-aws.svg";
 import tableauCertIcon from "@/assets/cert-tableau.svg";
 import hackerrankCertIcon from "@/assets/cert-hackerrank.png";
+import profilePhoto from "@/assets/profile-photo.jpg";
 
 const About = () => {
   const skillCategories = [
@@ -125,8 +126,13 @@ const About = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             {/* Photo Placeholder */}
             <div className="flex justify-center items-start">
-              <div className="w-64 h-64 rounded-2xl bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-900/30 dark:to-blue-800/30 flex items-center justify-center border-4 border-blue-500/20">
-                <span className="text-gray-500 dark:text-gray-400 text-sm">Your Photo Here</span>
+              <div className="w-64 h-64 rounded-2xl overflow-hidden bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-900/30 dark:to-blue-800/30 border-4 border-blue-500/20">
+                <img
+                  src={profilePhoto}
+                  alt="Saumya Prasad - Product Data Analyst portrait"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
               </div>
             </div>
 
