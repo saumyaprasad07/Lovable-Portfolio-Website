@@ -51,6 +51,13 @@ const About = () => {
 
   const certifications = [
     {
+      title: "Oracle Analytics Cloud 2025 Certified Professional",
+      provider: "Oracle",
+      url: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=1D743272F69487A1E287924BF22D0C5F638E9DAB20AE2868D9570F333DD8E9FA",
+      year: "2025",
+      icon: null
+    },
+    {
       title: "Google Advanced Data Analytics",
       provider: "Google",
       url: "https://www.coursera.org/account/accomplishments/specialization/L1UFPKLC27OQ",
@@ -84,13 +91,6 @@ const About = () => {
       url: "https://www.hackerrank.com/certificates/646ec66e4b25",
       year: "2023",
       icon: hackerrankCertIcon
-    },
-    {
-      title: "Oracle Analytics Cloud 2025 Certified Professional",
-      provider: "Oracle",
-      url: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=1D743272F69487A1E287924BF22D0C5F638E9DAB20AE2868D9570F333DD8E9FA",
-      year: "2025",
-      icon: null
     }
   ];
 
