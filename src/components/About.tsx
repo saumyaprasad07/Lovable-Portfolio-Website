@@ -126,7 +126,7 @@ const About = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             {/* Photo Placeholder */}
             <div className="flex justify-center items-start">
-              <div className="w-72 h-72 md:w-80 md:h-80 rounded-full overflow-hidden bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-900/30 dark:to-blue-800/30">
+              <div className="w-72 h-72 md:w-80 md:h-80 p-3 rounded-full overflow-hidden bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-900/30 dark:to-blue-800/30">
                 <img
                   src={profilePhoto}
                   alt="Saumya Prasad - Product Data Analyst portrait"
