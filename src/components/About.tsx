@@ -123,9 +123,9 @@ const About = () => {
 
         {/* Main About Section */}
         <div className="max-w-7xl mx-auto mb-16">
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start lg:items-center">
             {/* Photo Placeholder */}
-            <div className="flex justify-center items-start">
+            <div className="flex justify-center lg:justify-end items-start lg:items-center">
               <div className="w-72 h-72 md:w-80 md:h-80 rounded-full overflow-hidden bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-900/30 dark:to-blue-800/30 border-4 border-blue-500/20">
                 <img
                   src={profilePhoto}
@@ -137,7 +137,7 @@ const About = () => {
             </div>
 
             {/* Content */}
-            <div className="space-y-6">
+            <div className="space-y-6 max-w-xl mx-auto text-center lg:text-left lg:max-w-none">
               <p className="text-gray-700 leading-relaxed">
                 I'm a passionate Product Data Analyst with a Master's degree in Information Systems from California State University Long Beach, currently working at ServiceNow in New York. My expertise lies in transforming complex data into actionable product insights that drive business decisions.
               </p>
