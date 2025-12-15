@@ -141,10 +141,8 @@ const Projects = () => {
         {/* Other Projects */}
         <div>
           <div className="text-center mb-12">
-            <h3 className="heading-3 mb-4">Additional Projects</h3>
-            <p className="text-lg text-muted-foreground">
-              More examples of my data analysis and business intelligence work
-            </p>
+            
+            
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
