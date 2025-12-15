@@ -48,19 +48,6 @@ const CareerTimeline = () => {
       gpa: "3.5",
       coursework: ["Business Intelligence", "Machine Learning", "Data Science", "Cloud Computing"]
     },
-    {
-      type: "experience",
-      icon: Briefcase,
-      title: "Product Analyst",
-      organization: "Orion Technolab",
-      location: "India",
-      date: "Jan 2020 - Jul 2023",
-      responsibilities: [
-        "Led end-to-end conversion and retention analysis for grocery delivery app",
-        "Designed and analyzed A/B experiments achieving 7% lift in conversions",
-        "Built SQL-based dashboards diagnosing delivery inefficiencies"
-      ]
-    }
   ];
 
   return (
