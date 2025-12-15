@@ -1,4 +1,4 @@
-import { Download, FileText, ExternalLink, BookOpen, BarChart3, FileStack } from "lucide-react";
+import { Download, FileText, ExternalLink, BookOpen, BarChart3 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -32,11 +32,9 @@ const Resume = () => {
               </div>
             </CardHeader>
             <CardContent>
-              <Button className="w-full button-primary" size="lg" asChild>
-                <a href="https://drive.google.com/file/d/1JVH3S6MtrlNB7Gq-RNhBLnowYmHIPeJD/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                  <Download className="mr-2 h-5 w-5" />
-                  Download PDF Resume
-                </a>
+              <Button className="w-full button-primary" size="lg">
+                <Download className="mr-2 h-5 w-5" />
+                Download PDF Resume
               </Button>
               <p className="text-xs text-muted-foreground text-center mt-4">
                 Last updated: November 2024
@@ -108,16 +106,6 @@ const Resume = () => {
                 <a href="https://public.tableau.com/app/profile/saumya.prasad/vizzes" target="_blank" rel="noopener noreferrer">
                   <BarChart3 className="mr-2 h-4 w-4" />
                   Tableau Public
-                </a>
-              </Button>
-              <Button 
-                variant="outline" 
-                className="w-full justify-start" 
-                asChild
-              >
-                <a href="https://www.notion.so/saumyaprasad/Saumya-C-Prasad-275a7b9cbe00802ebf0fe4a418620b45" target="_blank" rel="noopener noreferrer">
-                  <FileStack className="mr-2 h-4 w-4" />
-                  Notion Portfolio
                 </a>
               </Button>
             </CardContent>

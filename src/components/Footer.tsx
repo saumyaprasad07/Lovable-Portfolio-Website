@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Heart, BookOpen, BarChart3, FileStack } from "lucide-react";
+import { Github, Linkedin, Mail, Heart, BookOpen, BarChart3 } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -59,15 +59,6 @@ const Footer = () => {
               aria-label="Tableau Public"
             >
               <BarChart3 className="h-5 w-5" />
-            </a>
-            <a 
-              href="https://www.notion.so/saumyaprasad/Saumya-C-Prasad-275a7b9cbe00802ebf0fe4a418620b45" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="p-2 rounded-full hover:bg-primary/10 hover:text-primary transition-all"
-              aria-label="Notion Portfolio"
-            >
-              <FileStack className="h-5 w-5" />
             </a>
           </div>
         </div>
