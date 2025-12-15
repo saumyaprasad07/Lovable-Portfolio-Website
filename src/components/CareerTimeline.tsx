@@ -3,19 +3,6 @@ import { GraduationCap, Briefcase } from "lucide-react";
 const CareerTimeline = () => {
   const timelineItems = [
     {
-      type: "experience",
-      icon: Briefcase,
-      title: "Product Analyst",
-      organization: "ServiceNow",
-      location: "Remote",
-      date: "Nov 2024 - Present",
-      responsibilities: [
-        "Defined product KPIs, built event-tracking schemas, and analyzed usage data using SQL & Python",
-        "Led A/B testing and experimentation analysis, measuring conversion lift and statistical significance",
-        "Created interactive Power BI dashboards and delivered actionable product insights"
-      ]
-    },
-    {
       type: "education",
       icon: GraduationCap,
       title: "Master of Science in Information Systems",
