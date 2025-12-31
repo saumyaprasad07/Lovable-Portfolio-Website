@@ -138,14 +138,11 @@ const About = () => {
 
             {/* Content */}
             <div className="space-y-6">
-              <p className="text-gray-700 leading-relaxed">
-                I'm a passionate Product Data Analyst with a Master's degree in Information Systems from California State University Long Beach, currently working at ServiceNow in New York. My expertise lies in transforming complex data into actionable product insights that drive business decisions.
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                I'm Saumya Prasad, a Data & Business Analyst who enjoys turning messy, complex data into insights that actually help people make better decisions. My interest in analytics comes from wanting to understand the why behind numbers—why users drop off, why processes slow down, and how data can be used to improve outcomes. I earned my Master's in Information Systems from California State University, Long Beach, where I strengthened my skills in SQL, Python, Tableau, and Power BI while working on real-world projects that improved reporting efficiency and business performance.
               </p>
-              <p className="text-gray-700 leading-relaxed">
-                With a strong foundation in SQL, Python, and modern BI tools, I specialize in product analytics, experimentation, and building data models that reveal user behavior patterns. I've successfully delivered insights that contributed to a 10% increase in student enrollment and optimized database performance by 40%.
-              </p>
-              <p className="text-gray-700 leading-relaxed">
-                My approach combines technical rigor with business acumen, enabling me to bridge the gap between data and strategy. I'm driven by curiosity and the challenge of uncovering insights that shape product roadmaps and enhance user experiences.
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                I value clarity, impact, and collaboration in my work. I enjoy partnering with stakeholders, asking the right questions, and translating business problems into analytical solutions that are easy to understand and act on. Whether it's building dashboards, defining KPIs, or analyzing user behavior through funnel and retention analysis, my goal is always to create insights that drive meaningful change. I'm currently seeking opportunities in data analytics, business intelligence, and product analytics, where I can continue learning, contribute value, and grow as a data professional.
               </p>
             </div>
           </div>
