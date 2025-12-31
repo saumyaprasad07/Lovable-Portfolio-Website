@@ -25,7 +25,7 @@ const About = () => {
     {
       icon: BarChart3,
       title: "BI & Visualization",
-      skills: ["Tableau", "Power BI", "Looker", "Google Data Studio", "Oracle Analytics Cloud", "D3.js", "Matplotlib", "Seaborn"]
+      skills: ["Tableau", "Power BI", "Looker", "Google Data Studio", "Oracle Analytics Cloud", "Matplotlib", "Seaborn"]
     },
     {
       icon: GitBranch,
