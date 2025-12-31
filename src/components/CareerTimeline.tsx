@@ -1,6 +1,17 @@
 import { GraduationCap, Briefcase } from "lucide-react";
 const CareerTimeline = () => {
   const timelineItems = [{
+    type: "experience",
+    icon: Briefcase,
+    title: "Project Manager",
+    organization: "Saayam for All",
+    location: "New York, US",
+    date: "Aug 2025 - Present",
+    responsibilities: [
+      "Led end-to-end project planning across multiple NGO initiatives by defining timelines, allocating resources, and prioritizing tasks using Microsoft Project, Asana, and Trello",
+      "Improved operational efficiency by analyzing existing workflows and implementing process improvements, reducing task delays and enhancing cross-functional coordination"
+    ]
+  }, {
     type: "education",
     icon: GraduationCap,
     title: "Master of Science in Information Systems",
@@ -8,7 +19,19 @@ const CareerTimeline = () => {
     location: "Long Beach, CA",
     date: "May 2025",
     gpa: "3.5",
-    coursework: ["Business Data Analytics", "Project Management", "DBMS", "System Design", "Information Systems"]
+    coursework: ["Business Analytics", "Project Management", "Database Management", "Statistics"]
+  }, {
+    type: "experience",
+    icon: Briefcase,
+    title: "Data Analyst",
+    organization: "California State University Long Beach",
+    location: "Long Beach, CA",
+    date: "Aug 2024 - Apr 2025",
+    responsibilities: [
+      "Designed and automated 5+ end-to-end dashboards using SQL, Python, Tableau, and Power BI, improving reporting efficiency by 25%",
+      "Partnered with stakeholders to gather requirements, translate business needs into technical specifications, and deliver data-driven recommendations",
+      "Optimized SQL queries and Python scripts in Agile sprints, reducing database query time by 30%"
+    ]
   }, {
     type: "experience",
     icon: Briefcase,
@@ -16,7 +39,11 @@ const CareerTimeline = () => {
     organization: "California State University Long Beach",
     location: "Long Beach, CA",
     date: "Mar 2024 - May 2024",
-    responsibilities: ["Conducted market research on CSU PACE programs, analyzing 25K+ rows of data", "Developed business cases with actionable insights that increased student enrollment by 10%", "Built interactive Excel dashboards providing leadership with real-time visibility"]
+    responsibilities: [
+      "Conducted requirements gathering through stakeholder interviews for CSU PACE programs and defined measurable KPIs",
+      "Built interactive Excel dashboards incorporating cohort analysis, regression models, and enrollment metrics",
+      "Delivered actionable insights through data storytelling, contributing to a 10% increase in student enrollment"
+    ]
   }, {
     type: "education",
     icon: GraduationCap,
@@ -25,7 +52,7 @@ const CareerTimeline = () => {
     location: "Mumbai, India",
     date: "May 2023",
     gpa: "3.5",
-    coursework: ["Business Intelligence", "Machine Learning", "Data Science", "Cloud Computing"]
+    coursework: ["Data Mining & Business Intelligence", "Machine Learning", "Data Science and AI", "Cloud Computing"]
   }];
   return <section className="section-spacing bg-background">
       <div className="container-wide px-4 md:px-6">
