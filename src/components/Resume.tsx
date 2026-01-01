@@ -63,7 +63,7 @@ const Resume = () => {
                 className="w-full justify-start" 
                 asChild
               >
-                <a href="https://linkedin.com/in/saumyaprasad07" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/saumya-prasad07/" target="_blank" rel="noopener noreferrer">
                   <ExternalLink className="mr-2 h-4 w-4" />
                   LinkedIn Profile
                 </a>

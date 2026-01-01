@@ -64,7 +64,7 @@ export const ContactVariation1Clean = () => {
               <p className="text-sm font-medium text-muted-foreground mb-4">Connect with me</p>
               <div className="flex flex-wrap gap-3">
                 <a
-                  href="https://linkedin.com/in/saumyaprasad07"
+                  href="https://www.linkedin.com/in/saumya-prasad07/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 px-4 py-2.5 rounded-lg border border-border hover:border-primary hover:bg-primary/5 transition-all group"
@@ -126,8 +126,8 @@ export const ContactVariation2IconBased = () => {
     {
       icon: Linkedin,
       label: "LinkedIn",
-      value: "linkedin.com/in/saumyaprasad07",
-      href: "https://linkedin.com/in/saumyaprasad07",
+      value: "linkedin.com/in/saumya-prasad07",
+      href: "https://www.linkedin.com/in/saumya-prasad07/",
       color: "text-[#0077B5]",
       bgColor: "bg-blue-50 dark:bg-blue-950/30",
     },
@@ -260,7 +260,7 @@ export const ContactVariation3Premium = () => {
               </p>
 
               <a
-                href="https://linkedin.com/in/saumyaprasad07"
+                href="https://www.linkedin.com/in/saumya-prasad07/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-between p-4 rounded-xl border border-border hover:border-primary bg-background hover:bg-primary/5 transition-all group"
@@ -309,7 +309,7 @@ export const ContactVariation3Premium = () => {
                 </a>
               </Button>
               <a
-                href="https://linkedin.com/in/saumyaprasad07"
+                href="https://www.linkedin.com/in/saumya-prasad07/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto"

@@ -42,7 +42,7 @@ const Contact = () => {
               <p className="text-sm font-medium text-muted-foreground mb-4">Connect with me</p>
               <div className="flex flex-wrap gap-3">
                 <a
-                  href="https://linkedin.com/in/saumyaprasad07"
+                  href="https://www.linkedin.com/in/saumya-prasad07/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 px-4 py-2.5 rounded-lg border border-border hover:border-primary hover:bg-primary/5 transition-all group"
