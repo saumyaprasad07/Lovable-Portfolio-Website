@@ -3,29 +3,27 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 const Experience = () => {
   const experiences = [
   {
-    title: "Product Analyst",
-    company: "ServiceNow",
-    location: "New York",
-    duration: "Nov 2024 - Present",
+    title: "Project Manager",
+    company: "Saayam for All",
+    location: "Remote",
+    duration: "Aug 2025 - Present",
     responsibilities: [
-      "Defined comprehensive product KPIs and success metrics (feature activation, time-to-value, workflow completion, retention rate) for SaaS platform, establishing measurement framework for product performance tracking",
-      "Designed end-to-end event-tracking and instrumentation schema, mapping workflow steps to behavioral events for accurate product analytics and usage attribution",
-      "Extracted, cleaned, and modeled product-usage datasets using SQL and Python, creating funnel, cohort, and segmentation analyses to identify user drop-off points and behavioral patterns",
-      "Conducted A/B testing and experimentation analysis, measuring conversion lift and running statistical significance tests to determine optimal feature variants for rollout",
-      "Built interactive Power BI dashboards visualizing adoption trends, workflow efficiency, retention cohorts, and segment-level performance for cross-functional stakeholder visibility",
-      "Delivered actionable insights through root-cause analysis, identifying workflow friction and low-adoption segments to inform product roadmap prioritization"
+      "Led end-to-end project planning across multiple NGO initiatives by defining timelines, allocating resources, and prioritizing tasks using Microsoft Project, Asana, and Trello, ensuring on-time delivery across parallel workstreams.",
+      "Improved operational efficiency by analyzing existing workflows and implementing process improvements, leveraging strong business problem understanding to reduce task delays and enhance cross-functional coordination among stakeholders."
     ]
   },
   {
-    title: "Market Research Data Analyst",
-    company: "California State University Long Beach",
+    title: "Data Analyst",
+    company: "California State University - Long Beach",
     location: "Long Beach, CA",
-    duration: "Mar 2024 - May 2024",
+    duration: "Mar 2024 - May 2025",
     responsibilities: [
-      "Conducted comprehensive market research analyzing CSU PACE programs, performing statistical analysis on 25K+ data rows to identify enrollment trends, student demographics, and stakeholder needs",
-      "Developed data-driven business cases with actionable strategic recommendations that contributed to 10% increase in student enrollment quarter-over-quarter",
-      "Built interactive Excel dashboards featuring dynamic slicers, pivot tables, and KPI tracking, providing executive leadership with real-time program performance visibility",
-      "Synthesized qualitative and quantitative research findings into executive presentations, influencing strategic program expansion decisions"
+      "Built and automated 5+ scalable dashboards using SQL, Python, Tableau, Power BI, and Excel, improving reporting efficiency by 25% and enabling real-time tracking of KPIs across academic and operational teams.",
+      "Partnered with stakeholders and program owners to gather requirements, define success metrics, and translate business and product needs into data models, dashboards, and actionable insights.",
+      "Analyzed large, multi-source datasets to identify trends, cohort behavior, and growth opportunities; optimized SQL queries and Python workflows in Agile sprints, reducing query runtime by 30%.",
+      "Defined and tracked KPIs for CSU PACE programs, including enrollment, retention, and conversion metrics, supporting data-informed product and program decisions.",
+      "Developed interactive dashboards incorporating cohort analysis, regression models, and funnel-style enrollment metrics, contributing to a 10% increase in student enrollment.",
+      "Delivered insights through data storytelling, executive-ready visualizations, and presentations, enabling faster decision-making and improved visibility into performance and outcomes."
     ]
   }
 ];
