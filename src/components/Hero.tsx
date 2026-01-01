@@ -112,8 +112,8 @@ const Hero = () => {
 
         {/* Stats Preview */}
         <div className="flex flex-wrap justify-center gap-6 max-w-3xl mx-auto">
-          {[{
-          number: "3+",
+        {[{
+          number: "2+",
           label: "Years Experience",
           icon: Award
         }, {
