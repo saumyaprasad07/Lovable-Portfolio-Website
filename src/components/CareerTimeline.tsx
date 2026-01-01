@@ -26,23 +26,14 @@ const CareerTimeline = () => {
     title: "Data Analyst",
     organization: "California State University Long Beach",
     location: "Long Beach, CA",
-    date: "Aug 2024 - Apr 2025",
+    date: "Mar 2024 - May 2025",
     responsibilities: [
-      "Designed and automated 5+ end-to-end dashboards using SQL, Python, Tableau, and Power BI, improving reporting efficiency by 25%",
-      "Partnered with stakeholders to gather requirements, translate business needs into technical specifications, and deliver data-driven recommendations",
-      "Optimized SQL queries and Python scripts in Agile sprints, reducing database query time by 30%"
-    ]
-  }, {
-    type: "experience",
-    icon: Briefcase,
-    title: "Data Analyst",
-    organization: "California State University Long Beach",
-    location: "Long Beach, CA",
-    date: "Mar 2024 - May 2024",
-    responsibilities: [
-      "Conducted requirements gathering through stakeholder interviews for CSU PACE programs and defined measurable KPIs",
-      "Built interactive Excel dashboards incorporating cohort analysis, regression models, and enrollment metrics",
-      "Delivered actionable insights through data storytelling, contributing to a 10% increase in student enrollment"
+      "Built and automated 5+ scalable dashboards using SQL, Python, Tableau, Power BI, and Excel, improving reporting efficiency by 25%",
+      "Partnered with stakeholders and program owners to gather requirements, define success metrics, and translate business needs into data models and actionable insights",
+      "Analyzed large, multi-source datasets to identify trends, cohort behavior, and growth opportunities; optimized SQL queries reducing runtime by 30%",
+      "Defined and tracked KPIs for CSU PACE programs, including enrollment, retention, and conversion metrics",
+      "Developed interactive dashboards incorporating cohort analysis, regression models, and funnel-style enrollment metrics, contributing to a 10% increase in student enrollment",
+      "Delivered insights through data storytelling and executive-ready visualizations, enabling faster decision-making"
     ]
   }, {
     type: "education",
