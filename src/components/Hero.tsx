@@ -95,7 +95,7 @@ const Hero = () => {
           label: "GitHub"
         }, {
           icon: Linkedin,
-          href: "https://linkedin.com/in/saumyaprasad07",
+          href: "https://www.linkedin.com/in/saumya-prasad07/",
           label: "LinkedIn"
         }, {
           icon: Mail,
