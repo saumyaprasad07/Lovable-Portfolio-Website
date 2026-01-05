@@ -32,9 +32,11 @@ const Resume = () => {
               </div>
             </CardHeader>
             <CardContent>
-              <Button className="w-full button-primary" size="lg">
-                <Download className="mr-2 h-5 w-5" />
-                Download PDF Resume
+              <Button className="w-full button-primary" size="lg" asChild>
+                <a href="/Saumya_Prasad_Resume.pdf" download>
+                  <Download className="mr-2 h-5 w-5" />
+                  Download PDF Resume
+                </a>
               </Button>
               <p className="text-xs text-muted-foreground text-center mt-4">
                 Last updated: November 2024
