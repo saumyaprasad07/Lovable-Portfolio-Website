@@ -20,7 +20,7 @@ const About = () => {
     {
       icon: TrendingUp,
       title: "Cloud & Infrastructure",
-      skills: ["AWS (S3, Redshift, Lambda, EC2)", "Google Cloud Platform", "Microsoft Azure"]
+      skills: ["AWS (S3, Redshift, Lambda, EC2)", "Google Cloud Platform"]
     },
     {
       icon: BarChart3,
