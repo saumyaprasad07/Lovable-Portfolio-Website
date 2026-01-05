@@ -15,7 +15,7 @@ const About = () => {
     {
       icon: Database,
       title: "Databases & Data Warehouses",
-      skills: ["MySQL", "PostgreSQL", "Snowflake", "BigQuery", "MongoDB", "SQL Server", "Oracle"]
+      skills: ["MySQL", "PostgreSQL", "Snowflake", "BigQuery", "MongoDB", "Oracle"]
     },
     {
       icon: TrendingUp,
