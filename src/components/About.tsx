@@ -1,4 +1,4 @@
-import { Code as Code2, Database, ChartBar as BarChart3, ClipboardCheck, GitBranch, TrendingUp, CircleCheck as CheckCircle2, Award, Target, Lightbulb } from "lucide-react";
+import { Code as Code2, Database, ChartBar as BarChart3, ClipboardCheck, TrendingUp, CircleCheck as CheckCircle2, Award, Target, Lightbulb } from "lucide-react";
 import googleCertIcon from "@/assets/cert-google.png";
 import awsCertIcon from "@/assets/cert-aws.svg";
 import tableauCertIcon from "@/assets/cert-tableau.svg";
@@ -28,19 +28,9 @@ const About = () => {
       skills: ["Tableau", "Power BI", "Looker", "Google Data Studio", "Oracle Analytics Cloud", "Matplotlib", "Seaborn"]
     },
     {
-      icon: GitBranch,
-      title: "ETL & Data Engineering",
-      skills: ["Apache Spark", "Apache Airflow", "dbt", "Data Pipeline Development", "ETL Workflows", "Data Integration"]
-    },
-    {
       icon: ClipboardCheck,
       title: "Analytics & Frameworks",
       skills: ["Python (Pandas, NumPy, Scikit-learn)", "Advanced Excel (Power Query, Pivot Tables, VBA)", "Statistical Analysis", "Predictive Modeling"]
-    },
-    {
-      icon: Lightbulb,
-      title: "AI & ML Tools",
-      skills: ["Scikit-learn", "TensorFlow", "Machine Learning Models", "Predictive Analytics", "NLP", "Data Mining Algorithms"]
     },
     {
       icon: Target,
