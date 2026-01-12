@@ -33,7 +33,7 @@ const Resume = () => {
             </CardHeader>
             <CardContent>
               <Button className="w-full button-primary" size="lg" asChild>
-                <a href="/Saumya_Prasad_Resume.pdf" download>
+                <a href="https://drive.google.com/file/d/1zJKdkNqjwwxqyUAMyt7vme7yaInH1WEO/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                   <Download className="mr-2 h-5 w-5" />
                   Download PDF Resume
                 </a>
