@@ -129,10 +129,10 @@ const About = () => {
             {/* Content */}
             <div className="space-y-6">
               <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                I'm Saumya Prasad, a Data & Business Analyst who enjoys turning messy, complex data into insights that actually help people make better decisions. My interest in analytics comes from wanting to understand the why behind numbers—why users drop off, why processes slow down, and how data can be used to improve outcomes. I earned my Master's in Information Systems from California State University, Long Beach, where I strengthened my skills in SQL, Python, Tableau, and Power BI while working on real-world projects that improved reporting efficiency and business performance.
+                I'm Saumya Prasad, a Data Analyst and Business Analyst skilled in Python, SQL, DAX, Power BI, Tableau, and Excel. I specialize in data modeling, ETL, semantic modeling, and BI dashboarding—translating business needs into actionable insights. With a Master's in Information Systems from California State University, Long Beach, I bring hands-on experience in requirements elicitation, Agile workflows, and process optimization using tools like Miro, Visio, GitHub, and JIRA.
               </p>
               <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                I value clarity, impact, and collaboration in my work. I enjoy partnering with stakeholders, asking the right questions, and translating business problems into analytical solutions that are easy to understand and act on. Whether it's building dashboards, defining KPIs, or analyzing user behavior through funnel and retention analysis, my goal is always to create insights that drive meaningful change. I'm currently seeking opportunities in data analytics, business intelligence, and product analytics, where I can continue learning, contribute value, and grow as a data professional.
+                I value clarity, impact, and collaboration in my work. Whether it's building interactive dashboards, defining KPIs, automating workflows with Power Automate and n8n.io, or analyzing data to uncover trends, my goal is always to support data-driven decision-making. I'm currently seeking opportunities in data analytics, business intelligence, and business analysis, where I can continue learning, contribute value, and grow as a data professional.
               </p>
             </div>
           </div>
