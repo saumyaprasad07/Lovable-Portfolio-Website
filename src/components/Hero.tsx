@@ -3,6 +3,7 @@ import { ArrowRight, Github, Linkedin, Mail, Download, ChartBar as BarChart3, Da
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 const Hero = () => {
+  const navigate = useNavigate();
   const [isVisible, setIsVisible] = useState(false);
   const [currentRole, setCurrentRole] = useState(0);
   const [displayedText, setDisplayedText] = useState("");
