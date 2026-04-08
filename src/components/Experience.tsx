@@ -3,27 +3,27 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 const Experience = () => {
   const experiences = [
   {
-    title: "Project Manager",
+    title: "Business Analyst",
     company: "Saayam for All",
     location: "Remote",
-    duration: "Aug 2025 - Present",
+    duration: "Sep 2025 - Present",
     responsibilities: [
-      "Led end-to-end project planning across multiple NGO initiatives by defining timelines, allocating resources, and prioritizing tasks using Microsoft Project, Asana, and Trello, ensuring on-time delivery across parallel workstreams.",
-      "Improved operational efficiency by analyzing existing workflows and implementing process improvements, leveraging strong business problem understanding to reduce task delays and enhance cross-functional coordination among stakeholders."
+      "Conducted requirements elicitation through stakeholder interviews, workshops, and surveys; translated business needs into measurable KPIs, BRDs, TRDs, and user stories in JIRA aligned with strategic objectives.",
+      "Facilitated Agile ceremonies including sprint planning, backlog grooming, and UAT sessions; wrote detailed test cases and validated BI and system solutions against acceptance criteria.",
+      "Designed process workflows, system diagrams, and visual models using Miro and Visio to communicate complex business processes, identify gaps, and recommend improvements.",
+      "Managed documentation and version control of BA artifacts using GitHub, ensuring collaboration and consistency across projects."
     ]
   },
   {
     title: "Data Analyst",
-    company: "California State University - Long Beach",
+    company: "California State University Long Beach",
     location: "Long Beach, CA",
-    duration: "Mar 2024 - May 2025",
+    duration: "Mar 2024 - May 2024",
     responsibilities: [
-      "Built and automated 5+ scalable dashboards using SQL, Python, Tableau, Power BI, and Excel, improving reporting efficiency by 25% and enabling real-time tracking of KPIs across academic and operational teams.",
-      "Partnered with stakeholders and program owners to gather requirements, define success metrics, and translate business and product needs into data models, dashboards, and actionable insights.",
-      "Analyzed large, multi-source datasets to identify trends, cohort behavior, and growth opportunities; optimized SQL queries and Python workflows in Agile sprints, reducing query runtime by 30%.",
-      "Defined and tracked KPIs for CSU PACE programs, including enrollment, retention, and conversion metrics, supporting data-informed product and program decisions.",
-      "Developed interactive dashboards incorporating cohort analysis, regression models, and funnel-style enrollment metrics, contributing to a 10% increase in student enrollment.",
-      "Delivered insights through data storytelling, executive-ready visualizations, and presentations, enabling faster decision-making and improved visibility into performance and outcomes."
+      "Designed and maintained SharePoint sites/pages, centralizing team resources and improving information accessibility.",
+      "Developed low-code applications using Microsoft Power Apps and automated workflows with Power Automate, increasing operational efficiency by 10%.",
+      "Built advanced Excel reports using Pivot Tables, XLOOKUP/VLOOKUP, conditional formatting, and Power Query to clean, analyze, and visualize data for decision-making.",
+      "Developed 3+ business intelligence dashboards in Power BI using SQL and Excel data sources to track KPIs and deliver actionable insights."
     ]
   }
 ];
