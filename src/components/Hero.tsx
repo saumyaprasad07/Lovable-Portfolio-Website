@@ -1,7 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Github, Linkedin, Mail, Download, ChartBar as BarChart3, Database, TrendingUp, Award } from "lucide-react";
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 const Hero = () => {
+  const navigate = useNavigate();
   const [isVisible, setIsVisible] = useState(false);
   const [currentRole, setCurrentRole] = useState(0);
   const [displayedText, setDisplayedText] = useState("");
@@ -71,9 +73,7 @@ const Hero = () => {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16 max-w-2xl mx-auto">
-          <Button size="lg" className="button-primary" onClick={() => document.getElementById('projects')?.scrollIntoView({
-          behavior: 'smooth'
-        })}>
+          <Button size="lg" className="button-primary" onClick={() => navigate('/projects')}>
             <BarChart3 className="mr-2 h-5 w-5" />
             View Projects
             <ArrowRight className="ml-2 h-4 w-4" />
