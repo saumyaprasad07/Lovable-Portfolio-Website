@@ -14,19 +14,19 @@ const Achievements = () => {
     organization: "Data Con LA",
     category: "Science and Technology",
     highlights: ["Supported event logistics for one of Southern California's largest data science conferences", "Gained exposure to emerging trends in data analytics and machine learning"],
-    url: "https://www.linkedin.com/in/saumya-prasad07/"
+    url: "https://www.linkedin.com/in/saumyaprasad07/"
   }, {
     role: "Student Volunteer",
     organization: "RE+ Events",
     category: "Science and Technology",
     highlights: ["Managed exhibitor and attendee registrations", "Networked with professionals in energy and sustainability sector"],
-    url: "https://www.linkedin.com/in/saumya-prasad07/"
+    url: "https://www.linkedin.com/in/saumyaprasad07/"
   }, {
     role: "Student Volunteer",
     organization: "ISACA Los Angeles Chapter",
     category: "Science and Technology",
     highlights: ["Supported cybersecurity and governance conference execution", "Received CPE certification for active volunteer participation"],
-    url: "https://www.linkedin.com/in/saumya-prasad07/"
+    url: "https://www.linkedin.com/in/saumyaprasad07/"
   }];
   const organizations = [{
     role: "Treasurer & Social Media Coordinator",
