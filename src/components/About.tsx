@@ -131,18 +131,7 @@ const About = () => {
               <p className="text-gray-700 dark:text-gray-300 leading-relaxed whitespace-pre-line">
                 I'm a Data Analyst and Business Analyst with a Master's in Information Systems from California State University Long Beach, passionate about turning complex data into clear, actionable insights.
 
-
-
-
-                My toolkit spans the full analytics stack - from Python, SQL, and DAX for analysis and modeling, to Power BI and Tableau for BI dashboarding, to cloud platforms like BigQuery, Snowflake, and AWS Redshift. I'm equally comfortable working deep in the data and sitting across the table from stakeholders to translate business needs into measurable outcomes.
-
-
-
-
-                I've built recommendation systems, uncovered a 26.4% gender wage gap through regression modeling on 25K+ census records, and designed end-to-end database systems that improved query performance by 40%. On the business side, I lead Agile ceremonies, write BRDs and user stories, and design process workflows that bridge the gap between technical teams and business goals.
-
-
-
+                My toolkit spans the full analytics stack - from Python, SQL, and DAX for analysis and modeling, to Power BI and Tableau for BI dashboarding, to cloud platforms like BigQuery, Snowflake, and AWS Redshift. I'm equally comfortable working deep in the data and sitting across the table from stakeholders to translate business needs into measurable outcomes. I've built recommendation systems, uncovered a 26.4% gender wage gap through regression modeling on 25K+ census records, and designed end-to-end database systems that improved query performance by 40%. On the business side, I lead Agile ceremonies, write BRDs and user stories, and design process workflows that bridge the gap between technical teams and business goals.
 
                 Whether I'm building a self-serve dashboard, automating workflows with Power Automate, or scoping requirements through stakeholder interviews - I care about making data useful, not just accurate.
               </p>
