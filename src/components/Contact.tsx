@@ -54,16 +54,6 @@ const Contact = () => {
                   <ExternalLink className="h-3.5 w-3.5 opacity-0 group-hover:opacity-100 transition-opacity" />
                 </a>
 
-                <a
-                  href="https://saumyaprasad.lovable.app"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 px-4 py-2.5 rounded-lg border border-border hover:border-primary hover:bg-primary/5 transition-all group"
-                >
-                  <Globe className="h-4 w-4 text-primary" />
-                  <span className="font-medium text-sm">Portfolio</span>
-                  <ExternalLink className="h-3.5 w-3.5 opacity-0 group-hover:opacity-100 transition-opacity" />
-                </a>
               </div>
             </div>
           </div>
