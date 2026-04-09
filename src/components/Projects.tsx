@@ -66,7 +66,7 @@ const Projects = () => {
       <div className="container-wide px-4 md:px-6">
         {/* Section Header */}
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="heading-1 mb-6">Data Projects</h2>
+          <h2 className="heading-1 mb-6">Projects</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Real-world analytics solutions delivering measurable business value through data-driven insights
           </p>
