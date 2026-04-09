@@ -208,7 +208,7 @@ const Projects = () => {
               </a>
               <a href="mailto:saumya.prasad460@gmail.com" className="button-secondary inline-flex items-center justify-center">
                 Get In Touch
-              </button>
+              </a>
             </div>
           </div>
         </div>
