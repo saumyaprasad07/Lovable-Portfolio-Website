@@ -206,9 +206,7 @@ const Projects = () => {
                 <Github className="w-5 h-5 mr-2" />
                 View All Projects
               </a>
-              <button onClick={() => document.getElementById('contact')?.scrollIntoView({
-              behavior: 'smooth'
-            })} className="button-secondary">
+              <a href="mailto:saumya.prasad460@gmail.com" className="button-secondary inline-flex items-center justify-center">
                 Get In Touch
               </button>
             </div>
