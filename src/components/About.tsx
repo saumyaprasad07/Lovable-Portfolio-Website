@@ -9,38 +9,28 @@ const About = () => {
   const skillCategories = [
     {
       icon: Code2,
-      title: "Programming Languages",
-      skills: ["Python", "SQL", "HTML", "CSS"]
-    },
-    {
-      icon: Database,
-      title: "Databases & Data Warehouses",
-      skills: ["MySQL", "PostgreSQL", "Snowflake", "BigQuery", "Oracle"]
-    },
-    {
-      icon: TrendingUp,
-      title: "Cloud & Infrastructure",
-      skills: ["AWS (S3, Redshift, Lambda, EC2)", "Google Cloud Platform"]
+      title: "Data & Programming",
+      skills: ["Python (Pandas, NumPy, Scikit-learn)", "SQL", "HTML", "CSS"]
     },
     {
       icon: BarChart3,
-      title: "BI & Visualization",
-      skills: ["Tableau", "Power BI", "Looker", "Google Data Studio", "Matplotlib", "Seaborn"]
+      title: "Visualization & BI",
+      skills: ["Power BI", "Tableau", "Looker", "Google Data Studio", "Matplotlib", "Seaborn"]
+    },
+    {
+      icon: Database,
+      title: "Databases & Cloud",
+      skills: ["MySQL", "PostgreSQL", "Snowflake", "BigQuery", "Oracle", "AWS (S3, Redshift, Lambda, EC2)", "Google Cloud Platform"]
     },
     {
       icon: ClipboardCheck,
-      title: "Analytics & Frameworks",
-      skills: ["Python (Pandas, NumPy, Scikit-learn)", "Advanced Excel (Power Query, Pivot Tables, VBA)", "Statistical Analysis", "Predictive Modeling"]
+      title: "Analytics & Experimentation",
+      skills: ["Statistical Analysis", "Predictive Modeling", "A/B Testing", "Hypothesis Testing", "Funnel & Cohort Analysis", "KPI Development", "User Behavior Analytics"]
     },
     {
       icon: Target,
-      title: "Product Analytics",
-      skills: ["KPI Development", "Funnel Analysis", "A/B Testing", "Cohort Analysis", "User Behavior Analytics", "Statistical Hypothesis Testing"]
-    },
-    {
-      icon: TrendingUp,
-      title: "Experimentation & Analytics Tools",
-      skills: ["Amplitude", "Google Analytics", "Adobe Analytics"]
+      title: "Tools",
+      skills: ["Amplitude", "Google Analytics", "Adobe Analytics", "Excel (Power Query, Pivot Tables, VBA)"]
     }
   ];
 
