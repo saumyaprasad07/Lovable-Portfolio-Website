@@ -13,7 +13,7 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="flex gap-4">
+          <div className="flex gap-2">
             <a 
               href="https://github.com/saumyaprasad07" 
               target="_blank" 
