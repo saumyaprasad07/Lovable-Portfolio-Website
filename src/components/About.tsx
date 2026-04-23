@@ -140,24 +140,24 @@ const About = () => {
         </div>
 
         {/* Skills Section */}
-        <div className="mb-16">
-          <div className="text-center mb-12">
+        <div className="mb-12">
+          <div className="text-center mb-8">
             <h3 className="text-2xl font-bold mb-2">Technical Skills</h3>
-            <div className="w-24 h-1 bg-blue-500 mx-auto mb-4"></div>
+            <div className="w-24 h-1 bg-blue-500 mx-auto"></div>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl mx-auto">
             {skillCategories.map((category, index) => (
-              <div key={index} className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="p-3 rounded-full bg-blue-500/10 border border-blue-500/20 flex-shrink-0">
-                    <category.icon className="h-5 w-5 text-blue-500" />
+              <div key={index} className="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-lg transition-shadow">
+                <div className="flex items-center gap-2 mb-3">
+                  <div className="p-2 rounded-full bg-blue-500/10 border border-blue-500/20 flex-shrink-0">
+                    <category.icon className="h-4 w-4 text-blue-500" />
                   </div>
                   <h4 className="font-bold text-gray-900 text-sm leading-tight">{category.title}</h4>
                 </div>
-                <ul className="space-y-2">
+                <ul className="space-y-1">
                   {category.skills.map((skill, skillIndex) => (
-                    <li key={skillIndex} className="text-sm text-gray-700 flex items-start">
+                    <li key={skillIndex} className="text-sm text-gray-700 flex items-start leading-snug">
                       <span>{skill}</span>
                     </li>
                   ))}
