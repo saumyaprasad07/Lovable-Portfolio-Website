@@ -10,7 +10,7 @@ const About = () => {
     {
       icon: Code2,
       title: "Programming Languages",
-      skills: ["Python", "SQL", "HTML/CSS"]
+      skills: ["Python", "SQL", "HTML", "CSS"]
     },
     {
       icon: Database,
