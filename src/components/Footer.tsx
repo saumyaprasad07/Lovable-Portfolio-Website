@@ -4,16 +4,16 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="py-12 px-4 border-t border-border">
+    <footer className="py-4 px-4 border-t border-border">
       <div className="container mx-auto">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-2">
           <div className="text-center md:text-left">
             <p className="text-sm text-muted-foreground mt-1">
               © {currentYear} All rights reserved.
             </p>
           </div>
 
-          <div className="flex gap-4">
+          <div className="flex gap-2">
             <a 
               href="https://github.com/saumyaprasad07" 
               target="_blank" 
