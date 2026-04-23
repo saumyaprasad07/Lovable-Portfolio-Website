@@ -10,27 +10,27 @@ const About = () => {
     {
       icon: Code2,
       title: "Data & Programming",
-      skills: ["Python (Pandas, NumPy, Scikit-learn)", "SQL", "HTML", "CSS"]
+      skills: ["Python (Pandas, NumPy, Scikit-learn)", "SQL", "DAX", "HTML", "CSS"]
     },
     {
       icon: BarChart3,
       title: "Visualization & BI",
-      skills: ["Power BI", "Tableau", "Looker", "Google Data Studio", "Matplotlib", "Seaborn"]
+      skills: ["Power BI", "Tableau", "Looker", "Google Data Studio", "Excel (Power Query, Pivot Tables)", "Matplotlib", "Seaborn"]
     },
     {
       icon: Database,
-      title: "Databases & Cloud",
-      skills: ["MySQL", "PostgreSQL", "Snowflake", "BigQuery", "Oracle", "AWS (S3, Redshift, Lambda, EC2)", "Google Cloud Platform"]
+      title: "Databases, Cloud & Platforms",
+      skills: ["MySQL", "PostgreSQL", "Oracle", "Snowflake", "BigQuery", "AWS (S3, Redshift, Lambda, EC2)", "Google Cloud Platform", "Microsoft Fabric"]
     },
     {
       icon: ClipboardCheck,
-      title: "Analytics & Experimentation",
-      skills: ["Statistical Analysis", "Predictive Modeling", "A/B Testing", "Hypothesis Testing", "Funnel & Cohort Analysis", "KPI Development", "User Behavior Analytics"]
+      title: "Analytics & Data Modeling",
+      skills: ["Statistical Analysis", "Predictive Modeling", "A/B Testing", "Hypothesis Testing", "Funnel Analysis", "Cohort Analysis", "KPI Development", "User Behavior Analytics", "Data Modeling (ERD, 3NF, Dimensional Modeling)"]
     },
     {
       icon: Target,
-      title: "Tools",
-      skills: ["Amplitude", "Google Analytics", "Adobe Analytics", "Excel (Power Query, Pivot Tables, VBA)"]
+      title: "Automation & Tools",
+      skills: ["Power Automate", "Power Apps", "n8n", "Amplitude", "Google Analytics", "Adobe Analytics", "Dynamics CRM"]
     }
   ];
 
