@@ -6,7 +6,7 @@ const Contact = () => {
     <section id="contact" className="py-12 bg-gradient-to-b from-background to-muted/20">
       <div className="container mx-auto max-w-5xl px-4">
         <div className="text-center mb-6 animate-fade-in">
-          <h2 className="heading-1 mb-2">Let's Work Together</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-2">Let's Work Together</h2>
         </div>
 
         <div className="max-w-3xl mx-auto space-y-4">
