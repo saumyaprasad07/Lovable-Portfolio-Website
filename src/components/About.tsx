@@ -34,8 +34,8 @@ const About = () => {
     },
     {
       icon: Target,
-      title: "Product & Business Analytics",
-      skills: ["KPI Development", "Funnel Analysis", "A/B Testing", "Cohort Analysis", "User Behavior Analytics", "Market Research", "Statistical Hypothesis Testing"]
+      title: "Product Analytics",
+      skills: ["KPI Development", "Funnel Analysis", "A/B Testing", "Cohort Analysis", "User Behavior Analytics", "Statistical Hypothesis Testing"]
     }
   ];
 
