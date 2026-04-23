@@ -132,7 +132,7 @@ const About = () => {
                 I'm a Data Analyst and Business Analyst with a Master's in Information Systems from California State University Long Beach. I enjoy turning complex data into clear, actionable insights.
               </p>
               <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                I work across the full analytics stack—using Python, SQL, and DAX for analysis, and Power BI and Tableau for dashboards. I also have experience with cloud platforms like BigQuery, Snowflake, and AWS Redshift.
+                I work across the full analytics stack - using Python, SQL, and DAX for analysis, and Power BI and Tableau for dashboards. 
               </p>
               <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                 On the business side, I work with Agile teams, write BRDs and user stories, and design workflows that connect technical solutions to business goals. My focus is always on making data useful and impactful.
